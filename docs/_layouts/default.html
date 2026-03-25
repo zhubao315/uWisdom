@@ -7,7 +7,7 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.summary | default: site.description }}">
     <meta name="author" content="{{ page.author | default: 'zhubao315' }}">
-    <meta name="theme-color" content="#133D72">
+    <meta name="theme-color" content="#007AFF">
     {% seo %}
     <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
@@ -22,18 +22,11 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="{{ '/' | relative_url }}">
-          <svg class="brand-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="logo-bg" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#133D72"/>
-                <stop offset="100%" stop-color="#0F2847"/>
-              </linearGradient>
-            </defs>
-            <rect width="38" height="38" rx="6" fill="url(#logo-bg)"/>
-            <g fill="#fff">
-              <path d="M6 8 L11 30 L14 30 L19 16 L24 30 L27 30 L32 8 L28 8 L24.5 24 L21 8 L17 8 L13.5 24 L10 8 Z"/>
+          <svg class="brand-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" fill="#007AFF"/>
+            <g stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <path d="M15 18 L28 82 L50 42 L72 82 L85 18"/>
             </g>
-            <circle cx="19" cy="5" r="2" fill="#2DD4BF"/>
           </svg>
           <span class="brand-text">
             uWisdom
