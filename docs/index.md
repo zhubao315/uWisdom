@@ -16,6 +16,7 @@ summary: uWisdom 个人知识操作系统首页
 
 - 第一层：四个核心身份
 - 第二层：每个核心身份下的关键子领域
+- 第三层：每个子领域下的关键主题方向
 
 ## 入口导航
 
@@ -29,6 +30,10 @@ summary: uWisdom 个人知识操作系统首页
     <p>围绕四大身份展开的子领域知识条目。</p>
   </article>
   <article class="card">
+    <h2><a href="{{ '/knowledge-base/themes/' | relative_url }}">第三层领域</a></h2>
+    <p>把子领域进一步展开为可持续沉淀的主题方向。</p>
+  </article>
+  <article class="card">
     <h2><a href="{{ '/uWisdom-PRD.html' | relative_url }}">PRD</a></h2>
     <p>查看产品定位、架构、功能设计与演进路线。</p>
   </article>
@@ -39,4 +44,3 @@ summary: uWisdom 个人知识操作系统首页
 > 设定我关注的领域，并不断探寻“领域”路径，保持正确迭代并跟随时代步伐，成为 `[[有趣的人]]`。
 
 > 成果源于挖掘机会，而非解决问题。
-
