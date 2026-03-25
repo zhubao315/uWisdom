@@ -16,6 +16,22 @@ permalink: /today/
 - 标签：theme
 - 摘要：葡萄酒大师相关知识主题
 
+## [陈传多](/figures/chuando-tan.html)
+
+- 分类：人物志
+- 领域：人物志
+- 更新：2026-03-25
+- 标签：figure, lifestyle
+- 摘要：新加坡摄影师与"冻龄男神"，健康生活方式的倡导者
+
+## [钱钟书](/figures/qian-zhongshu.html)
+
+- 分类：人物志
+- 领域：人物志
+- 更新：2026-03-25
+- 标签：figure, culture, learning
+- 摘要：学贯中西的"文化昆仑"，《围城》作者
+
 ## [金融市场](/knowledge-base/domains/financial-markets.html)
 
 - 分类：知识百科 / 领域
@@ -55,19 +71,3 @@ permalink: /today/
 - 更新：2026-03-25
 - 标签：theme
 - 摘要：摄影家相关知识主题
-
-## [蔡志忠](/figures/cai-zhizhong.html)
-
-- 分类：人物志
-- 领域：人物志
-- 更新：2026-03-25
-- 标签：figure, culture, confidence
-- 摘要：以强大自信和持续创作推动国学传承与普及表达的文化创作者
-
-## [蒙田](/figures/montaigne.html)
-
-- 分类：人物志
-- 领域：人物志
-- 更新：2026-03-25
-- 标签：philosophy, writing, figure
-- 摘要：随笔体裁创始人，怀疑论哲学家与人文主义思想家

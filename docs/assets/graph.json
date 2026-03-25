@@ -3,17 +3,32 @@
     "/encyclopedia": {
       "mermaid": ""
     },
+    "/figures/andy-matuschak.html": {
+      "mermaid": "graph LR\nA[\"安迪·马图恰克\"]\nA --> N1[\"卢曼\"]\nA --> N2[\"数字人生\"]\nA --> N3[\"个人数字操作系统\"]"
+    },
     "/figures/bruce-lee.html": {
       "mermaid": "graph LR\nA[\"李小龙\"]\nA --> N1[\"∑ 生活艺术家\"]\nA --> N2[\"健身跑者\"]\nA --> N3[\"力量训练纪律\"]"
+    },
+    "/figures/buffett.html": {
+      "mermaid": "graph LR\nA[\"巴菲特\"]\nA --> N1[\"查理·芒格\"]\nA --> N2[\"金融市场\"]\nA --> N3[\"主题研究\"]"
     },
     "/figures/cai-zhizhong.html": {
       "mermaid": "graph LR\nA[\"蔡志忠\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"国学大师\"]\nA --> N3[\"传统智慧现代转译\"]"
     },
     "/figures/charlie-munger.html": {
-      "mermaid": "graph LR\nA[\"查理·芒格\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"技术投资\"]\nA --> N3[\"市场周期观察\"]"
+      "mermaid": "graph LR\nA[\"查理·芒格\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"技术投资\"]\nA --> N3[\"认知偏差清单\"]\nN4[\"巴菲特\"] --> A"
+    },
+    "/figures/chuando-tan.html": {
+      "mermaid": "graph LR\nA[\"陈传多\"]\nA --> N1[\"∑ 生活艺术家\"]\nA --> N2[\"健身跑者\"]"
     },
     "/figures/eddie-peng.html": {
       "mermaid": "graph LR\nA[\"彭于晏\"]\nA --> N1[\"健身跑者\"]\nA --> N2[\"跑步周期训练\"]\nA --> N3[\"力量训练纪律\"]"
+    },
+    "/figures/elon-musk.html": {
+      "mermaid": "graph LR\nA[\"埃隆·马斯克\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"技术投资\"]"
+    },
+    "/figures/feng-tang.html": {
+      "mermaid": "graph LR\nA[\"冯唐\"]\nA --> N1[\"国学大师\"]"
     },
     "/figures/haruki-murakami.html": {
       "mermaid": "graph LR\nA[\"村上春树\"]\nA --> N1[\"跑步周期训练\"]\nA --> N2[\"视觉叙事\"]\nA --> N3[\"城市文化与现代生活\"]"
@@ -27,26 +42,44 @@
     "/figures/linus-torvalds.html": {
       "mermaid": "graph LR\nA[\"莱纳斯\"]\nA --> N1[\"开源发烧友\"]\nA --> N2[\"工程交付闭环\"]\nA --> N3[\"开源协作机制\"]"
     },
+    "/figures/luhmann.html": {
+      "mermaid": "graph LR\nA[\"卢曼\"]\nA --> N1[\"数字人生\"]\nA --> N2[\"个人数字操作系统\"]\nN3[\"安迪·马图恰克\"] --> A"
+    },
+    "/figures/mandelstam.html": {
+      "mermaid": "graph LR\nA[\"曼德尔施塔姆\"]\nA --> N1[\"国学大师\"]"
+    },
     "/figures/montaigne.html": {
-      "mermaid": "graph LR\nA[\"蒙田\"]\nA --> N1[\"国学大师\"]\nA --> N2[\"认知偏差清单\"]\nA --> N3[\"主题研究\"]"
+      "mermaid": "graph LR\nA[\"蒙田\"]\nA --> N1[\"国学大师\"]\nA --> N2[\"心理学专家\"]\nA --> N3[\"经典阅读体系\"]"
+    },
+    "/figures/nietzsche.html": {
+      "mermaid": "graph LR\nA[\"尼采\"]\nA --> N1[\"心理学专家\"]\nA --> N2[\"经典阅读体系\"]"
+    },
+    "/figures/qian-zhongshu.html": {
+      "mermaid": "graph LR\nA[\"钱钟书\"]\nA --> N1[\"国学大师\"]"
     },
     "/figures/shen-nanpeng.html": {
       "mermaid": "graph LR\nA[\"沈南鹏\"]\nA --> N1[\"技术投资\"]\nA --> N2[\"AI 产业投资\"]\nA --> N3[\"机会到产品转化\"]"
+    },
+    "/figures/song-zhenzong.html": {
+      "mermaid": "graph LR\nA[\"宋真宗赵恒\"]\nA --> N1[\"国学大师\"]"
     },
     "/figures/steve-jobs.html": {
       "mermaid": "graph LR\nA[\"史蒂夫·乔布斯\"]\nA --> N1[\"产品经理\"]\nA --> N2[\"机会到产品转化\"]\nA --> N3[\"产品需求设计\"]"
     },
     "/figures/su-shi.html": {
-      "mermaid": "graph LR\nA[\"苏轼\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"视觉叙事\"]\nA --> N3[\"城市文化与现代生活\"]\nN4[\"国学大师\"] --> A"
+      "mermaid": "graph LR\nA[\"苏轼\"]\nA --> N1[\"∑ 生活艺术家\"]\nA --> N2[\"北京文化使者\"]\nA --> N3[\"国学大师\"]\nN4[\"国学大师\"] --> A"
     },
     "/figures/wang-jian.html": {
       "mermaid": "graph LR\nA[\"王坚\"]\nA --> N1[\"云计算与云原生\"]\nA --> N2[\"云原生转型\"]\nA --> N3[\"平台治理\"]"
     },
     "/figures/wang-yangming.html": {
-      "mermaid": "graph LR\nA[\"王阳明\"]\nA --> N1[\"心理学专家\"]\nA --> N2[\"经典阅读体系\"]\nA --> N3[\"传统智慧现代转译\"]\nN4[\"国学大师\"] --> A"
+      "mermaid": "graph LR\nA[\"王阳明\"]\nA --> N1[\"国学大师\"]\nA --> N2[\"心理学专家\"]\nA --> N3[\"经典阅读体系\"]\nN4[\"国学大师\"] --> A"
     },
     "/figures/yu-minhong.html": {
       "mermaid": "graph LR\nA[\"俞敏洪\"]\nA --> N1[\"机会到产品转化\"]\nA --> N2[\"产品需求设计\"]\nA --> N3[\"主题研究\"]"
+    },
+    "/figures/zhang-juzheng.html": {
+      "mermaid": "graph LR\nA[\"张居正\"]\nA --> N1[\"国学大师\"]"
     },
     "/identities/architect.html": {
       "mermaid": "graph LR\nA[\"∑ 架构师\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"云计算与云原生\"]\nA --> N3[\"全栈工程师\"]"
@@ -58,7 +91,7 @@
       "mermaid": "graph LR\nA[\"∑ 投资人\"]\nA --> N1[\"商品交易\"]\nA --> N2[\"金融市场\"]\nA --> N3[\"技术投资\"]"
     },
     "/identities/life-artist.html": {
-      "mermaid": "graph LR\nA[\"∑ 生活艺术家\"]\nA --> N1[\"数字人生\"]\nA --> N2[\"健身跑者\"]\nA --> N3[\"游戏王者\"]\nN4[\"李小龙\"] --> A\nN5[\"蒋勋\"] --> A"
+      "mermaid": "graph LR\nA[\"∑ 生活艺术家\"]\nA --> N1[\"数字人生\"]\nA --> N2[\"健身跑者\"]\nA --> N3[\"游戏王者\"]\nN4[\"李小龙\"] --> A\nN5[\"陈传多\"] --> A\nN6[\"蒋勋\"] --> A"
     },
     "/identities/lifelong-learner.html": {
       "mermaid": "graph LR\nA[\"∑ 终身学习者\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"国学大师\"]\nA --> N3[\"心理学专家\"]"
@@ -67,13 +100,13 @@
       "mermaid": ""
     },
     "/knowledge-base/domains/ai-expert.html": {
-      "mermaid": "graph LR\nA[\"人工智能专家\"]\nA --> N1[\"云计算与云原生\"]\nA --> N2[\"Agent 工作流设计\"]\nA --> N3[\"LLM 应用架构\"]\nN4[\"∑ 架构师\"] --> A\nN5[\"云计算与云原生\"] --> A\nN6[\"Agent 工作流设计\"] --> A"
+      "mermaid": "graph LR\nA[\"人工智能专家\"]\nA --> N1[\"云计算与云原生\"]\nA --> N2[\"Agent 工作流设计\"]\nA --> N3[\"LLM 应用架构\"]\nN4[\"埃隆·马斯克\"] --> A\nN5[\"∑ 架构师\"] --> A\nN6[\"云计算与云原生\"] --> A"
     },
     "/knowledge-base/domains/beijing-culture.html": {
       "mermaid": "graph LR\nA[\"北京文化使者\"]\nA --> N1[\"北京城市叙事\"]\nA --> N2[\"文化行走路线\"]\nA --> N3[\"视觉叙事\"]\nN4[\"蔡志忠\"] --> A\nN5[\"苏轼\"] --> A\nN6[\"∑ 终身学习者\"] --> A"
     },
     "/knowledge-base/domains/chinese-classics.html": {
-      "mermaid": "graph LR\nA[\"国学大师\"]\nA --> N1[\"苏轼\"]\nA --> N2[\"王阳明\"]\nA --> N3[\"经典阅读体系\"]\nN4[\"蔡志忠\"] --> A\nN5[\"蒙田\"] --> A\nN6[\"∑ 终身学习者\"] --> A"
+      "mermaid": "graph LR\nA[\"国学大师\"]\nA --> N1[\"苏轼\"]\nA --> N2[\"王阳明\"]\nA --> N3[\"经典阅读体系\"]\nN4[\"蔡志忠\"] --> A\nN5[\"冯唐\"] --> A\nN6[\"曼德尔施塔姆\"] --> A"
     },
     "/knowledge-base/domains/cloud-native.html": {
       "mermaid": "graph LR\nA[\"云计算与云原生\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"工程交付闭环\"]\nA --> N3[\"平台治理\"]\nN4[\"王坚\"] --> A\nN5[\"∑ 架构师\"] --> A\nN6[\"人工智能专家\"] --> A"
@@ -82,13 +115,13 @@
       "mermaid": "graph LR\nA[\"商品交易\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"商品供需分析\"]\nA --> N3[\"周期交易框架\"]\nN4[\"∑ 投资人\"] --> A\nN5[\"金融市场\"] --> A\nN6[\"商品供需分析\"] --> A"
     },
     "/knowledge-base/domains/digital-life.html": {
-      "mermaid": "graph LR\nA[\"数字人生\"]\nA --> N1[\"数字资产编排\"]\nA --> N2[\"个人数字操作系统\"]\nN3[\"∑ 生活艺术家\"] --> A\nN4[\"数字资产编排\"] --> A\nN5[\"个人数字操作系统\"] --> A"
+      "mermaid": "graph LR\nA[\"数字人生\"]\nA --> N1[\"数字资产编排\"]\nA --> N2[\"个人数字操作系统\"]\nN3[\"安迪·马图恰克\"] --> A\nN4[\"卢曼\"] --> A\nN5[\"∑ 生活艺术家\"] --> A"
     },
     "/knowledge-base/domains/financial-markets.html": {
-      "mermaid": "graph LR\nA[\"金融市场\"]\nA --> N1[\"商品交易\"]\nA --> N2[\"市场周期观察\"]\nA --> N3[\"组合纪律体系\"]\nN4[\"查理·芒格\"] --> A\nN5[\"∑ 投资人\"] --> A\nN6[\"商品交易\"] --> A"
+      "mermaid": "graph LR\nA[\"金融市场\"]\nA --> N1[\"商品交易\"]\nA --> N2[\"市场周期观察\"]\nA --> N3[\"组合纪律体系\"]\nN4[\"巴菲特\"] --> A\nN5[\"查理·芒格\"] --> A\nN6[\"∑ 投资人\"] --> A"
     },
     "/knowledge-base/domains/fitness-running.html": {
-      "mermaid": "graph LR\nA[\"健身跑者\"]\nA --> N1[\"跑步周期训练\"]\nA --> N2[\"力量训练纪律\"]\nN3[\"李小龙\"] --> A\nN4[\"彭于晏\"] --> A\nN5[\"∑ 生活艺术家\"] --> A"
+      "mermaid": "graph LR\nA[\"健身跑者\"]\nA --> N1[\"跑步周期训练\"]\nA --> N2[\"力量训练纪律\"]\nN3[\"李小龙\"] --> A\nN4[\"陈传多\"] --> A\nN5[\"彭于晏\"] --> A"
     },
     "/knowledge-base/domains/full-stack-engineer.html": {
       "mermaid": "graph LR\nA[\"全栈工程师\"]\nA --> N1[\"工程交付闭环\"]\nA --> N2[\"全栈原型构建\"]\nN3[\"∑ 架构师\"] --> A\nN4[\"工程交付闭环\"] --> A\nN5[\"全栈原型构建\"] --> A"
@@ -115,10 +148,10 @@
       "mermaid": "graph LR\nA[\"产品经理\"]\nA --> N1[\"机会到产品转化\"]\nA --> N2[\"产品需求设计\"]\nN3[\"史蒂夫·乔布斯\"] --> A\nN4[\"∑ 架构师\"] --> A\nN5[\"机会到产品转化\"] --> A"
     },
     "/knowledge-base/domains/psychology.html": {
-      "mermaid": "graph LR\nA[\"心理学专家\"]\nA --> N1[\"认知偏差清单\"]\nA --> N2[\"情绪调节策略\"]\nN3[\"王阳明\"] --> A\nN4[\"∑ 终身学习者\"] --> A\nN5[\"认知偏差清单\"] --> A"
+      "mermaid": "graph LR\nA[\"心理学专家\"]\nA --> N1[\"认知偏差清单\"]\nA --> N2[\"情绪调节策略\"]\nN3[\"蒙田\"] --> A\nN4[\"尼采\"] --> A\nN5[\"王阳明\"] --> A"
     },
     "/knowledge-base/domains/technology-investment.html": {
-      "mermaid": "graph LR\nA[\"技术投资\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"AI 产业投资\"]\nA --> N3[\"竞技复盘方法\"]\nN4[\"查理·芒格\"] --> A\nN5[\"沈南鹏\"] --> A\nN6[\"∑ 投资人\"] --> A"
+      "mermaid": "graph LR\nA[\"技术投资\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"AI 产业投资\"]\nA --> N3[\"竞技复盘方法\"]\nN4[\"查理·芒格\"] --> A\nN5[\"埃隆·马斯克\"] --> A\nN6[\"沈南鹏\"] --> A"
     },
     "/knowledge-base/domains/wine.html": {
       "mermaid": "graph LR\nA[\"葡萄酒大师\"]\nA --> N1[\"风土地图\"]\nA --> N2[\"葡萄酒品鉴笔记\"]\nN3[\"∑ 生活艺术家\"] --> A\nN4[\"风土地图\"] --> A\nN5[\"葡萄酒品鉴笔记\"] --> A"
@@ -136,13 +169,13 @@
       "mermaid": "graph LR\nA[\"北京城市叙事\"]\nA --> N1[\"北京文化使者\"]\nN2[\"北京文化使者\"] --> A\nN3[\"城市文化与现代生活\"] --> A"
     },
     "/knowledge-base/themes/classics-reading-system.html": {
-      "mermaid": "graph LR\nA[\"经典阅读体系\"]\nA --> N1[\"国学大师\"]\nN2[\"王阳明\"] --> A\nN3[\"国学大师\"] --> A"
+      "mermaid": "graph LR\nA[\"经典阅读体系\"]\nA --> N1[\"国学大师\"]\nN2[\"蒙田\"] --> A\nN3[\"尼采\"] --> A\nN4[\"王阳明\"] --> A"
     },
     "/knowledge-base/themes/cloud-transformation.html": {
       "mermaid": "graph LR\nA[\"云原生转型\"]\nA --> N1[\"云计算与云原生\"]\nN2[\"王坚\"] --> A"
     },
     "/knowledge-base/themes/cognitive-biases.html": {
-      "mermaid": "graph LR\nA[\"认知偏差清单\"]\nA --> N1[\"心理学专家\"]\nN2[\"蒙田\"] --> A\nN3[\"心理学专家\"] --> A"
+      "mermaid": "graph LR\nA[\"认知偏差清单\"]\nA --> N1[\"心理学专家\"]\nN2[\"查理·芒格\"] --> A\nN3[\"蒙田\"] --> A\nN4[\"心理学专家\"] --> A"
     },
     "/knowledge-base/themes/commodity-supply-demand.html": {
       "mermaid": "graph LR\nA[\"商品供需分析\"]\nA --> N1[\"商品交易\"]\nN2[\"商品交易\"] --> A"
@@ -202,7 +235,7 @@
       "mermaid": "graph LR\nA[\"专利布局策略\"]\nA --> N1[\"知识产权顾问\"]\nN2[\"知识产权顾问\"] --> A"
     },
     "/knowledge-base/themes/personal-digital-os.html": {
-      "mermaid": "graph LR\nA[\"个人数字操作系统\"]\nA --> N1[\"数字人生\"]\nN2[\"数字人生\"] --> A\nN3[\"个人知识操作系统\"] --> A"
+      "mermaid": "graph LR\nA[\"个人数字操作系统\"]\nA --> N1[\"数字人生\"]\nN2[\"安迪·马图恰克\"] --> A\nN3[\"卢曼\"] --> A\nN4[\"数字人生\"] --> A"
     },
     "/knowledge-base/themes/platform-governance.html": {
       "mermaid": "graph LR\nA[\"平台治理\"]\nA --> N1[\"云计算与云原生\"]\nN2[\"王坚\"] --> A\nN3[\"云计算与云原生\"] --> A"
@@ -247,13 +280,13 @@
       "mermaid": "graph LR\nA[\"AI 原生企业能力重构\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"Agent 工作流设计\"]\nA --> N3[\"LLM 应用架构\"]"
     },
     "/topic-research/city-culture-and-modern-life.html": {
-      "mermaid": "graph LR\nA[\"城市文化与现代生活\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"北京城市叙事\"]\nA --> N3[\"视觉叙事\"]\nN4[\"村上春树\"] --> A\nN5[\"蒋勋\"] --> A\nN6[\"苏轼\"] --> A"
+      "mermaid": "graph LR\nA[\"城市文化与现代生活\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"北京城市叙事\"]\nA --> N3[\"视觉叙事\"]\nN4[\"村上春树\"] --> A\nN5[\"蒋勋\"] --> A"
     },
     "/topic-research/fifteenth-five-year-plan.html": {
       "mermaid": "graph LR\nA[\"十五五规划\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"技术投资\"]\nA --> N3[\"AI 产业投资\"]"
     },
     "/topic-research": {
-      "mermaid": "graph LR\nA[\"主题研究\"]\nN1[\"蒙田\"] --> A\nN2[\"俞敏洪\"] --> A"
+      "mermaid": "graph LR\nA[\"主题研究\"]\nN1[\"巴菲特\"] --> A\nN2[\"俞敏洪\"] --> A"
     },
     "/topic-research/openclaw-agent-ecosystem.html": {
       "mermaid": "graph LR\nA[\"OpenClaw 智能体生态\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"Agent 工作流设计\"]\nA --> N3[\"LLM 应用架构\"]"
