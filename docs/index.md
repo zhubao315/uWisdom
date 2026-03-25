@@ -4,39 +4,48 @@ summary: uWisdom 个人知识操作系统首页
 ---
 
 <section class="hero">
-  <div class="eyebrow">uWisdom · Knowledge Compendium</div>
-  <h1>以工程可读性为核心的<br>个人知识操作系统</h1>
-  <p>围绕真实领域结构，构建可持续演进、可智能检索、可被 Agent 调用的知识底座。知识不只是沉淀，更要持续演进、服务真实场景。</p>
+  <div class="eyebrow">uWisdom</div>
+  <h1>个人知识操作系统</h1>
+  <p><strong>工程化可读，让知识成为可被 AI 调用的终身资产。</strong></p>
+  <p class="meta">GitHub 原生托管 · Pages 一键发布 · 可持续演进 · 全维度检索 · Agent 原生适配</p>
   <p class="meta">知识百科 · 主题研究 · 人物志 · 工具 & Agent</p>
 </section>
 
-<div class="grid" style="margin-top: var(--sp-8)">
+## 入口导航
+
+<div class="grid">
   <article class="card">
     <h2><a href="{{ '/encyclopedia/' | relative_url }}">知识百科</a></h2>
-    <p>按领域、主题、标签组织长期知识条目。架构师、投资人、终身学习者、生活艺术家四大板块。</p>
+    <p>体系化沉淀，搭建终身知识资产库。</p>
   </article>
   <article class="card">
     <h2><a href="{{ '/topic-research/' | relative_url }}">主题研究</a></h2>
-    <p>围绕重点方向开展系统性深度研究，从问题到方法论的完整链路。</p>
+    <p>锚定核心方向，深耕体系化研究。</p>
   </article>
   <article class="card">
     <h2><a href="{{ '/figures/' | relative_url }}">人物志</a></h2>
-    <p>聚焦关键人物、思想家与作者——王阳明、蒙田、芒格、马斯克等 25 位标杆人物。</p>
-  </article>
-  <article class="card">
-    <h2><a href="{{ '/search/' | relative_url }}">搜索</a></h2>
-    <p>支持问题输入与多维过滤，按领域、标签、版本、作者快速匹配知识条目。</p>
+    <p>溯源智者思想，读懂核心影响力。</p>
   </article>
   <article class="card">
     <h2><a href="{{ '/tools-agent/' | relative_url }}">工具 & Agent</a></h2>
-    <p>搜索、图谱、Agent 接入与语义索引——让知识可被机器读取与调用。</p>
+    <p>打通 AI 能力，让知识被精准调用。</p>
   </article>
   <article class="card">
-    <h2><a href="{{ '/today/' | relative_url }}">今日知识精华</a></h2>
-    <p>构建时自动产出每日精选，持续推动知识复盘与再利用。</p>
+    <h2><a href="{{ '/search/' | relative_url }}">全域搜索</a></h2>
+    <p>自然语言提问，秒级定位知识。</p>
+  </article>
+  <article class="card">
+    <h2><a href="{{ '/today/' | relative_url }}">今日精华</a></h2>
+    <p>自动生成每日精选，唤醒知识价值。</p>
   </article>
 </div>
 
-> 设定我关注的领域，并不断探寻"领域"路径，保持正确迭代并跟随时代步伐。
+## 当前强化方向
 
-> 成果源于挖掘机会，而非解决问题。 — 德鲁克《成果管理》
+- **导航重构**：四大模块为核心，优化知识流转路径
+- **搜索升级**：自然语言 + 结构化筛选，精准触达
+- **Agent 适配**：一键分享，无缝对接 AI 学习调用
+- **知识图谱**：自动生成关联图谱，可视化知识脉络
+- **每日精选**：自动产出当日精华，助力知识复用
+
+> 锚定核心领域，深耕与探索并行，在迭代中与时代同频。成果源于主动挖掘机会，而非被动解决问题。
