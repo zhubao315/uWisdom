@@ -1,10 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7c8cff"/>
-      <stop offset="100%" stop-color="#3767ff"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#133D72"/>
+      <stop offset="100%" stop-color="#0F2847"/>
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="8" fill="url(#g)"/>
-  <text x="16" y="22" text-anchor="middle" font-family="serif" font-weight="bold" font-size="18" fill="#fff">W</text>
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- Simplified w+u -->
+  <g stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M8 11 L10 22 L14 11" opacity="0.9"/>
+    <path d="M18 11 L22 22 L24 11" opacity="0.9"/>
+    <path d="M14 11 Q16 22 18 11" opacity="0.95"/>
+  </g>
+  <!-- Center node -->
+  <circle cx="16" cy="15" r="2.2" fill="#FBBF24"/>
+  <!-- Accent nodes -->
+  <circle cx="10" cy="11" r="1.2" fill="#FBBF24" opacity="0.7"/>
+  <circle cx="22" cy="11" r="1.2" fill="#FBBF24" opacity="0.7"/>
+  <circle cx="10" cy="22" r="1" fill="#2DD4BF" opacity="0.6"/>
+  <circle cx="22" cy="22" r="1" fill="#2DD4BF" opacity="0.6"/>
 </svg>

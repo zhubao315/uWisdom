@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'zh-CN' }}">
+<html lang="{{ page.lang | default: 'zh-CN' }}" color-scheme="light dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.summary | default: site.description }}">
     <meta name="author" content="{{ page.author | default: 'zhubao315' }}">
+    <meta name="theme-color" content="#133D72">
     {% seo %}
     <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
@@ -13,13 +15,31 @@
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
       window.mermaid = mermaid;
-      mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+      mermaid.initialize({ startOnLoad: false, theme: document.documentElement.getAttribute('color-scheme') === 'dark' ? 'dark' : 'neutral' });
     </script>
   </head>
   <body data-baseurl="{{ site.baseurl }}">
     <header class="site-header">
       <div class="wrap">
-        <a class="brand" href="{{ '/' | relative_url }}">uWisdom</a>
+        <a class="brand" href="{{ '/' | relative_url }}">
+          <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="7" fill="#133D72"/>
+            <g stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <path d="M8 11 L10 22 L14 11" opacity="0.9"/>
+              <path d="M18 11 L22 22 L24 11" opacity="0.9"/>
+              <path d="M14 11 Q16 22 18 11" opacity="0.95"/>
+            </g>
+            <circle cx="16" cy="15" r="2.2" fill="#FBBF24"/>
+            <circle cx="10" cy="11" r="1.2" fill="#FBBF24" opacity="0.7"/>
+            <circle cx="22" cy="11" r="1.2" fill="#FBBF24" opacity="0.7"/>
+            <circle cx="10" cy="22" r="1" fill="#2DD4BF" opacity="0.6"/>
+            <circle cx="22" cy="22" r="1" fill="#2DD4BF" opacity="0.6"/>
+          </svg>
+          <span class="brand-text">
+            uWisdom
+            <span class="brand-sub">Knowledge Compendium</span>
+          </span>
+        </a>
         <button class="menu-toggle" aria-label="打开导航" data-menu-toggle>&#9776;</button>
         <nav class="nav" data-nav>
           <a href="{{ '/' | relative_url }}">首页</a>
@@ -49,7 +69,7 @@
       {% endunless %}
       {{ content }}
       {% unless page.url == "/" %}
-      <section class="entry-graph card">
+      <section class="entry-graph">
         <div class="eyebrow">Knowledge Graph</div>
         <h2>条目关系图</h2>
         <p class="meta">自动根据当前页面的上下游关系生成 Mermaid 图。</p>
@@ -62,15 +82,18 @@
         <div class="footer-grid">
           <div>
             <strong>uWisdom</strong>
-            <p class="meta">以工程可读性为核心的个人知识操作系统</p>
+            <p>以工程可读性为核心的个人知识操作系统</p>
+            <p>知识持续演进 · 人机双读 · 商业落地可控</p>
           </div>
           <div>
             <p><a href="https://github.com/zhubao315/uWisdom">GitHub 仓库</a></p>
             <p><a href="{{ '/search/' | relative_url }}">搜索知识</a></p>
+            <p><a href="{{ '/today/' | relative_url }}">今日精华</a></p>
           </div>
           <div>
             <p><a href="{{ '/encyclopedia/' | relative_url }}">知识百科</a></p>
-            <p><a href="{{ '/today/' | relative_url }}">今日精华</a></p>
+            <p><a href="{{ '/figures/' | relative_url }}">人物志</a></p>
+            <p><a href="{{ '/tools-agent/' | relative_url }}">工具 & Agent</a></p>
           </div>
         </div>
       </div>
