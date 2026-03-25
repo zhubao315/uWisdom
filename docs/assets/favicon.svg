@@ -5,18 +5,22 @@
       <stop offset="100%" stop-color="#0F2847"/>
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <rect width="32" height="32" rx="5" fill="url(#bg)"/>
   <!-- Simplified w+u -->
-  <g stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <path d="M8 11 L10 22 L14 11" opacity="0.9"/>
-    <path d="M18 11 L22 22 L24 11" opacity="0.9"/>
-    <path d="M14 11 Q16 22 18 11" opacity="0.95"/>
+  <g stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M7 8 L7 24 L11 24 L11 8"/>
+    <path d="M21 8 L21 24 L25 24 L25 8"/>
+    <path d="M11 14 Q16 6 21 14"/>
   </g>
-  <!-- Center node -->
-  <circle cx="16" cy="15" r="2.2" fill="#FBBF24"/>
-  <!-- Accent nodes -->
-  <circle cx="10" cy="11" r="1.2" fill="#FBBF24" opacity="0.7"/>
-  <circle cx="22" cy="11" r="1.2" fill="#FBBF24" opacity="0.7"/>
-  <circle cx="10" cy="22" r="1" fill="#2DD4BF" opacity="0.6"/>
-  <circle cx="22" cy="22" r="1" fill="#2DD4BF" opacity="0.6"/>
+  <!-- Nodes -->
+  <g>
+    <circle cx="9" cy="8" r="1.5" fill="#FBBF24"/>
+    <circle cx="23" cy="8" r="1.5" fill="#FBBF24"/>
+    <circle cx="16" cy="14" r="1.8" fill="#2DD4BF"/>
+  </g>
+  <!-- Engineering brackets -->
+  <g stroke="#fff" stroke-width="1" opacity="0.7">
+    <path d="M7 26 L11 30"/>
+    <path d="M25 26 L21 30"/>
+  </g>
 </svg>
