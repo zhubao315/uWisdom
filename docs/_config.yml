@@ -1,0 +1,14 @@
+title: uWisdom
+description: 基于驾驭工程可读性原则的个人知识操作系统
+baseurl: "/uWisdom"
+url: "https://zhubao315.github.io"
+markdown: kramdown
+theme: null
+kramdown:
+  input: GFM
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+

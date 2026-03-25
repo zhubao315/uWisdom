@@ -1,0 +1,135 @@
+:root {
+  --bg: #f5f1e8;
+  --paper: #fffdf8;
+  --ink: #1f2937;
+  --muted: #5b6472;
+  --line: #d9cfbe;
+  --accent: #0f766e;
+  --accent-2: #b45309;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Han Serif SC", "Noto Serif SC", serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(180, 83, 9, 0.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.10), transparent 30%),
+    var(--bg);
+  line-height: 1.75;
+}
+
+a {
+  color: var(--accent);
+}
+
+.wrap {
+  width: min(960px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 253, 248, 0.86);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header .wrap,
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.site-header .wrap {
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.content {
+  padding: 40px 0 56px;
+}
+
+.hero,
+.card,
+blockquote {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(31, 41, 55, 0.06);
+}
+
+.hero {
+  padding: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 18px;
+}
+
+.card h3,
+.card h2 {
+  margin-top: 0;
+}
+
+.eyebrow {
+  color: var(--accent-2);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0 40px;
+  color: var(--muted);
+}
+
+code {
+  background: rgba(15, 118, 110, 0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+@media (max-width: 720px) {
+  .site-header .wrap,
+  .nav {
+    display: block;
+  }
+
+  .nav a {
+    margin-right: 12px;
+  }
+}
+

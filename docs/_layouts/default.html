@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.summary | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="{{ '/' | relative_url }}">uWisdom</a>
+        <nav class="nav">
+          <a href="{{ '/' | relative_url }}">首页</a>
+          <a href="{{ '/identities/' | relative_url }}">第一层领域</a>
+          <a href="{{ '/knowledge-base/domains/' | relative_url }}">第二层领域</a>
+          <a href="{{ '/uWisdom-PRD.html' | relative_url }}">PRD</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap content">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Repository: <a href="https://github.com/zhubao315/uWisdom">zhubao315/uWisdom</a></p>
+        <p>Pages: <a href="https://zhubao315.github.io/uWisdom">https://zhubao315.github.io/uWisdom</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
+
