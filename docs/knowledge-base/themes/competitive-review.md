@@ -1,6 +1,6 @@
 ---
 title: 竞技复盘方法
-summary: 游戏王者领域下的第三层主题
+summary: 游戏王者相关知识主题
 permalink: /knowledge-base/themes/competitive-review.html
 ---
 # 竞技复盘方法

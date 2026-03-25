@@ -1,6 +1,6 @@
 ---
 title: 国学大师
-summary: 终身学习者身份下的第二层领域
+summary: 终身学习者相关知识领域
 permalink: /knowledge-base/domains/chinese-classics.html
 ---
 

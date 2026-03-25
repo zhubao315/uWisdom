@@ -1,6 +1,6 @@
 ---
 title: ∑ 生活艺术家
-summary: 第一层知识条目，定义生活艺术家身份及其子领域
+summary: 定义生活艺术家角色及其关键知识领域
 permalink: /identities/life-artist.html
 ---
 
@@ -15,7 +15,7 @@ permalink: /identities/life-artist.html
 - 把生活视作长期作品，而不是碎片化消费
 - 让数字工具、身体状态、空间环境、审美修养彼此协同
 
-## 第二层子领域
+## 关键知识领域
 
 - [数字人生]({{ '/knowledge-base/domains/digital-life.html' | relative_url }})
 - [户外大神]({{ '/knowledge-base/domains/outdoor-adventure.html' | relative_url }})
@@ -23,4 +23,3 @@ permalink: /identities/life-artist.html
 - [葡萄酒大师]({{ '/knowledge-base/domains/wine.html' | relative_url }})
 - [摄影家]({{ '/knowledge-base/domains/photography.html' | relative_url }})
 - [游戏王者]({{ '/knowledge-base/domains/gaming.html' | relative_url }})
-

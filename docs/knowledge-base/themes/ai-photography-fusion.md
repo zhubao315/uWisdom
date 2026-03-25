@@ -1,6 +1,6 @@
 ---
 title: AI 与摄影融合
-summary: 摄影家领域下的第三层主题
+summary: 摄影家相关知识主题
 permalink: /knowledge-base/themes/ai-photography-fusion.html
 ---
 # AI 与摄影融合

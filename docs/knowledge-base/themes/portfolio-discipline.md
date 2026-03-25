@@ -1,6 +1,6 @@
 ---
 title: 组合纪律体系
-summary: 金融市场领域下的第三层主题
+summary: 金融市场相关知识主题
 permalink: /knowledge-base/themes/portfolio-discipline.html
 ---
 # 组合纪律体系

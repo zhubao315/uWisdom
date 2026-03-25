@@ -1,6 +1,6 @@
 ---
 title: 软件成果保护
-summary: 知识产权顾问领域下的第三层主题
+summary: 知识产权顾问相关知识主题
 permalink: /knowledge-base/themes/software-asset-protection.html
 ---
 # 软件成果保护

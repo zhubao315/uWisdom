@@ -25,12 +25,14 @@ uWisdom 不是单纯的笔记库，也不是静态知识堆积区，而是一套
 - 人机双读：既适合人阅读，也适合 Agent 解析与调用
 - 商业落地可控：知识来源、适用范围、时效性和风险边界清晰
 
-## 文档
-
-- [uWisdom PRD](./docs/uWisdom-PRD.md)
-
 ## GitHub Pages
 
 - Repository: `https://github.com/zhubao315/uWisdom`
 - Pages: `https://zhubao315.github.io/uWisdom`
 
+## 站点栏目
+
+- `知识百科`：按领域、主题、标签浏览知识条目
+- `主题研究`：系统性深度研究某一领域或话题
+- `人物志`：聚焦关键人物、思想家、作者与其代表思想
+- `工具 & Agent`：管理搜索、索引、Agent 接入与知识图谱能力

@@ -1,6 +1,6 @@
 ---
 title: 工程交付闭环
-summary: 全栈工程师领域下的第三层主题
+summary: 全栈工程师相关知识主题
 permalink: /knowledge-base/themes/engineering-delivery.html
 ---
 # 工程交付闭环

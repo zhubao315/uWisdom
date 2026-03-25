@@ -1,6 +1,6 @@
 ---
 title: 徒步系统
-summary: 户外大神领域下的第三层主题
+summary: 户外大神相关知识主题
 permalink: /knowledge-base/themes/hiking-system.html
 ---
 # 徒步系统

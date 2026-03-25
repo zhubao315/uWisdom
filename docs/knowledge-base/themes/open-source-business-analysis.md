@@ -1,6 +1,6 @@
 ---
 title: 开源商业模式分析
-summary: 技术投资领域下的第三层主题
+summary: 技术投资相关知识主题
 permalink: /knowledge-base/themes/open-source-business-analysis.html
 ---
 # 开源商业模式分析

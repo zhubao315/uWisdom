@@ -1,6 +1,6 @@
 ---
 title: 技术投资
-summary: 投资人身份下的第二层领域
+summary: 投资人相关知识领域
 permalink: /knowledge-base/domains/technology-investment.html
 ---
 

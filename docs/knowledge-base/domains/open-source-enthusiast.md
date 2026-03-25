@@ -1,6 +1,6 @@
 ---
 title: 开源发烧友
-summary: 架构师身份下的第二层领域
+summary: 架构师相关知识领域
 permalink: /knowledge-base/domains/open-source-enthusiast.html
 ---
 

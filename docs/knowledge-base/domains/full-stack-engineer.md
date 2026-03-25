@@ -1,6 +1,6 @@
 ---
 title: 全栈工程师
-summary: 架构师身份下的第二层领域
+summary: 架构师相关知识领域
 permalink: /knowledge-base/domains/full-stack-engineer.html
 ---
 

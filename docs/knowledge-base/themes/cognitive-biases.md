@@ -1,6 +1,6 @@
 ---
 title: 认知偏差清单
-summary: 心理学专家领域下的第三层主题
+summary: 心理学专家相关知识主题
 permalink: /knowledge-base/themes/cognitive-biases.html
 ---
 # 认知偏差清单

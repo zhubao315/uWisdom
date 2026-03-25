@@ -1,6 +1,6 @@
 ---
 title: 视觉叙事
-summary: 摄影家领域下的第三层主题
+summary: 摄影家相关知识主题
 permalink: /knowledge-base/themes/visual-storytelling.html
 ---
 # 视觉叙事

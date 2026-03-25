@@ -1,6 +1,6 @@
 ---
 title: 文化行走路线
-summary: 北京文化使者领域下的第三层主题
+summary: 北京文化使者相关知识主题
 permalink: /knowledge-base/themes/cultural-walking-routes.html
 ---
 # 文化行走路线

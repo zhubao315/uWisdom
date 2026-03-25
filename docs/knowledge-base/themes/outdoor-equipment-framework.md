@@ -1,6 +1,6 @@
 ---
 title: 户外装备框架
-summary: 户外大神领域下的第三层主题
+summary: 户外大神相关知识主题
 permalink: /knowledge-base/themes/outdoor-equipment-framework.html
 ---
 # 户外装备框架

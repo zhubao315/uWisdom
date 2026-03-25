@@ -1,6 +1,6 @@
 ---
 title: 专利布局策略
-summary: 知识产权顾问领域下的第三层主题
+summary: 知识产权顾问相关知识主题
 permalink: /knowledge-base/themes/patent-strategy.html
 ---
 # 专利布局策略

@@ -1,6 +1,6 @@
 ---
 title: 经典阅读体系
-summary: 国学大师领域下的第三层主题
+summary: 国学大师相关知识主题
 permalink: /knowledge-base/themes/classics-reading-system.html
 ---
 # 经典阅读体系

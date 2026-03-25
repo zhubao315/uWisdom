@@ -1,6 +1,6 @@
 ---
 title: 传统智慧现代转译
-summary: 国学大师领域下的第三层主题
+summary: 国学大师相关知识主题
 permalink: /knowledge-base/themes/traditional-wisdom-modernization.html
 ---
 # 传统智慧现代转译

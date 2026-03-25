@@ -1,6 +1,6 @@
 ---
 title: 葡萄酒大师
-summary: 生活艺术家身份下的第二层领域
+summary: 生活艺术家相关知识领域
 permalink: /knowledge-base/domains/wine.html
 ---
 

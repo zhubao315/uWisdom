@@ -1,6 +1,6 @@
 ---
 title: 游戏机制分析
-summary: 游戏王者领域下的第三层主题
+summary: 游戏王者相关知识主题
 permalink: /knowledge-base/themes/game-mechanics-analysis.html
 ---
 # 游戏机制分析

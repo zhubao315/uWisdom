@@ -1,6 +1,6 @@
 ---
 title: 葡萄酒品鉴笔记
-summary: 葡萄酒大师领域下的第三层主题
+summary: 葡萄酒大师相关知识主题
 permalink: /knowledge-base/themes/wine-tasting-notes.html
 ---
 # 葡萄酒品鉴笔记

@@ -1,6 +1,6 @@
 ---
 title: 周期交易框架
-summary: 商品交易领域下的第三层主题
+summary: 商品交易相关知识主题
 permalink: /knowledge-base/themes/cycle-trading-framework.html
 ---
 # 周期交易框架

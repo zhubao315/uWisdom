@@ -1,12 +1,12 @@
 ---
-title: 第三层领域
-summary: uWisdom 第三层知识条目
+title: 按主题
+summary: 按主题浏览 uWisdom 知识条目
 permalink: /knowledge-base/themes/
 ---
 
-# 第三层领域
+# 按主题
 
-第三层用于把第二层子领域继续展开为可持续沉淀的关键主题方向。它是后续 `Area / Project / Task` 继续落地前的主题化中间层。
+这里聚合从具体问题域、方法题和研究方向展开的知识主题，适合继续沉淀为项目、任务和研究专题。
 
 <div class="grid">
   <article class="card">
@@ -58,4 +58,3 @@ permalink: /knowledge-base/themes/
     <p><a href="{{ '/knowledge-base/themes/competitive-review.html' | relative_url }}">竞技复盘方法</a></p>
   </article>
 </div>
-

@@ -1,6 +1,6 @@
 ---
 title: 个人数字操作系统
-summary: 数字人生领域下的第三层主题
+summary: 数字人生相关知识主题
 permalink: /knowledge-base/themes/personal-digital-os.html
 ---
 # 个人数字操作系统

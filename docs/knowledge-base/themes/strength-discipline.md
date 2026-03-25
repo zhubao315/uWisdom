@@ -1,6 +1,6 @@
 ---
 title: 力量训练纪律
-summary: 健身跑者领域下的第三层主题
+summary: 健身跑者相关知识主题
 permalink: /knowledge-base/themes/strength-discipline.html
 ---
 # 力量训练纪律

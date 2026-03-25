@@ -1,6 +1,6 @@
 ---
 title: 摄影家
-summary: 生活艺术家身份下的第二层领域
+summary: 生活艺术家相关知识领域
 permalink: /knowledge-base/domains/photography.html
 ---
 

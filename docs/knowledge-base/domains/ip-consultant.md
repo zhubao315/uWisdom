@@ -1,6 +1,6 @@
 ---
 title: 知识产权顾问
-summary: 架构师身份下的第二层领域
+summary: 架构师相关知识领域
 permalink: /knowledge-base/domains/ip-consultant.html
 ---
 

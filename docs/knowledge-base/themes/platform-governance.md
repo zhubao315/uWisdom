@@ -1,6 +1,6 @@
 ---
 title: 平台治理
-summary: 云计算与云原生领域下的第三层主题
+summary: 云计算与云原生相关知识主题
 permalink: /knowledge-base/themes/platform-governance.html
 ---
 # 平台治理

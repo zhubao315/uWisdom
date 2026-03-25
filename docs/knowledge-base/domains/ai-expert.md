@@ -1,6 +1,6 @@
 ---
 title: 人工智能专家
-summary: 架构师身份下的第二层领域
+summary: 架构师相关知识领域
 permalink: /knowledge-base/domains/ai-expert.html
 ---
 

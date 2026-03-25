@@ -1,6 +1,6 @@
 ---
 title: 北京城市叙事
-summary: 北京文化使者领域下的第三层主题
+summary: 北京文化使者相关知识主题
 permalink: /knowledge-base/themes/beijing-city-narrative.html
 ---
 # 北京城市叙事

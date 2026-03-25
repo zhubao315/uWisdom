@@ -1,6 +1,6 @@
 ---
 title: 跑步周期训练
-summary: 健身跑者领域下的第三层主题
+summary: 健身跑者相关知识主题
 permalink: /knowledge-base/themes/running-periodization.html
 ---
 # 跑步周期训练

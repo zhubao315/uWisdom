@@ -6,6 +6,7 @@
   --line: #d9cfbe;
   --accent: #0f766e;
   --accent-2: #b45309;
+  --accent-3: #7c2d12;
 }
 
 * {
@@ -65,8 +66,58 @@ a {
   color: var(--muted);
 }
 
+.nav-group {
+  position: relative;
+}
+
+.nav-group summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.nav-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 180px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  box-shadow: 0 14px 36px rgba(31, 41, 55, 0.08);
+}
+
+.nav-panel a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.nav-panel a:hover {
+  background: rgba(15, 118, 110, 0.08);
+}
+
 .content {
   padding: 40px 0 56px;
+}
+
+.entry-actions {
+  margin-bottom: 18px;
+}
+
+.agent-copy-button {
+  border: 1px solid var(--accent);
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font: inherit;
+  cursor: pointer;
 }
 
 .hero,
@@ -95,6 +146,72 @@ blockquote {
 .card h3,
 .card h2 {
   margin-top: 0;
+}
+
+.card-list {
+  display: grid;
+  gap: 14px;
+}
+
+.card-list a {
+  font-weight: 700;
+}
+
+.tag-list,
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(180, 83, 9, 0.10);
+  color: var(--accent-3);
+  text-decoration: none;
+}
+
+.search-panel {
+  margin-bottom: 22px;
+}
+
+.search-panel input,
+.search-panel select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  font: inherit;
+}
+
+.search-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 1fr);
+  gap: 12px;
+}
+
+.search-result {
+  margin-bottom: 14px;
+}
+
+.search-result h3 {
+  margin-bottom: 4px;
+}
+
+.search-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.entry-graph {
+  margin-top: 28px;
+}
+
+#knowledge-graph svg {
+  max-width: 100%;
 }
 
 .eyebrow {
@@ -130,6 +247,15 @@ code {
 
   .nav a {
     margin-right: 12px;
+  }
+
+  .nav-panel {
+    position: static;
+    margin-top: 8px;
+  }
+
+  .search-grid {
+    grid-template-columns: 1fr;
   }
 }
 

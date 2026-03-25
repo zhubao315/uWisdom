@@ -1,6 +1,6 @@
 ---
 title: AI 产业投资
-summary: 技术投资领域下的第三层主题
+summary: 技术投资相关知识主题
 permalink: /knowledge-base/themes/ai-industry-investment.html
 ---
 # AI 产业投资

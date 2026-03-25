@@ -1,6 +1,6 @@
 ---
 title: LLM 应用架构
-summary: 人工智能专家领域下的第三层主题
+summary: 人工智能专家相关知识主题
 permalink: /knowledge-base/themes/llm-application-architecture.html
 ---
 # LLM 应用架构

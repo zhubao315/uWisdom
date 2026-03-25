@@ -1,6 +1,6 @@
 ---
 title: 开源协作机制
-summary: 开源发烧友领域下的第三层主题
+summary: 开源发烧友相关知识主题
 permalink: /knowledge-base/themes/open-source-collaboration.html
 ---
 # 开源协作机制

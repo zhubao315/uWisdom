@@ -1,12 +1,12 @@
 ---
-title: 第一层领域
-summary: uWisdom 第一层领域条目
+title: 角色地图
+summary: 从核心角色视角理解 uWisdom 的长期知识结构
 permalink: /identities/
 ---
 
-# 第一层领域
+# 角色地图
 
-第一层用于定义你的长期核心身份，是整个知识体系的最高层入口。
+这里用于定义你的长期核心角色，是理解整套知识体系的顶层视角。
 
 <div class="grid">
   <article class="card">
@@ -26,4 +26,3 @@ permalink: /identities/
     <p>将审美、仪式感、体能与数字生活整合成有质感的生活方式。</p>
   </article>
 </div>
-

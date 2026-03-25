@@ -1,6 +1,6 @@
 ---
 title: 市场周期观察
-summary: 金融市场领域下的第三层主题
+summary: 金融市场相关知识主题
 permalink: /knowledge-base/themes/market-cycle-observation.html
 ---
 # 市场周期观察

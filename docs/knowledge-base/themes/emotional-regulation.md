@@ -1,6 +1,6 @@
 ---
 title: 情绪调节策略
-summary: 心理学专家领域下的第三层主题
+summary: 心理学专家相关知识主题
 permalink: /knowledge-base/themes/emotional-regulation.html
 ---
 # 情绪调节策略

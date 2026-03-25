@@ -6,22 +6,52 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.summary | default: site.description }}">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <script type="module" src="{{ '/assets/app.js' | relative_url }}"></script>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      window.mermaid = mermaid;
+      mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+    </script>
   </head>
-  <body>
+  <body data-baseurl="{{ site.baseurl }}">
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="{{ '/' | relative_url }}">uWisdom</a>
         <nav class="nav">
           <a href="{{ '/' | relative_url }}">首页</a>
-          <a href="{{ '/identities/' | relative_url }}">第一层领域</a>
-          <a href="{{ '/knowledge-base/domains/' | relative_url }}">第二层领域</a>
-          <a href="{{ '/knowledge-base/themes/' | relative_url }}">第三层领域</a>
-          <a href="{{ '/uWisdom-PRD.html' | relative_url }}">PRD</a>
+          <details class="nav-group">
+            <summary>知识百科</summary>
+            <div class="nav-panel">
+              <a href="{{ '/encyclopedia/' | relative_url }}">总览</a>
+              <a href="{{ '/knowledge-base/domains/' | relative_url }}">按领域</a>
+              <a href="{{ '/knowledge-base/themes/' | relative_url }}">按主题</a>
+              <a href="{{ '/encyclopedia/#tag-index' | relative_url }}">按标签</a>
+            </div>
+          </details>
+          <a href="{{ '/tools-agent/' | relative_url }}">工具 & Agent</a>
+          <a href="{{ '/topic-research/' | relative_url }}">主题研究</a>
+          <a href="{{ '/figures/' | relative_url }}">人物志</a>
+          <a href="{{ '/search/' | relative_url }}">搜索</a>
         </nav>
       </div>
     </header>
     <main class="wrap content">
+      {% unless page.url == "/" %}
+      <div class="entry-actions">
+        <button class="agent-copy-button" type="button" data-copy-agent>
+          复制链接，让你的 Agent 学习这条知识
+        </button>
+      </div>
+      {% endunless %}
       {{ content }}
+      {% unless page.url == "/" %}
+      <section class="entry-graph card">
+        <div class="eyebrow">Knowledge Graph</div>
+        <h2>条目关系图</h2>
+        <p class="meta">自动根据当前页面的上下游关系生成 Mermaid 图。</p>
+        <div id="knowledge-graph" data-graph-target></div>
+      </section>
+      {% endunless %}
     </main>
     <footer class="site-footer">
       <div class="wrap">

@@ -1,6 +1,6 @@
 ---
 title: 云原生转型
-summary: 云计算与云原生领域下的第三层主题
+summary: 云计算与云原生相关知识主题
 permalink: /knowledge-base/themes/cloud-transformation.html
 ---
 # 云原生转型

@@ -1,6 +1,6 @@
 ---
 title: 全栈原型构建
-summary: 全栈工程师领域下的第三层主题
+summary: 全栈工程师相关知识主题
 permalink: /knowledge-base/themes/full-stack-prototyping.html
 ---
 # 全栈原型构建

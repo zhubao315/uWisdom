@@ -1,6 +1,6 @@
 ---
 title: 心理学专家
-summary: 终身学习者身份下的第二层领域
+summary: 终身学习者相关知识领域
 permalink: /knowledge-base/domains/psychology.html
 ---
 

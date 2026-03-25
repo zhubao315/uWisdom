@@ -1,6 +1,6 @@
 ---
 title: 产品需求设计
-summary: 产品经理领域下的第三层主题
+summary: 产品经理相关知识主题
 permalink: /knowledge-base/themes/prd-design.html
 ---
 # 产品需求设计
