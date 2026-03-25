@@ -9,7 +9,7 @@ import faiss
 import numpy as np
 from openai import OpenAI
 
-ROOT = Path("/root/uWisdom")
+ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "docs" / "assets"
 OUTPUT = ROOT / "data" / "semantic"
 
@@ -67,4 +67,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

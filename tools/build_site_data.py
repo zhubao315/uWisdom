@@ -7,7 +7,7 @@ import subprocess
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path("/root/uWisdom")
+ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 ASSETS = DOCS / "assets"
 
