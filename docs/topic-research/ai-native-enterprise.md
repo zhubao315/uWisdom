@@ -6,26 +6,41 @@ tags:
   - ai
   - agent
   - architecture
-version: v1.0.0
-author: zhubao315
 ---
 
 # AI 原生企业能力重构
 
-## 研究问题
+## 研究背景
 
-当 LLM、Agent 与知识系统成熟后，企业的工作流、组织分工和产品形态将如何变化？
+大模型和 AI Agent 的快速发展正在重新定义企业的能力边界。传统的"人做决策、系统执行"模式正在向"AI 辅助决策、Agent 自动执行"转变。
 
-## 研究框架
+## 研究方向
 
-- 知识底座：RAG、知识单元、版本追溯
-- 执行层：Agent 工具调用、流程编排、审计回路
-- 产品层：AI 原生界面、任务自动化、结果验证
-- 组织层：岗位变化、管理模式、协同方式
+### 知识能力重构
 
-## 关联条目
+- 企业知识的结构化存储与 AI 可读设计
+- RAG 管线在企业知识管理中的应用
+- 从文档库到知识图谱的演进
 
-- [人工智能专家]({{ '/knowledge-base/domains/ai-expert.html' | relative_url }})
+### 流程能力重构
+
+- AI 辅助的审批、分析和决策流程
+- Agent 自动化处理重复性工作
+- 人机协作的最优分工模式
+
+### 产品能力重构
+
+- AI 原生产品设计：从"功能驱动"到"意图驱动"
+- 自然语言交互替代传统 UI
+- 个性化与自适应产品体验
+
+### 组织能力重构
+
+- AI 工程师 / Prompt 工程师等新角色
+- 数据驱动的组织决策机制
+- AI 治理与合规框架
+
+## 延伸阅读
+
 - [LLM 应用架构]({{ '/knowledge-base/themes/llm-application-architecture.html' | relative_url }})
-- [Agent 工作流设计]({{ '/knowledge-base/themes/agent-workflow-design.html' | relative_url }})
-
+- [人工智能专家]({{ '/knowledge-base/domains/ai-expert.html' | relative_url }})

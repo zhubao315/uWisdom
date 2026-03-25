@@ -1,14 +1,40 @@
 ---
-title: 专利布局策略
-summary: 知识产权顾问相关知识主题
+title: 专利策略
+summary: 技术创新的专利挖掘、布局与风险管理
 permalink: /knowledge-base/themes/patent-strategy.html
+tags:
+  - architecture
 ---
-# 专利布局策略
-所属第二层领域：[知识产权顾问]({{ '/knowledge-base/domains/ip-consultant.html' | relative_url }})
-## 定义
-围绕核心技术成果建立可保护、可扩展、可商业转化的专利组合。
-## 后续可展开
-- 机会识别
-- 专利池设计
-- 申请节奏规划
 
+# 专利策略
+
+所属领域：[知识产权顾问]({{ '/knowledge-base/domains/ip-consultant.html' | relative_url }})
+
+## 定义
+
+技术创新的专利挖掘方法、申请策略和布局规划。
+
+## 核心要点
+
+### 专利挖掘
+
+- 从技术方案中识别可专利化的创新点
+- 方法专利 vs 系统专利 vs 用途专利
+- 专利质量 > 专利数量
+
+### 布局策略
+
+- 防御性专利：防止被诉侵权
+- 进攻性专利：许可收入或竞争壁垒
+- 专利池与交叉许可
+
+### 风险管理
+
+- FTO（Freedom to Operate）分析
+- 专利无效宣告与应对
+- 跨境专利保护的差异
+
+## 延伸阅读
+
+- [软件成果保护]({{ '/knowledge-base/themes/software-asset-protection.html' | relative_url }})
+- [知识产权顾问]({{ '/knowledge-base/domains/ip-consultant.html' | relative_url }})
