@@ -1207,6 +1207,22 @@
       "content": "城市文化与现代生活 研究问题 如何把城市文化观察转化为个人表达、生活美学与长期知识资产？ 研究框架 城市叙事：历史、人文、空间与人物 生活方式：行走、摄影、品鉴与记录 个人表达：研究写作、路线设计、作品输出 关联条目 [北京文化使者]() [北京城市叙事]() [视觉叙事]()"
     },
     {
+      "url": "/topic-research/fifteenth-five-year-plan.html",
+      "title": "十五五规划",
+      "summary": "围绕国家战略、产业升级与技术演进研究“十五五”阶段机会结构",
+      "section": "主题研究",
+      "domain": "主题研究",
+      "tags": [
+        "planning",
+        "strategy",
+        "industry"
+      ],
+      "version": "v1.0.0",
+      "author": "zhubao315",
+      "book": "",
+      "content": "十五五规划 研究问题 在“十五五”阶段，哪些国家战略方向、产业能力建设和区域协同主题最值得持续跟踪，并能转化为个人的知识、投资与产品机会？ 研究框架 宏观方向：国家战略重点、科技创新、产业安全、新质生产力 产业层：AI、半导体、云计算、绿色能源、数字基础设施 区域层：京津冀、长三角、大湾区等区域协同与产业分工 应用层：企业数字化、智能体落地、公共服务现代化 研究价值 帮助建立中长期趋势观察框架 把政策语言转化为产业判断和机会识别能力 连接投资判断、系统架构和主题研究 关联条目 [金融市场]() [技术投资]() [AI 产业投资]() [市场周期观察]()"
+    },
+    {
       "url": "/topic-research",
       "title": "主题研究",
       "summary": "针对重要领域或话题开展系统性深度研究",
@@ -1218,7 +1234,23 @@
       "version": "v1.0.0",
       "author": "",
       "book": "",
-      "content": "主题研究 这里收录不是单条知识点，而是系统性专题研究。 <div class=\"grid\" <article class=\"card\" <h2 <a href=\"\" AI 原生企业能力重构</a </h2 <p 从工作流、知识底座、模型能力和组织协同观察企业如何被 AI 重构。</p </article <article class=\"card\" <h2 <a href=\"\" 个人知识操作系统</a </h2 <p 从知识资产化、搜索、Agent 接入和持续演进角度研究个人知识系统。</p </article <article class=\"card\" <h2 <a href=\"\" 城市文化与现代生活</a </h2 <p 把北京文化、生活方式和个人表达组织成长期研究母题。</p </article </div"
+      "content": "主题研究 这里收录不是单条知识点，而是系统性专题研究。 <div class=\"grid\" <article class=\"card\" <h2 <a href=\"\" 十五五规划</a </h2 <p 围绕国家战略、产业升级、区域协同与技术演进研究“十五五”关键机会。</p </article <article class=\"card\" <h2 <a href=\"\" OpenClaw 智能体生态</a </h2 <p 研究 OpenClaw 作为智能体平台、工具链与生态协作网络的演进路径。</p </article <article class=\"card\" <h2 <a href=\"\" AI 原生企业能力重构</a </h2 <p 从工作流、知识底座、模型能力和组织协同观察企业如何被 AI 重构。</p </article <article class=\"card\" <h2 <a href=\"\" 个人知识操作系统</a </h2 <p 从知识资产化、搜索、Agent 接入和持续演进角度研究个人知识系统。</p </article <article class=\"card\" <h2 <a href=\"\" 城市文化与现代生活</a </h2 <p 把北京文化、生活方式和个人表达组织成长期研究母题。</p </article </div"
+    },
+    {
+      "url": "/topic-research/openclaw-agent-ecosystem.html",
+      "title": "OpenClaw 智能体生态",
+      "summary": "研究 OpenClaw 作为智能体平台、工具链与生态协作网络的能力结构与演进路径",
+      "section": "主题研究",
+      "domain": "主题研究",
+      "tags": [
+        "ai",
+        "agent",
+        "ecosystem"
+      ],
+      "version": "v1.0.0",
+      "author": "zhubao315",
+      "book": "",
+      "content": "OpenClaw 智能体生态 研究问题 OpenClaw 作为智能体平台与工具链，如何形成从知识底座、工具接入、工作流编排到生态协作的完整能力体系？ 研究框架 平台层：模型接入、上下文管理、工具调用、权限边界 工具层：知识库、检索、工作流、MCP/插件能力 协同层：单 Agent、多 Agent、角色分工、链式调用 生态层：开源社区、技能市场、场景模板、企业接入 研究价值 帮助理解智能体生态而不是单点 Agent 为 uWisdom 的 Agent 可调用设计提供现实参照 支撑未来从个人知识系统走向智能体平台协作 关联条目 [人工智能专家]() [Agent 工作流设计]() [LLM 应用架构]() [工具 & Agent]()"
     },
     {
       "url": "/topic-research/personal-knowledge-operating-system.html",
@@ -1273,10 +1305,12 @@
       "digital-life",
       "discipline",
       "domain",
+      "ecosystem",
       "entrepreneurship",
       "figure",
       "fitness",
       "grit",
+      "industry",
       "innovation",
       "investment",
       "knowledge",
@@ -1285,8 +1319,10 @@
       "literature",
       "open-source",
       "philosophy",
+      "planning",
       "product",
       "research",
+      "strategy",
       "theme",
       "thinking",
       "writing"

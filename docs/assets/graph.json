@@ -124,10 +124,10 @@
       "mermaid": "graph LR\nA[\"葡萄酒大师\"]\nN1[\"∑ 生活艺术家\"] --> A\nN2[\"风土地图\"] --> A\nN3[\"葡萄酒品鉴笔记\"] --> A"
     },
     "/knowledge-base/themes/agent-workflow-design.html": {
-      "mermaid": "graph LR\nA[\"Agent 工作流设计\"]\nA --> N1[\"人工智能专家\"]\nN2[\"AI 原生企业能力重构\"] --> A"
+      "mermaid": "graph LR\nA[\"Agent 工作流设计\"]\nA --> N1[\"人工智能专家\"]\nN2[\"AI 原生企业能力重构\"] --> A\nN3[\"OpenClaw 智能体生态\"] --> A"
     },
     "/knowledge-base/themes/ai-industry-investment.html": {
-      "mermaid": "graph LR\nA[\"AI 产业投资\"]\nA --> N1[\"技术投资\"]\nN2[\"沈南鹏\"] --> A"
+      "mermaid": "graph LR\nA[\"AI 产业投资\"]\nA --> N1[\"技术投资\"]\nN2[\"沈南鹏\"] --> A\nN3[\"十五五规划\"] --> A"
     },
     "/knowledge-base/themes/ai-photography-fusion.html": {
       "mermaid": "graph LR\nA[\"AI 与摄影融合\"]\nA --> N1[\"摄影家\"]"
@@ -178,10 +178,10 @@
       "mermaid": ""
     },
     "/knowledge-base/themes/llm-application-architecture.html": {
-      "mermaid": "graph LR\nA[\"LLM 应用架构\"]\nA --> N1[\"人工智能专家\"]\nN2[\"AI 原生企业能力重构\"] --> A"
+      "mermaid": "graph LR\nA[\"LLM 应用架构\"]\nA --> N1[\"人工智能专家\"]\nN2[\"AI 原生企业能力重构\"] --> A\nN3[\"OpenClaw 智能体生态\"] --> A"
     },
     "/knowledge-base/themes/market-cycle-observation.html": {
-      "mermaid": "graph LR\nA[\"市场周期观察\"]\nA --> N1[\"金融市场\"]\nN2[\"查理·芒格\"] --> A"
+      "mermaid": "graph LR\nA[\"市场周期观察\"]\nA --> N1[\"金融市场\"]\nN2[\"查理·芒格\"] --> A\nN3[\"十五五规划\"] --> A"
     },
     "/knowledge-base/themes/open-source-business-analysis.html": {
       "mermaid": "graph LR\nA[\"开源商业模式分析\"]\nA --> N1[\"技术投资\"]"
@@ -241,7 +241,7 @@
       "mermaid": ""
     },
     "/tools-agent": {
-      "mermaid": "graph LR\nA[\"工具 & Agent\"]\nN1[\"个人知识操作系统\"] --> A"
+      "mermaid": "graph LR\nA[\"工具 & Agent\"]\nN1[\"OpenClaw 智能体生态\"] --> A\nN2[\"个人知识操作系统\"] --> A"
     },
     "/topic-research/ai-native-enterprise.html": {
       "mermaid": "graph LR\nA[\"AI 原生企业能力重构\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"Agent 工作流设计\"]\nA --> N3[\"LLM 应用架构\"]"
@@ -249,8 +249,14 @@
     "/topic-research/city-culture-and-modern-life.html": {
       "mermaid": "graph LR\nA[\"城市文化与现代生活\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"北京城市叙事\"]\nA --> N3[\"视觉叙事\"]\nN4[\"村上春树\"] --> A\nN5[\"蒋勋\"] --> A\nN6[\"苏轼\"] --> A"
     },
+    "/topic-research/fifteenth-five-year-plan.html": {
+      "mermaid": "graph LR\nA[\"十五五规划\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"技术投资\"]\nA --> N3[\"AI 产业投资\"]"
+    },
     "/topic-research": {
       "mermaid": "graph LR\nA[\"主题研究\"]\nN1[\"蒙田\"] --> A\nN2[\"俞敏洪\"] --> A"
+    },
+    "/topic-research/openclaw-agent-ecosystem.html": {
+      "mermaid": "graph LR\nA[\"OpenClaw 智能体生态\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"Agent 工作流设计\"]\nA --> N3[\"LLM 应用架构\"]"
     },
     "/topic-research/personal-knowledge-operating-system.html": {
       "mermaid": "graph LR\nA[\"个人知识操作系统\"]\nA --> N1[\"数字人生\"]\nA --> N2[\"个人数字操作系统\"]\nA --> N3[\"工具 & Agent\"]"

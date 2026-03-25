@@ -10,6 +10,14 @@ permalink: /topic-research/
 
 <div class="grid">
   <article class="card">
+    <h2><a href="{{ '/topic-research/fifteenth-five-year-plan.html' | relative_url }}">十五五规划</a></h2>
+    <p>围绕国家战略、产业升级、区域协同与技术演进研究“十五五”关键机会。</p>
+  </article>
+  <article class="card">
+    <h2><a href="{{ '/topic-research/openclaw-agent-ecosystem.html' | relative_url }}">OpenClaw 智能体生态</a></h2>
+    <p>研究 OpenClaw 作为智能体平台、工具链与生态协作网络的演进路径。</p>
+  </article>
+  <article class="card">
     <h2><a href="{{ '/topic-research/ai-native-enterprise.html' | relative_url }}">AI 原生企业能力重构</a></h2>
     <p>从工作流、知识底座、模型能力和组织协同观察企业如何被 AI 重构。</p>
   </article>
@@ -22,4 +30,3 @@ permalink: /topic-research/
     <p>把北京文化、生活方式和个人表达组织成长期研究母题。</p>
   </article>
 </div>
-
