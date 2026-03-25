@@ -13,6 +13,86 @@
       "content": "知识百科 这里展示对外可理解的知识组织方式，不暴露仓库内部层级术语。 <div class=\"grid\" <article class=\"card\" <h2 <a href=\"\" 按领域</a </h2 <p 从长期关注方向出发浏览知识，包括技术、投资、学习与生活四大板块。</p </article <article class=\"card\" <h2 <a href=\"\" 按主题</a </h2 <p 从更具体的问题域、方法题和研究方向切入。</p </article <article class=\"card\" <h2 <a href=\"#tag index\" 按标签</a </h2 <p 按可复用关键词快速聚合知识条目。</p </article </div 按领域 <div class=\"card list\" <div class=\"card\" <a href=\"\" 人工智能专家</a · AIGC、LLM、Agent、RAG 与企业落地</div <div class=\"card\" <a href=\"\" 云计算与云原生</a · 平台、容器、治理与现代工程体系</div <div class=\"card\" <a href=\"\" 金融市场</a · 周期、行业、组合纪律和市场观察</div <div class=\"card\" <a href=\"\" 国学大师</a · 经典阅读、传统智慧与现代转译</div <div class=\"card\" <a href=\"\" 数字人生</a · 个人数字操作系统与数字资产管理</div <div class=\"card\" <a href=\"\" 摄影家</a · 视觉叙事、影像表达与 AI 融合创作</div </div 按主题 <div class=\"card list\" <div class=\"card\" <a href=\"\" LLM 应用架构</a </div <div class=\"card\" <a href=\"\" Agent 工作流设计</a </div <div class=\"card\" <a href=\"\" 机会到产品转化</a </div <div class=\"card\" <a href=\"\" 市场周期观察</a </div <div class=\"card\" <a href=\"\" 经典阅读体系</a </div <div class=\"card\" <a href=\"\" 个人数字操作系统</a </div </div 按标签 <div id=\"tag index\" class=\"tag list\" <a class=\"tag\" href=\"?tag=ai\" ai</a <a class=\"tag\" href=\"?tag=agent\" agent</a <a class=\"tag\" href=\"?tag=architecture\" architecture</a <a class=\"tag\" href=\"?tag=investment\" investment</a <a class=\"tag\" href=\"?tag=learning\" learning</a <a class=\"tag\" href=\"?tag=lifestyle\" lifestyle</a <a class=\"tag\" href=\"?tag=culture\" culture</a <a class=\"tag\" href=\"?tag=photography\" photography</a </div"
     },
     {
+      "url": "/figures/bruce-lee.html",
+      "title": "李小龙",
+      "summary": "强调自我雕琢、身心统一与持续突破的生活艺术家代表",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "discipline",
+        "lifestyle"
+      ],
+      "version": "v1.0.0",
+      "author": "李小龙",
+      "book": "李小龙基本中国拳法",
+      "content": "李小龙 人物定位 武术家、电影人、思想表达者，也是现代意义上的自我塑造代表人物。 负责领域 自我雕琢 自我打造 身心统一 为什么值得长期研究 适合放在“艺术与自我塑造”栏目 对纪律、表达与身体修炼都有强烈示范意义 延伸阅读 [健身跑者]() [力量训练纪律]() [生活艺术家]()"
+    },
+    {
+      "url": "/figures/cai-zhizhong.html",
+      "title": "蔡志忠",
+      "summary": "以强大自信和持续创作推动国学传承与普及表达的文化创作者",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "culture",
+        "confidence"
+      ],
+      "version": "v1.0.0",
+      "author": "蔡志忠",
+      "book": "蔡志忠国学漫画",
+      "content": "蔡志忠 人物定位 漫画家、文化传播者，以高产、强烈个人风格和国学表达能力著称。 负责领域 强大自信 国学传承 持续创作 为什么值得长期研究 适合作为“智慧与思维”中的自信型表达样本 对国学现代传播和长期内容生产都有借鉴意义 延伸阅读 [国学大师]() [传统智慧现代转译]() [北京文化使者]()"
+    },
+    {
+      "url": "/figures/charlie-munger.html",
+      "title": "查理·芒格",
+      "summary": "多元思维、长期主义与反脆弱判断的代表人物",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "investment",
+        "thinking"
+      ],
+      "version": "v1.0.0",
+      "author": "Charlie Munger",
+      "book": "穷查理宝典",
+      "content": "查理·芒格 人物定位 伯克希尔重要合伙人，以多元思维模型、长期主义和反愚蠢策略著称。 负责领域 多元思维运用 远离负面之人 恒久之计 为什么值得长期研究 适合作为投资人角色中的核心智囊 也适合进入“智慧与思维”栏目，作为跨领域判断模型来源 延伸阅读 [金融市场]() [技术投资]() [市场周期观察]()"
+    },
+    {
+      "url": "/figures/eddie-peng.html",
+      "title": "彭于晏",
+      "summary": "严格自律、健身塑形与积极状态管理的当代样本",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "discipline",
+        "fitness"
+      ],
+      "version": "v1.0.0",
+      "author": "彭于晏",
+      "book": "在线",
+      "content": "彭于晏 人物定位 以高度自律、训练投入和持续形象管理著称的当代公众人物。 负责领域 严格自律 健身塑形 乐观向上 为什么值得长期研究 适合作为“艺术与自我塑造”中的自律样本 帮助把身体管理理解为长期人格工程 延伸阅读 [健身跑者]() [跑步周期训练]() [力量训练纪律]()"
+    },
+    {
+      "url": "/figures/haruki-murakami.html",
+      "title": "村上春树",
+      "summary": "将文学创作、跑步、音乐与定量工作结合起来的长期主义写作者",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "writing",
+        "lifestyle"
+      ],
+      "version": "v1.0.0",
+      "author": "村上春树",
+      "book": "当我谈跑步时我谈些什么",
+      "content": "村上春树 人物定位 小说家，也是把写作、跑步和规律生活连接为一体的长期主义实践者。 负责领域 文学创作 旅居感悟 跑步健身 音乐欣赏 为什么值得长期研究 适合作为“艺术与自我塑造”中最稳定的定量工作样本 对你的写作、跑步与生活节律设计都有借鉴意义 延伸阅读 [视觉叙事]() [跑步周期训练]() [城市文化与现代生活]()"
+    },
+    {
       "url": "/figures",
       "title": "人物志",
       "summary": "聚焦关键人物、思想家与书籍作者",
@@ -25,7 +105,39 @@
       "version": "v1.0.0",
       "author": "",
       "book": "",
-      "content": "人物志 人物志用于沉淀关键人物、思想家、作者及其思想影响力。 <div class=\"grid\" <article class=\"card\" <h2 <a href=\"\" 王阳明</a </h2 <p 心学集大成者，知行合一与致良知的代表人物。</p </article <article class=\"card\" <h2 <a href=\"\" 苏轼</a </h2 <p 跨越政治、文学、书法和生活美学的复合型人物。</p </article <article class=\"card\" <h2 <a href=\"\" 蒙田</a </h2 <p 随笔体裁奠基者，怀疑论与人文主义的重要思想家。</p </article </div"
+      "content": "人物志 人物志用于沉淀关键人物、思想家、作者及其思想影响力。 领域智囊 <div class=\"grid\" <article class=\"card\" <h2 <a href=\"\" 莱纳斯</a </h2 <p 开源系统工程的代表人物，适合作为架构师视角的工程智囊。</p </article <article class=\"card\" <h2 <a href=\"\" 王坚</a </h2 <p 云计算基础设施与数字化转型的重要推动者。</p </article <article class=\"card\" <h2 <a href=\"\" 查理·芒格</a </h2 <p 多元思维与长期主义的代表人物。</p </article <article class=\"card\" <h2 <a href=\"\" 沈南鹏</a </h2 <p 产业判断、组织建设与投资布局的代表人物。</p </article <article class=\"card\" <h2 <a href=\"\" 王阳明</a </h2 <p 知行合一与致良知，适合作为终身学习者的思想支点。</p </article <article class=\"card\" <h2 <a href=\"\" 苏轼</a </h2 <p 兼具审美、思想与生活气息的生活艺术家代表。</p </article <article class=\"card\" <h2 <a href=\"\" 蒋勋</a </h2 <p 将美学、生活与文化修养结合的当代讲述者。</p </article </div 创业与拼搏 <div class=\"grid\" <article class=\"card\" <h2 <a href=\"\" 俞敏洪</a </h2 <p 代表圈层突破、长期拼搏与现实世界中的创业韧性。</p </article </div 艺术与自我塑造 <div class=\"grid\" <article class=\"card\" <h2 <a href=\"\" 李小龙</a </h2 <p 强调自我雕琢、自我打造与身心统一。</p </article <article class=\"card\" <h2 <a href=\"\" 彭于晏</a </h2 <p 代表严格自律、健身塑形和乐观向上的精神状态。</p </article <article class=\"card\" <h2 <a href=\"\" 村上春树</a </h2 <p 将文学创作、跑步、音乐和定量工作结合起来。</p </article <article class=\"card\" <h2 <a href=\"\" 史蒂夫·乔布斯</a </h2 <p 代表科技革新、产品精雕和对完美的近乎执着。</p </article </div 智慧与思维 <div class=\"grid\" <article class=\"card\" <h2 <a href=\"\" 蔡志忠</a </h2 <p 以极强自信和持续创作推动国学传播与思想表达。</p </article <article class=\"card\" <h2 <a href=\"\" 蒙田</a </h2 <p 怀疑论、人文主义与自我观察写作的重要代表。</p </article <article class=\"card\" <h2 <a href=\"\" 查理·芒格</a </h2 <p 远离负面之人，运用多元思维，为长期决策服务。</p </article </div"
+    },
+    {
+      "url": "/figures/jiang-xun.html",
+      "title": "蒋勋",
+      "summary": "以美学、文学与生活修养串联日常感知的当代讲述者",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "lifestyle",
+        "aesthetics"
+      ],
+      "version": "v1.0.0",
+      "author": "蒋勋",
+      "book": "生活十讲",
+      "content": "蒋勋 人物定位 通过美学、文学与生活感知帮助现代人重建审美能力和生活细节意识。 负责领域 生活美学 文化修养 自我感知 为什么值得长期研究 适合作为生活艺术家角色中的温和型智囊 能补足高强度技术思维之外的审美与感受力 延伸阅读 [生活艺术家]() [城市文化与现代生活]() [视觉叙事]()"
+    },
+    {
+      "url": "/figures/linus-torvalds.html",
+      "title": "莱纳斯",
+      "summary": "Linux 与 Git 的创造者，开源工程与系统架构的重要代表人物",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "architecture",
+        "open-source"
+      ],
+      "version": "v1.0.0",
+      "author": "Linus Torvalds",
+      "book": "Linux / Git",
+      "content": "莱纳斯 人物定位 Linux 内核与 Git 的创造者，是现代开源工程、系统架构和协作机制的重要塑造者。 负责领域 工程可读性 系统架构 开源协作 为什么值得长期研究 适合作为架构师角色中的工程智囊 对复杂系统、版本管理和开源治理具有长期借鉴价值 延伸阅读 [开源发烧友]() [开源协作机制]() [工程交付闭环]()"
     },
     {
       "url": "/figures/montaigne.html",
@@ -44,6 +156,38 @@
       "content": "蒙田 人物定位 法国文艺复兴时期思想家，以《随笔集》奠定现代随笔与自我审视写作传统。 核心思想 我知道什么？ 反独断 通过自我观察理解人 为什么值得长期研究 对研究写作、思辨表达和终身学习方法非常关键 适合与王阳明、现代心理学并置阅读 延伸阅读 [主题研究]() [国学大师]() [认知偏差清单]()"
     },
     {
+      "url": "/figures/shen-nanpeng.html",
+      "title": "沈南鹏",
+      "summary": "兼具创业经验与投资判断的产业型投资代表人物",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "investment",
+        "entrepreneurship"
+      ],
+      "version": "v1.0.0",
+      "author": "沈南鹏",
+      "book": "在线",
+      "content": "沈南鹏 人物定位 从创业到投资，兼具组织建设、产业判断和资本配置能力的代表人物。 负责领域 产业判断 创业与投资连接 组织与长期布局 为什么值得长期研究 适合作为投资人角色中的实践型智囊 帮助连接创业世界与资本世界的长期逻辑 延伸阅读 [技术投资]() [AI 产业投资]() [机会到产品转化]()"
+    },
+    {
+      "url": "/figures/steve-jobs.html",
+      "title": "史蒂夫·乔布斯",
+      "summary": "代表科技革新、产品精雕与传统颠覆的产品型企业家",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "product",
+        "innovation"
+      ],
+      "version": "v1.0.0",
+      "author": "Steve Jobs",
+      "book": "史蒂夫·乔布斯传",
+      "content": "史蒂夫·乔布斯 人物定位 产品型企业家的标志性人物，以技术革新、产品精雕和审美执着著称。 负责领域 科技革新 产品精雕 传统颠覆 为什么值得长期研究 适合作为“艺术与自我塑造”与“架构师/产品经理”之间的桥梁人物 能帮助你持续提升产品判断与体验标准 延伸阅读 [产品经理]() [产品需求设计]() [机会到产品转化]()"
+    },
+    {
       "url": "/figures/su-shi.html",
       "title": "苏轼",
       "summary": "跨越文学、政治、艺术与生活美学的复合型人物",
@@ -60,6 +204,22 @@
       "content": "苏轼 人物定位 北宋文学家、书法家、画家、政治家，也是中国生活美学的重要代表人物。 核心价值 逆境中的精神韧性 诗文、政治与生活实践的统一 兼具审美、思想与烟火气 为什么值得长期研究 可连接文学、摄影、城市文化、生活方式设计等多个领域 适合与你的“生活艺术家”视角互相映照 延伸阅读 [北京文化使者]() [视觉叙事]() [城市文化与现代生活]()"
     },
     {
+      "url": "/figures/wang-jian.html",
+      "title": "王坚",
+      "summary": "中国云计算基础设施的重要推动者，适合作为架构师的产业智囊",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "architecture",
+        "cloud"
+      ],
+      "version": "v1.0.0",
+      "author": "王坚",
+      "book": "在线",
+      "content": "王坚 人物定位 云计算基础设施与数字化转型的重要推动者，代表从底层基础设施重塑产业能力的架构思维。 负责领域 云计算 基础设施 产业级架构 为什么值得长期研究 适合作为架构师角色中的产业智囊 能帮助理解技术平台如何转化为社会级能力 延伸阅读 [云计算与云原生]() [云原生转型]() [平台治理]()"
+    },
+    {
       "url": "/figures/wang-yangming.html",
       "title": "王阳明",
       "summary": "心学集大成者，知行合一与致良知的代表人物",
@@ -74,6 +234,22 @@
       "author": "王阳明",
       "book": "传习录",
       "content": "王阳明 人物定位 明代思想家、军事家、教育家，心学集大成者。 核心思想 心即理 知行合一 致良知 为什么值得长期研究 他的思想能够直接进入现代人的决策、修身和行动方法 适合与心理学、领导力、个人成长体系并读 延伸阅读 [心理学专家]() [经典阅读体系]() [传统智慧现代转译]()"
+    },
+    {
+      "url": "/figures/yu-minhong.html",
+      "title": "俞敏洪",
+      "summary": "代表圈层突破、长期拼搏与创业韧性的现实主义创业者",
+      "section": "人物志",
+      "domain": "人物志",
+      "tags": [
+        "figure",
+        "entrepreneurship",
+        "grit"
+      ],
+      "version": "v1.0.0",
+      "author": "俞敏洪",
+      "book": "愿你的青春不负梦想",
+      "content": "俞敏洪 人物定位 从个体奋斗到组织创业的代表人物，体现现实环境中的长期拼搏与圈层突破。 负责领域 创业拼搏 不懈奋斗 圈层突破 为什么值得长期研究 适合放在“创业与拼搏”栏目作为现实世界奋斗样本 有助于平衡理想主义与执行韧性之间的张力 延伸阅读 [主题研究]() [机会到产品转化]() [产品需求设计]()"
     },
     {
       "url": "/identities/architect.html",
@@ -981,7 +1157,7 @@
       "version": "v1.0.0",
       "author": "",
       "book": "",
-      "content": "今日知识精华 以下内容由站点构建脚本自动挑选，优先展示最近更新且可复用度高的条目。 风土地图 分类：知识百科 / 主题 更新：2026 03 25 摘要：葡萄酒大师相关知识主题 金融市场 分类：知识百科 / 领域 更新：2026 03 25 摘要：投资人相关知识领域 软件成果保护 分类：知识百科 / 主题 更新：2026 03 25 摘要：知识产权顾问相关知识主题 跑步周期训练 分类：知识百科 / 主题 更新：2026 03 25 摘要：健身跑者相关知识主题 认知偏差清单 分类：知识百科 / 主题 更新：2026 03 25 摘要：心理学专家相关知识主题 视觉叙事 分类：知识百科 / 主题 更新：2026 03 25 摘要：摄影家相关知识主题 蒙田 分类：人物志 更新：2026 03 25 摘要：随笔体裁创始人，怀疑论哲学家与人文主义思想家 葡萄酒大师 分类：知识百科 / 领域 更新：2026 03 25 摘要：生活艺术家相关知识领域"
+      "content": "今日知识精华 以下内容由站点构建脚本自动挑选，优先展示最近更新且可复用度高的条目。 风土地图 分类：知识百科 / 主题 更新：2026 03 25 摘要：葡萄酒大师相关知识主题 金融市场 分类：知识百科 / 领域 更新：2026 03 25 摘要：投资人相关知识领域 软件成果保护 分类：知识百科 / 主题 更新：2026 03 25 摘要：知识产权顾问相关知识主题 跑步周期训练 分类：知识百科 / 主题 更新：2026 03 25 摘要：健身跑者相关知识主题 认知偏差清单 分类：知识百科 / 主题 更新：2026 03 25 摘要：心理学专家相关知识主题 视觉叙事 分类：知识百科 / 主题 更新：2026 03 25 摘要：摄影家相关知识主题 蔡志忠 分类：人物志 更新：2026 03 25 摘要：以强大自信和持续创作推动国学传承与普及表达的文化创作者 蒙田 分类：人物志 更新：2026 03 25 摘要：随笔体裁创始人，怀疑论哲学家与人文主义思想家"
     },
     {
       "url": "/tools-agent",
@@ -1086,37 +1262,68 @@
       "金融市场"
     ],
     "tag": [
+      "aesthetics",
       "agent",
       "ai",
       "architecture",
       "beijing",
+      "cloud",
+      "confidence",
       "culture",
       "digital-life",
+      "discipline",
       "domain",
+      "entrepreneurship",
       "figure",
+      "fitness",
+      "grit",
+      "innovation",
       "investment",
       "knowledge",
       "learning",
       "lifestyle",
       "literature",
+      "open-source",
       "philosophy",
+      "product",
       "research",
       "theme",
+      "thinking",
       "writing"
     ],
     "version": [
       "v1.0.0"
     ],
     "book": [
+      "Linux / Git",
       "传习录",
+      "史蒂夫·乔布斯传",
+      "在线",
+      "当我谈跑步时我谈些什么",
+      "愿你的青春不负梦想",
+      "李小龙基本中国拳法",
+      "生活十讲",
+      "穷查理宝典",
       "苏轼诗词文集",
+      "蔡志忠国学漫画",
       "随笔集"
     ],
     "author": [
+      "Charlie Munger",
+      "Linus Torvalds",
+      "Steve Jobs",
       "zhubao315",
+      "俞敏洪",
+      "彭于晏",
+      "李小龙",
+      "村上春树",
+      "沈南鹏",
+      "王坚",
       "王阳明",
       "苏轼",
-      "蒙田"
+      "蒋勋",
+      "蒙田",
+      "蔡志忠"
     ]
   }
 }
