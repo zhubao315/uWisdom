@@ -2,8 +2,8 @@
   <!-- Background - Pure bright blue -->
   <rect width="100" height="100" fill="#007AFF"/>
   
-  <!-- W Letter - White, rounded strokes, 70% width, more refined -->
+  <!-- W Letter - White, rounded strokes, 70% width -->
   <g stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <path d="M20 22 L35 78 L50 38 L65 78 L80 22"/>
+    <path d="M15 20 L32 80 L50 35 L68 80 L85 20"/>
   </g>
 </svg>
