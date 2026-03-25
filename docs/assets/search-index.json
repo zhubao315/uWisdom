@@ -1136,18 +1136,6 @@
       "content": "葡萄酒品鉴笔记 所属第二层领域：[葡萄酒大师]() 定义 建立围绕香气、口感、结构、风土与场景的葡萄酒品鉴记录体系。 后续可展开 品鉴模板 风味词汇 对比记录"
     },
     {
-      "url": "/search",
-      "title": "搜索",
-      "summary": "按问题、领域、标签、版本、书籍和作者搜索 uWisdom",
-      "section": "搜索",
-      "domain": "",
-      "tags": [],
-      "version": "v1.0.0",
-      "author": "",
-      "book": "",
-      "content": "搜索 支持两种方式： 结构化搜索：按问题、领域、标签、版本、书籍、作者过滤 语义搜索：通过 OpenAI embeddings + FAISS 在本地工具或 Agent 服务中运行 <div data search root </div"
-    },
-    {
       "url": "/today",
       "title": "今日知识精华",
       "summary": "自动生成的每日精选知识页",
@@ -1157,7 +1145,7 @@
       "version": "v1.0.0",
       "author": "",
       "book": "",
-      "content": "今日知识精华 以下内容由站点构建脚本自动挑选，优先展示最近更新且可复用度高的条目。 风土地图 分类：知识百科 / 主题 更新：2026 03 25 摘要：葡萄酒大师相关知识主题 金融市场 分类：知识百科 / 领域 更新：2026 03 25 摘要：投资人相关知识领域 软件成果保护 分类：知识百科 / 主题 更新：2026 03 25 摘要：知识产权顾问相关知识主题 跑步周期训练 分类：知识百科 / 主题 更新：2026 03 25 摘要：健身跑者相关知识主题 认知偏差清单 分类：知识百科 / 主题 更新：2026 03 25 摘要：心理学专家相关知识主题 视觉叙事 分类：知识百科 / 主题 更新：2026 03 25 摘要：摄影家相关知识主题 蔡志忠 分类：人物志 更新：2026 03 25 摘要：以强大自信和持续创作推动国学传承与普及表达的文化创作者 蒙田 分类：人物志 更新：2026 03 25 摘要：随笔体裁创始人，怀疑论哲学家与人文主义思想家"
+      "content": "今日知识精华 以下内容由站点构建脚本自动挑选，优先展示最近更新且可复用度高的条目。 风土地图 分类：知识百科 / 主题 领域：葡萄酒大师 更新：2026 03 25 标签：theme 摘要：葡萄酒大师相关知识主题 金融市场 分类：知识百科 / 领域 领域：金融市场 更新：2026 03 25 标签：domain, investment 摘要：投资人相关知识领域 软件成果保护 分类：知识百科 / 主题 领域：知识产权顾问 更新：2026 03 25 标签：theme 摘要：知识产权顾问相关知识主题 跑步周期训练 分类：知识百科 / 主题 领域：健身跑者 更新：2026 03 25 标签：lifestyle, theme 摘要：健身跑者相关知识主题 认知偏差清单 分类：知识百科 / 主题 领域：心理学专家 更新：2026 03 25 标签：theme 摘要：心理学专家相关知识主题 视觉叙事 分类：知识百科 / 主题 领域：摄影家 更新：2026 03 25 标签：theme 摘要：摄影家相关知识主题 蔡志忠 分类：人物志 领域：人物志 更新：2026 03 25 标签：figure, culture, confidence 摘要：以强大自信和持续创作推动国学传承与普及表达的文化创作者 蒙田 分类：人物志 领域：人物志 更新：2026 03 25 标签：philosophy, writing, figure 摘要：随笔体裁创始人，怀疑论哲学家与人文主义思想家"
     },
     {
       "url": "/tools-agent",
@@ -1172,7 +1160,7 @@
       "version": "v1.0.0",
       "author": "",
       "book": "",
-      "content": "工具 & Agent uWisdom 不只是文档站，还要成为 Agent 可读、可调用、可扩展的知识底座。 能力总览 <div class=\"grid\" <article class=\"card\" <h2 Agent 接入入口</h2 <p 每个条目页都提供“复制链接，让你的 Agent 学习这条知识”按钮，便于把稳定 URL 直接作为 Agent 上下文入口。</p </article <article class=\"card\" <h2 结构化搜索</h2 <p 站点提供按领域、标签、版本、书籍、作者的过滤搜索，适合快速浏览和人工查阅。</p </article <article class=\"card\" <h2 语义搜索管线</h2 <p 通过 OpenAI embeddings 生成条目向量，再用 FAISS 建立近邻索引，实现“问题 自动匹配笔记”的召回基础。</p </article </div 语义搜索设计 推荐流程： 1. 从站点 Markdown 提取条目元数据与正文摘要 2. 使用 OpenAI embeddings 生成向量 3. 用 FAISS 构建本地索引 4. 查询时把自然语言问题嵌入同一向量空间 5. 召回最相关的知识条目，再交给 Agent 继续整合 仓库内置工具 tools/build site data.py：生成站点搜索索引、关系图谱数据和每日精选页面 tools/build semantic index.py：使用 OpenAI embeddings + FAISS 构建本地语义索引 tools/semantic query.py：输入自然语言问题，返回最匹配的知识条目 使用说明 ``bash cd /root/uWisdom python3 tools/build site data.py OPENAI API KEY=your key python3 tools/build semantic index.py OPENAI API KEY=your key python3 tools/semantic query.py \"我想找关于 Agent 工作流和知识调用的笔记\" `` 说明 GitHub Pages 是静态托管，适合发布结构化索引与知识内容 语义检索在本地工具、CI 或 Agent 服务侧运行更稳妥 不建议在前端页面中直接暴露 OpenAI API Key"
+      "content": "工具 & Agent uWisdom 不只是文档站，还要成为 Agent 可读、可调用、可扩展的知识底座。 能力总览 <div class=\"grid\" <article class=\"card\" <h2 Agent 接入入口</h2 <p 每个条目页都提供“复制链接，让你的 Agent 学习这条知识”按钮，便于把稳定 URL 直接作为 Agent 上下文入口。</p </article <article class=\"card\" <h2 结构化搜索</h2 <p 站点提供按领域、标签、版本、书籍、作者的过滤搜索，适合快速浏览和人工查阅。</p </article <article class=\"card\" <h2 语义搜索管线</h2 <p 通过 OpenAI embeddings 生成条目向量，再用 FAISS 建立近邻索引，实现“问题 自动匹配笔记”的召回基础。</p </article </div 语义搜索设计 推荐流程： 1. 从站点 Markdown 提取条目元数据与正文摘要 2. 使用 OpenAI embeddings 生成向量 3. 用 FAISS 构建本地索引 4. 查询时把自然语言问题嵌入同一向量空间 5. 召回最相关的知识条目，再交给 Agent 继续整合 仓库内置工具 tools/build site data.py：生成站点搜索索引、关系图谱数据和每日精选页面 tools/build semantic index.py：使用 OpenAI embeddings + FAISS 构建本地语义索引 tools/semantic query.py：输入自然语言问题，返回最匹配的知识条目 使用说明 说明 GitHub Pages 是静态托管，适合发布结构化索引与知识内容 语义检索在本地工具、CI 或 Agent 服务侧运行更稳妥 不建议在前端页面中直接暴露 OpenAI API Key"
     },
     {
       "url": "/topic-research/ai-native-enterprise.html",

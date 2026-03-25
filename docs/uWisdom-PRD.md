@@ -1,3 +1,9 @@
+---
+title: uWisdom 产品需求文档（PRD）
+summary: uWisdom 项目的产品定位、领域模型、功能设计、技术方案与演进路线
+permalink: /uWisdom-PRD.html
+---
+
 # uWisdom 产品需求文档（PRD）
 
 **文档标识**：`[[uWisdom-PRD]]`  

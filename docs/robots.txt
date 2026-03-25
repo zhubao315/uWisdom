@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zhubao315.github.io/uWisdom/sitemap.xml

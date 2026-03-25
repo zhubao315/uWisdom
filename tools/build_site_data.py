@@ -1,37 +1,58 @@
 #!/usr/bin/env python3
+"""Build search index, knowledge graph data, and daily highlights for uWisdom site."""
 from __future__ import annotations
 
 import json
 import re
 import subprocess
 from collections import defaultdict
+from datetime import date
 from pathlib import Path
+
+try:
+    import yaml
+
+    HAS_YAML = True
+except ImportError:
+    HAS_YAML = False
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 ASSETS = DOCS / "assets"
 
 
-def parse_front_matter(text: str):
+def parse_front_matter(text: str) -> tuple[dict, str]:
+    """Parse YAML front matter, with fallback to regex if pyyaml unavailable."""
     if not text.startswith("---\n"):
-      return {}, text
+        return {}, text
     parts = text.split("\n---\n", 1)
     if len(parts) != 2:
-      return {}, text
-    header = parts[0].splitlines()[1:]
+        return {}, text
+    header_raw = parts[0].split("---\n", 1)[1]
     body = parts[1]
-    data = {}
-    current_key = None
-    for line in header:
+
+    if HAS_YAML:
+        try:
+            data = yaml.safe_load(header_raw) or {}
+            if not isinstance(data, dict):
+                data = {}
+            return data, body
+        except yaml.YAMLError:
+            pass
+
+    # Fallback: regex-based parsing
+    data: dict = {}
+    current_key: str | None = None
+    for line in header_raw.splitlines():
         if not line.strip():
             continue
         if line.startswith("  - ") and current_key:
-            data.setdefault(current_key, []).append(line[4:].strip())
+            data.setdefault(current_key, []).append(line[4:].strip().strip('"').strip("'"))
             continue
         if re.match(r"^-\s+", line) and current_key:
-            data.setdefault(current_key, []).append(line[2:].strip())
+            data.setdefault(current_key, []).append(line[2:].strip().strip('"').strip("'"))
             continue
-        if ":" in line:
+        if ":" in line and not line.startswith(" "):
             key, value = line.split(":", 1)
             key = key.strip()
             value = value.strip().strip('"').strip("'")
@@ -44,29 +65,44 @@ def parse_front_matter(text: str):
     return data, body
 
 
-def extract_title(front, body, fallback):
+def extract_title(front: dict, body: str, fallback: str) -> str:
     if front.get("title"):
-        return front["title"]
+        return str(front["title"])
     for line in body.splitlines():
         if line.startswith("# "):
             return line[2:].strip()
     return fallback
 
 
-def strip_markdown(text: str):
+def strip_markdown(text: str) -> str:
     text = re.sub(r"\{\{.*?\}\}", "", text)
+    text = re.sub(r"```[\s\S]*?```", "", text)
     text = re.sub(r"`([^`]+)`", r"\1", text)
     text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
-    text = re.sub(r"^#+\s*", "", text, flags=re.M)
+    text = re.sub(r"^#+\s*", "", text, flags=re.MULTILINE)
     text = re.sub(r"[*_>\-]", " ", text)
+    text = re.sub(r"\|", " ", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
-def build_url(rel_path: Path, front) -> str:
+def truncate_by_sentence(text: str, max_len: int = 2500) -> str:
+    """Truncate text at sentence boundary instead of hard cutoff."""
+    if len(text) <= max_len:
+        return text
+    truncated = text[:max_len]
+    # Find last sentence-ending punctuation
+    for sep in ["。", "！", "？", ".", "!", "?", "\n"]:
+        idx = truncated.rfind(sep)
+        if idx > max_len * 0.6:
+            return truncated[: idx + 1]
+    return truncated
+
+
+def build_url(rel_path: Path, front: dict) -> str:
     permalink = front.get("permalink")
     if permalink:
-        return permalink.rstrip("/") or "/"
+        return str(permalink).rstrip("/") or "/"
     rel = "/" + rel_path.with_suffix(".html").as_posix()
     rel = rel.replace("/index.html", "/")
     return rel
@@ -74,35 +110,32 @@ def build_url(rel_path: Path, front) -> str:
 
 def section_for_path(rel_path: Path) -> str:
     value = rel_path.as_posix()
-    if value.startswith("knowledge-base/domains/"):
-        return "知识百科 / 领域"
-    if value.startswith("knowledge-base/themes/"):
-        return "知识百科 / 主题"
-    if value.startswith("topic-research/"):
-        return "主题研究"
-    if value.startswith("figures/"):
-        return "人物志"
-    if value.startswith("tools-agent/"):
-        return "工具 & Agent"
-    if value.startswith("identities/"):
-        return "角色地图"
-    if value.startswith("today/"):
-        return "今日知识精华"
-    if value.startswith("search/"):
-        return "搜索"
-    if value.startswith("encyclopedia/"):
-        return "知识百科"
+    section_map = [
+        ("knowledge-base/domains/", "知识百科 / 领域"),
+        ("knowledge-base/themes/", "知识百科 / 主题"),
+        ("topic-research/", "主题研究"),
+        ("figures/", "人物志"),
+        ("tools-agent/", "工具 & Agent"),
+        ("identities/", "角色地图"),
+        ("today/", "今日知识精华"),
+        ("search/", "搜索"),
+        ("encyclopedia/", "知识百科"),
+    ]
+    for prefix, section in section_map:
+        if value.startswith(prefix):
+            return section
     return "页面"
 
 
 def domain_for_path(rel_path: Path, title: str) -> str:
-    if rel_path.as_posix().startswith("knowledge-base/domains/"):
+    value = rel_path.as_posix()
+    if value.startswith("knowledge-base/domains/"):
         return title
-    if rel_path.as_posix().startswith("knowledge-base/themes/"):
+    if value.startswith("knowledge-base/themes/"):
         return ""
-    if rel_path.as_posix().startswith("figures/"):
+    if value.startswith("figures/"):
         return "人物志"
-    if rel_path.as_posix().startswith("topic-research/"):
+    if value.startswith("topic-research/"):
         return "主题研究"
     return ""
 
@@ -112,7 +145,7 @@ def linked_domain(body: str) -> str:
     return match.group(1).strip() if match else ""
 
 
-def infer_tags(rel_path: Path, title: str):
+def infer_tags(rel_path: Path, title: str) -> list[str]:
     tags = set()
     value = rel_path.as_posix()
     mapping = {
@@ -125,21 +158,22 @@ def infer_tags(rel_path: Path, title: str):
         "culture": ["北京", "文化", "人物志", "苏轼", "蒙田", "王阳明"],
         "digital-life": ["数字"],
     }
-    if "domains/" in value:
-        tags.add("domain")
-    if "themes/" in value:
-        tags.add("theme")
-    if "figures/" in value:
-        tags.add("figure")
-    if "topic-research/" in value:
-        tags.add("research")
+    type_markers = {
+        "domains/": "domain",
+        "themes/": "theme",
+        "figures/": "figure",
+        "topic-research/": "research",
+    }
+    for marker, tag in type_markers.items():
+        if marker in value:
+            tags.add(tag)
     for key, values in mapping.items():
         if any(token in title for token in values):
             tags.add(key)
     return sorted(tags)
 
 
-def internal_links(body: str):
+def internal_links(body: str) -> list[tuple[str, str]]:
     return re.findall(r"\[([^\]]+)\]\(\{\{\s*'([^']+)'", body)
 
 
@@ -150,43 +184,58 @@ def git_date(path: Path) -> str:
         text=True,
         check=False,
     )
-    return result.stdout.strip() or "2026-03-25"
+    return result.stdout.strip() or date.today().isoformat()
+
+
+def ensure_list(value) -> list:
+    """Ensure a value is a list (handle string or list from YAML)."""
+    if isinstance(value, list):
+        return value
+    if isinstance(value, str):
+        return [value]
+    return []
 
 
 def main():
-    pages = []
-    path_to_title = {}
-    url_to_page = {}
+    pages: list[dict] = []
+    url_to_page: dict[str, dict] = {}
 
     for path in sorted(DOCS.rglob("*.md")):
         rel_path = path.relative_to(DOCS)
         if rel_path.as_posix().startswith("_"):
             continue
-        raw = path.read_text(encoding="utf-8")
+        try:
+            raw = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            print(f"  skip: {rel_path}")
+            continue
+
         front, body = parse_front_matter(raw)
         title = extract_title(front, body, path.stem)
         url = build_url(rel_path, front)
+        tags = front.get("tags") or infer_tags(rel_path, title)
+        tags = ensure_list(tags)
+
         page = {
             "path": rel_path.as_posix(),
             "url": url,
             "title": title,
-            "summary": front.get("summary", ""),
+            "summary": str(front.get("summary", "")),
             "section": section_for_path(rel_path),
-            "domain": front.get("domain", "") or linked_domain(body) or domain_for_path(rel_path, title),
-            "tags": front.get("tags", []) or infer_tags(rel_path, title),
-            "version": front.get("version", "v1.0.0"),
-            "author": front.get("author", ""),
-            "book": front.get("book", ""),
-            "updated": front.get("updated", "") or git_date(path),
-            "content": strip_markdown(body)[:2500],
+            "domain": str(front.get("domain", "") or linked_domain(body) or domain_for_path(rel_path, title)),
+            "tags": tags,
+            "version": str(front.get("version", "v1.0.0")),
+            "author": str(front.get("author", "")),
+            "book": str(front.get("book", "")),
+            "updated": str(front.get("updated", "") or git_date(path)),
+            "content": truncate_by_sentence(strip_markdown(body)),
             "links": internal_links(body),
         }
         pages.append(page)
-        path_to_title[rel_path.as_posix()] = title
         url_to_page[url] = page
 
     title_to_url = {page["title"]: page["url"] for page in pages}
-    edges = set()
+    edges: set[tuple[str, str]] = set()
 
     for page in pages:
         for label, href in page["links"]:
@@ -202,26 +251,30 @@ def main():
             elif label in title_to_url:
                 edges.add((page["url"], title_to_url[label]))
 
-    incoming = defaultdict(list)
-    outgoing = defaultdict(list)
+    incoming: dict[str, list[str]] = defaultdict(list)
+    outgoing: dict[str, list[str]] = defaultdict(list)
     for source, target in sorted(edges):
         outgoing[source].append(target)
         incoming[target].append(source)
 
-    graph_pages = {}
+    graph_pages: dict[str, dict] = {}
     for page in pages:
         related = []
         for url in outgoing.get(page["url"], [])[:3]:
-            related.append(("out", url_to_page[url]["title"], url))
+            if url in url_to_page:
+                related.append(("out", url_to_page[url]["title"], url))
         for url in incoming.get(page["url"], [])[:3]:
-            related.append(("in", url_to_page[url]["title"], url))
+            if url in url_to_page:
+                related.append(("in", url_to_page[url]["title"], url))
+
         if related:
             lines = ["graph LR"]
-            lines.append(f'A["{page["title"]}"]')
-            for index, (_, title, url) in enumerate(related, start=1):
+            safe_page_title = page["title"].replace('"', "'")
+            lines.append(f'A["{safe_page_title}"]')
+            for index, (direction, title, url) in enumerate(related, start=1):
                 node = f"N{index}"
                 safe_title = title.replace('"', "'")
-                if url in outgoing.get(page["url"], []):
+                if direction == "out":
                     lines.append(f'A --> {node}["{safe_title}"]')
                 else:
                     lines.append(f'{node}["{safe_title}"] --> A')
@@ -238,9 +291,10 @@ def main():
         "author": sorted({page["author"] for page in pages if page["author"]}),
     }
 
+    skip_sections = {"页面", "搜索"}
     search_entries = []
     for page in pages:
-        if page["section"] in {"页面"}:
+        if page["section"] in skip_sections:
             continue
         search_entries.append(
             {key: page[key] for key in ("url", "title", "summary", "section", "domain", "tags", "version", "author", "book", "content")}
@@ -259,11 +313,30 @@ def main():
         encoding="utf-8",
     )
 
-    highlights = sorted(
-        [page for page in pages if page["section"] not in {"页面", "搜索", "知识百科", "角色地图"}],
-        key=lambda item: (item["updated"], item["title"]),
-        reverse=True,
-    )[:8]
+    # Daily highlights: rotate across domains, prefer recently updated
+    highlight_sections = {"知识百科 / 领域", "知识百科 / 主题", "主题研究", "人物志", "工具 & Agent"}
+    candidates = [p for p in pages if p["section"] in highlight_sections]
+    # Sort by updated date descending, then by title for stability
+    candidates.sort(key=lambda item: (item["updated"], item["title"]), reverse=True)
+    # Pick up to 8, ensuring domain diversity
+    highlights: list[dict] = []
+    seen_domains: set[str] = set()
+    for item in candidates:
+        if len(highlights) >= 8:
+            break
+        domain = item["domain"] or item["section"]
+        # Allow max 2 from same domain
+        domain_count = sum(1 for h in highlights if (h["domain"] or h["section"]) == domain)
+        if domain_count < 2:
+            highlights.append(item)
+            seen_domains.add(domain)
+    # Fill remaining slots
+    for item in candidates:
+        if len(highlights) >= 8:
+            break
+        if item not in highlights:
+            highlights.append(item)
+
     today_md = [
         "---",
         "title: 今日知识精华",
@@ -277,19 +350,24 @@ def main():
         "",
     ]
     for item in highlights:
+        summary_text = item["summary"] or "暂无摘要"
         today_md.extend(
             [
                 f"## [{item['title']}]({item['url']})",
                 "",
                 f"- 分类：{item['section']}",
+                f"- 领域：{item['domain'] or '—'}",
                 f"- 更新：{item['updated']}",
-                f"- 摘要：{item['summary'] or '暂无摘要'}",
+                f"- 标签：{', '.join(item['tags']) or '—'}",
+                f"- 摘要：{summary_text}",
                 "",
             ]
         )
     today_dir = DOCS / "today"
     today_dir.mkdir(exist_ok=True)
     (today_dir / "index.md").write_text("\n".join(today_md), encoding="utf-8")
+
+    print(f"Built: {len(search_entries)} search entries, {len(graph_pages)} graph pages, {len(highlights)} highlights")
 
 
 if __name__ == "__main__":

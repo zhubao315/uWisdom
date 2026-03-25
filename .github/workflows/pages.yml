@@ -26,9 +26,16 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Python deps
+        run: pip install pyyaml
 
       - name: Build site data
         run: python3 tools/build_site_data.py
+
+      - name: Validate front matter
+        run: python3 tools/validate_content.py
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -38,6 +45,12 @@ jobs:
         with:
           source: ./docs
           destination: ./_site
+
+      - name: Check for broken internal links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress './_site/**/*.html' --exclude 'mailto:' --exclude 'javascript:' --max-concurrency 8
+          fail: false
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

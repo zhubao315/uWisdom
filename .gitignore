@@ -1,8 +1,12 @@
 .DS_Store
 .jekyll-cache/
 .sass-cache/
+.jekyll-metadata
 node_modules/
 dist/
 build/
 __pycache__/
 *.pyc
+_site/
+Gemfile.lock
+data/

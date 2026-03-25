@@ -2,13 +2,58 @@ title: uWisdom
 description: 基于驾驭工程可读性原则的个人知识操作系统
 baseurl: "/uWisdom"
 url: "https://zhubao315.github.io"
+
+# Build
 markdown: kramdown
 theme: null
 kramdown:
   input: GFM
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO defaults
+twitter:
+  card: summary
+logo: /assets/logo.svg
+
+# Collections for structured content
+collections:
+  knowledge-base:
+    output: true
+    permalink: /:path/
+
+# Defaults
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+      lang: zh-CN
+  - scope:
+      path: "knowledge-base"
+    values:
+      section: "知识百科"
+  - scope:
+      path: "figures"
+    values:
+      section: "人物志"
+  - scope:
+      path: "topic-research"
+    values:
+      section: "主题研究"
 
+# Exclude from build
+exclude:
+  - tools
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .github
+  - LICENSE
+
+# Include
+include:
+  - .nojekyll

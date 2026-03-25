@@ -1,12 +1,15 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="{{ page.lang | default: 'zh-CN' }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.summary | default: site.description }}">
+    <meta name="author" content="{{ page.author | default: 'zhubao315' }}">
+    {% seo %}
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-    <script type="module" src="{{ '/assets/app.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/app.js' | relative_url }}"></script>
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
       window.mermaid = mermaid;
@@ -17,7 +20,8 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="{{ '/' | relative_url }}">uWisdom</a>
-        <nav class="nav">
+        <button class="menu-toggle" aria-label="打开导航" data-menu-toggle>&#9776;</button>
+        <nav class="nav" data-nav>
           <a href="{{ '/' | relative_url }}">首页</a>
           <details class="nav-group">
             <summary>知识百科</summary>
@@ -28,9 +32,9 @@
               <a href="{{ '/encyclopedia/#tag-index' | relative_url }}">按标签</a>
             </div>
           </details>
-          <a href="{{ '/tools-agent/' | relative_url }}">工具 & Agent</a>
           <a href="{{ '/topic-research/' | relative_url }}">主题研究</a>
           <a href="{{ '/figures/' | relative_url }}">人物志</a>
+          <a href="{{ '/tools-agent/' | relative_url }}">工具 & Agent</a>
           <a href="{{ '/search/' | relative_url }}">搜索</a>
         </nav>
       </div>
@@ -55,8 +59,20 @@
     </main>
     <footer class="site-footer">
       <div class="wrap">
-        <p>Repository: <a href="https://github.com/zhubao315/uWisdom">zhubao315/uWisdom</a></p>
-        <p>Pages: <a href="https://zhubao315.github.io/uWisdom">https://zhubao315.github.io/uWisdom</a></p>
+        <div class="footer-grid">
+          <div>
+            <strong>uWisdom</strong>
+            <p class="meta">以工程可读性为核心的个人知识操作系统</p>
+          </div>
+          <div>
+            <p><a href="https://github.com/zhubao315/uWisdom">GitHub 仓库</a></p>
+            <p><a href="{{ '/search/' | relative_url }}">搜索知识</a></p>
+          </div>
+          <div>
+            <p><a href="{{ '/encyclopedia/' | relative_url }}">知识百科</a></p>
+            <p><a href="{{ '/today/' | relative_url }}">今日精华</a></p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
