@@ -37,13 +37,13 @@
       "mermaid": "graph LR\nA[\"史蒂夫·乔布斯\"]\nA --> N1[\"产品经理\"]\nA --> N2[\"机会到产品转化\"]\nA --> N3[\"产品需求设计\"]"
     },
     "/figures/su-shi.html": {
-      "mermaid": "graph LR\nA[\"苏轼\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"视觉叙事\"]\nA --> N3[\"城市文化与现代生活\"]"
+      "mermaid": "graph LR\nA[\"苏轼\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"视觉叙事\"]\nA --> N3[\"城市文化与现代生活\"]\nN4[\"国学大师\"] --> A"
     },
     "/figures/wang-jian.html": {
       "mermaid": "graph LR\nA[\"王坚\"]\nA --> N1[\"云计算与云原生\"]\nA --> N2[\"云原生转型\"]\nA --> N3[\"平台治理\"]"
     },
     "/figures/wang-yangming.html": {
-      "mermaid": "graph LR\nA[\"王阳明\"]\nA --> N1[\"心理学专家\"]\nA --> N2[\"经典阅读体系\"]\nA --> N3[\"传统智慧现代转译\"]"
+      "mermaid": "graph LR\nA[\"王阳明\"]\nA --> N1[\"心理学专家\"]\nA --> N2[\"经典阅读体系\"]\nA --> N3[\"传统智慧现代转译\"]\nN4[\"国学大师\"] --> A"
     },
     "/figures/yu-minhong.html": {
       "mermaid": "graph LR\nA[\"俞敏洪\"]\nA --> N1[\"机会到产品转化\"]\nA --> N2[\"产品需求设计\"]\nA --> N3[\"主题研究\"]"
@@ -67,172 +67,172 @@
       "mermaid": ""
     },
     "/knowledge-base/domains/ai-expert.html": {
-      "mermaid": "graph LR\nA[\"人工智能专家\"]\nN1[\"∑ 架构师\"] --> A\nN2[\"Agent 工作流设计\"] --> A\nN3[\"LLM 应用架构\"] --> A"
+      "mermaid": "graph LR\nA[\"人工智能专家\"]\nA --> N1[\"云计算与云原生\"]\nA --> N2[\"Agent 工作流设计\"]\nA --> N3[\"LLM 应用架构\"]\nN4[\"∑ 架构师\"] --> A\nN5[\"云计算与云原生\"] --> A\nN6[\"Agent 工作流设计\"] --> A"
     },
     "/knowledge-base/domains/beijing-culture.html": {
-      "mermaid": "graph LR\nA[\"北京文化使者\"]\nN1[\"蔡志忠\"] --> A\nN2[\"苏轼\"] --> A\nN3[\"∑ 终身学习者\"] --> A"
+      "mermaid": "graph LR\nA[\"北京文化使者\"]\nA --> N1[\"北京城市叙事\"]\nA --> N2[\"文化行走路线\"]\nA --> N3[\"视觉叙事\"]\nN4[\"蔡志忠\"] --> A\nN5[\"苏轼\"] --> A\nN6[\"∑ 终身学习者\"] --> A"
     },
     "/knowledge-base/domains/chinese-classics.html": {
-      "mermaid": "graph LR\nA[\"国学大师\"]\nN1[\"蔡志忠\"] --> A\nN2[\"蒙田\"] --> A\nN3[\"∑ 终身学习者\"] --> A"
+      "mermaid": "graph LR\nA[\"国学大师\"]\nA --> N1[\"苏轼\"]\nA --> N2[\"王阳明\"]\nA --> N3[\"经典阅读体系\"]\nN4[\"蔡志忠\"] --> A\nN5[\"蒙田\"] --> A\nN6[\"∑ 终身学习者\"] --> A"
     },
     "/knowledge-base/domains/cloud-native.html": {
-      "mermaid": "graph LR\nA[\"云计算与云原生\"]\nN1[\"王坚\"] --> A\nN2[\"∑ 架构师\"] --> A\nN3[\"云原生转型\"] --> A"
+      "mermaid": "graph LR\nA[\"云计算与云原生\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"工程交付闭环\"]\nA --> N3[\"平台治理\"]\nN4[\"王坚\"] --> A\nN5[\"∑ 架构师\"] --> A\nN6[\"人工智能专家\"] --> A"
     },
     "/knowledge-base/domains/commodity-trading.html": {
-      "mermaid": "graph LR\nA[\"商品交易\"]\nN1[\"∑ 投资人\"] --> A\nN2[\"商品供需分析\"] --> A\nN3[\"周期交易框架\"] --> A"
+      "mermaid": "graph LR\nA[\"商品交易\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"商品供需分析\"]\nA --> N3[\"周期交易框架\"]\nN4[\"∑ 投资人\"] --> A\nN5[\"金融市场\"] --> A\nN6[\"商品供需分析\"] --> A"
     },
     "/knowledge-base/domains/digital-life.html": {
-      "mermaid": "graph LR\nA[\"数字人生\"]\nN1[\"∑ 生活艺术家\"] --> A\nN2[\"数字资产编排\"] --> A\nN3[\"个人数字操作系统\"] --> A"
+      "mermaid": "graph LR\nA[\"数字人生\"]\nA --> N1[\"数字资产编排\"]\nA --> N2[\"个人数字操作系统\"]\nN3[\"∑ 生活艺术家\"] --> A\nN4[\"数字资产编排\"] --> A\nN5[\"个人数字操作系统\"] --> A"
     },
     "/knowledge-base/domains/financial-markets.html": {
-      "mermaid": "graph LR\nA[\"金融市场\"]\nN1[\"查理·芒格\"] --> A\nN2[\"∑ 投资人\"] --> A\nN3[\"市场周期观察\"] --> A"
+      "mermaid": "graph LR\nA[\"金融市场\"]\nA --> N1[\"商品交易\"]\nA --> N2[\"市场周期观察\"]\nA --> N3[\"组合纪律体系\"]\nN4[\"查理·芒格\"] --> A\nN5[\"∑ 投资人\"] --> A\nN6[\"商品交易\"] --> A"
     },
     "/knowledge-base/domains/fitness-running.html": {
-      "mermaid": "graph LR\nA[\"健身跑者\"]\nN1[\"李小龙\"] --> A\nN2[\"彭于晏\"] --> A\nN3[\"∑ 生活艺术家\"] --> A"
+      "mermaid": "graph LR\nA[\"健身跑者\"]\nA --> N1[\"跑步周期训练\"]\nA --> N2[\"力量训练纪律\"]\nN3[\"李小龙\"] --> A\nN4[\"彭于晏\"] --> A\nN5[\"∑ 生活艺术家\"] --> A"
     },
     "/knowledge-base/domains/full-stack-engineer.html": {
-      "mermaid": "graph LR\nA[\"全栈工程师\"]\nN1[\"∑ 架构师\"] --> A\nN2[\"工程交付闭环\"] --> A\nN3[\"全栈原型构建\"] --> A"
+      "mermaid": "graph LR\nA[\"全栈工程师\"]\nA --> N1[\"工程交付闭环\"]\nA --> N2[\"全栈原型构建\"]\nN3[\"∑ 架构师\"] --> A\nN4[\"工程交付闭环\"] --> A\nN5[\"全栈原型构建\"] --> A"
     },
     "/knowledge-base/domains/gaming.html": {
-      "mermaid": "graph LR\nA[\"游戏王者\"]\nN1[\"∑ 生活艺术家\"] --> A\nN2[\"竞技复盘方法\"] --> A\nN3[\"游戏机制分析\"] --> A"
+      "mermaid": "graph LR\nA[\"游戏王者\"]\nA --> N1[\"游戏机制分析\"]\nN2[\"∑ 生活艺术家\"] --> A\nN3[\"竞技复盘方法\"] --> A\nN4[\"游戏机制分析\"] --> A"
     },
     "/knowledge-base/domains": {
       "mermaid": ""
     },
     "/knowledge-base/domains/ip-consultant.html": {
-      "mermaid": "graph LR\nA[\"知识产权顾问\"]\nN1[\"∑ 架构师\"] --> A\nN2[\"专利布局策略\"] --> A\nN3[\"软件成果保护\"] --> A"
+      "mermaid": "graph LR\nA[\"知识产权顾问\"]\nA --> N1[\"开源发烧友\"]\nA --> N2[\"专利布局策略\"]\nA --> N3[\"软件成果保护\"]\nN4[\"∑ 架构师\"] --> A\nN5[\"专利布局策略\"] --> A\nN6[\"软件成果保护\"] --> A"
     },
     "/knowledge-base/domains/open-source-enthusiast.html": {
-      "mermaid": "graph LR\nA[\"开源发烧友\"]\nN1[\"莱纳斯\"] --> A\nN2[\"∑ 架构师\"] --> A\nN3[\"开源协作机制\"] --> A"
+      "mermaid": "graph LR\nA[\"开源发烧友\"]\nA --> N1[\"开源商业模式分析\"]\nA --> N2[\"开源协作机制\"]\nA --> N3[\"开源选型方法\"]\nN4[\"莱纳斯\"] --> A\nN5[\"∑ 架构师\"] --> A\nN6[\"知识产权顾问\"] --> A"
     },
     "/knowledge-base/domains/outdoor-adventure.html": {
-      "mermaid": "graph LR\nA[\"户外大神\"]\nN1[\"∑ 生活艺术家\"] --> A\nN2[\"徒步系统\"] --> A\nN3[\"户外装备框架\"] --> A"
+      "mermaid": "graph LR\nA[\"户外大神\"]\nA --> N1[\"徒步系统\"]\nA --> N2[\"户外装备框架\"]\nN3[\"∑ 生活艺术家\"] --> A\nN4[\"徒步系统\"] --> A\nN5[\"户外装备框架\"] --> A"
     },
     "/knowledge-base/domains/photography.html": {
-      "mermaid": "graph LR\nA[\"摄影家\"]\nN1[\"∑ 生活艺术家\"] --> A\nN2[\"AI 与摄影融合\"] --> A\nN3[\"视觉叙事\"] --> A"
+      "mermaid": "graph LR\nA[\"摄影家\"]\nA --> N1[\"AI 与摄影融合\"]\nA --> N2[\"视觉叙事\"]\nN3[\"∑ 生活艺术家\"] --> A\nN4[\"AI 与摄影融合\"] --> A\nN5[\"视觉叙事\"] --> A"
     },
     "/knowledge-base/domains/product-manager.html": {
-      "mermaid": "graph LR\nA[\"产品经理\"]\nN1[\"史蒂夫·乔布斯\"] --> A\nN2[\"∑ 架构师\"] --> A\nN3[\"机会到产品转化\"] --> A"
+      "mermaid": "graph LR\nA[\"产品经理\"]\nA --> N1[\"机会到产品转化\"]\nA --> N2[\"产品需求设计\"]\nN3[\"史蒂夫·乔布斯\"] --> A\nN4[\"∑ 架构师\"] --> A\nN5[\"机会到产品转化\"] --> A"
     },
     "/knowledge-base/domains/psychology.html": {
-      "mermaid": "graph LR\nA[\"心理学专家\"]\nN1[\"王阳明\"] --> A\nN2[\"∑ 终身学习者\"] --> A\nN3[\"认知偏差清单\"] --> A"
+      "mermaid": "graph LR\nA[\"心理学专家\"]\nA --> N1[\"认知偏差清单\"]\nA --> N2[\"情绪调节策略\"]\nN3[\"王阳明\"] --> A\nN4[\"∑ 终身学习者\"] --> A\nN5[\"认知偏差清单\"] --> A"
     },
     "/knowledge-base/domains/technology-investment.html": {
-      "mermaid": "graph LR\nA[\"技术投资\"]\nN1[\"查理·芒格\"] --> A\nN2[\"沈南鹏\"] --> A\nN3[\"∑ 投资人\"] --> A"
+      "mermaid": "graph LR\nA[\"技术投资\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"AI 产业投资\"]\nA --> N3[\"竞技复盘方法\"]\nN4[\"查理·芒格\"] --> A\nN5[\"沈南鹏\"] --> A\nN6[\"∑ 投资人\"] --> A"
     },
     "/knowledge-base/domains/wine.html": {
-      "mermaid": "graph LR\nA[\"葡萄酒大师\"]\nN1[\"∑ 生活艺术家\"] --> A\nN2[\"风土地图\"] --> A\nN3[\"葡萄酒品鉴笔记\"] --> A"
+      "mermaid": "graph LR\nA[\"葡萄酒大师\"]\nA --> N1[\"风土地图\"]\nA --> N2[\"葡萄酒品鉴笔记\"]\nN3[\"∑ 生活艺术家\"] --> A\nN4[\"风土地图\"] --> A\nN5[\"葡萄酒品鉴笔记\"] --> A"
     },
     "/knowledge-base/themes/agent-workflow-design.html": {
-      "mermaid": "graph LR\nA[\"Agent 工作流设计\"]\nA --> N1[\"人工智能专家\"]\nN2[\"AI 原生企业能力重构\"] --> A\nN3[\"OpenClaw 智能体生态\"] --> A"
+      "mermaid": "graph LR\nA[\"Agent 工作流设计\"]\nA --> N1[\"人工智能专家\"]\nN2[\"人工智能专家\"] --> A\nN3[\"AI 原生企业能力重构\"] --> A\nN4[\"OpenClaw 智能体生态\"] --> A"
     },
     "/knowledge-base/themes/ai-industry-investment.html": {
-      "mermaid": "graph LR\nA[\"AI 产业投资\"]\nA --> N1[\"技术投资\"]\nN2[\"沈南鹏\"] --> A\nN3[\"十五五规划\"] --> A"
+      "mermaid": "graph LR\nA[\"AI 产业投资\"]\nA --> N1[\"技术投资\"]\nN2[\"沈南鹏\"] --> A\nN3[\"技术投资\"] --> A\nN4[\"十五五规划\"] --> A"
     },
     "/knowledge-base/themes/ai-photography-fusion.html": {
-      "mermaid": "graph LR\nA[\"AI 与摄影融合\"]\nA --> N1[\"摄影家\"]"
+      "mermaid": "graph LR\nA[\"AI 与摄影融合\"]\nA --> N1[\"摄影家\"]\nN2[\"摄影家\"] --> A"
     },
     "/knowledge-base/themes/beijing-city-narrative.html": {
-      "mermaid": "graph LR\nA[\"北京城市叙事\"]\nA --> N1[\"北京文化使者\"]\nN2[\"城市文化与现代生活\"] --> A"
+      "mermaid": "graph LR\nA[\"北京城市叙事\"]\nA --> N1[\"北京文化使者\"]\nN2[\"北京文化使者\"] --> A\nN3[\"城市文化与现代生活\"] --> A"
     },
     "/knowledge-base/themes/classics-reading-system.html": {
-      "mermaid": "graph LR\nA[\"经典阅读体系\"]\nA --> N1[\"国学大师\"]\nN2[\"王阳明\"] --> A"
+      "mermaid": "graph LR\nA[\"经典阅读体系\"]\nA --> N1[\"国学大师\"]\nN2[\"王阳明\"] --> A\nN3[\"国学大师\"] --> A"
     },
     "/knowledge-base/themes/cloud-transformation.html": {
       "mermaid": "graph LR\nA[\"云原生转型\"]\nA --> N1[\"云计算与云原生\"]\nN2[\"王坚\"] --> A"
     },
     "/knowledge-base/themes/cognitive-biases.html": {
-      "mermaid": "graph LR\nA[\"认知偏差清单\"]\nA --> N1[\"心理学专家\"]\nN2[\"蒙田\"] --> A"
+      "mermaid": "graph LR\nA[\"认知偏差清单\"]\nA --> N1[\"心理学专家\"]\nN2[\"蒙田\"] --> A\nN3[\"心理学专家\"] --> A"
     },
     "/knowledge-base/themes/commodity-supply-demand.html": {
-      "mermaid": "graph LR\nA[\"商品供需分析\"]\nA --> N1[\"商品交易\"]"
+      "mermaid": "graph LR\nA[\"商品供需分析\"]\nA --> N1[\"商品交易\"]\nN2[\"商品交易\"] --> A"
     },
     "/knowledge-base/themes/competitive-review.html": {
-      "mermaid": "graph LR\nA[\"竞技复盘方法\"]\nA --> N1[\"游戏王者\"]"
+      "mermaid": "graph LR\nA[\"竞技复盘方法\"]\nA --> N1[\"游戏王者\"]\nN2[\"技术投资\"] --> A"
     },
     "/knowledge-base/themes/cultural-walking-routes.html": {
-      "mermaid": "graph LR\nA[\"文化行走路线\"]\nA --> N1[\"北京文化使者\"]"
+      "mermaid": "graph LR\nA[\"文化行走路线\"]\nA --> N1[\"北京文化使者\"]\nN2[\"北京文化使者\"] --> A"
     },
     "/knowledge-base/themes/cycle-trading-framework.html": {
-      "mermaid": "graph LR\nA[\"周期交易框架\"]\nA --> N1[\"商品交易\"]"
+      "mermaid": "graph LR\nA[\"周期交易框架\"]\nA --> N1[\"商品交易\"]\nN2[\"商品交易\"] --> A"
     },
     "/knowledge-base/themes/digital-asset-curation.html": {
-      "mermaid": "graph LR\nA[\"数字资产编排\"]\nA --> N1[\"数字人生\"]"
+      "mermaid": "graph LR\nA[\"数字资产编排\"]\nA --> N1[\"数字人生\"]\nN2[\"数字人生\"] --> A"
     },
     "/knowledge-base/themes/emotional-regulation.html": {
-      "mermaid": "graph LR\nA[\"情绪调节策略\"]\nA --> N1[\"心理学专家\"]"
+      "mermaid": "graph LR\nA[\"情绪调节策略\"]\nA --> N1[\"心理学专家\"]\nN2[\"心理学专家\"] --> A"
     },
     "/knowledge-base/themes/engineering-delivery.html": {
-      "mermaid": "graph LR\nA[\"工程交付闭环\"]\nA --> N1[\"全栈工程师\"]\nN2[\"莱纳斯\"] --> A"
+      "mermaid": "graph LR\nA[\"工程交付闭环\"]\nA --> N1[\"全栈工程师\"]\nN2[\"莱纳斯\"] --> A\nN3[\"云计算与云原生\"] --> A\nN4[\"全栈工程师\"] --> A"
     },
     "/knowledge-base/themes/full-stack-prototyping.html": {
-      "mermaid": "graph LR\nA[\"全栈原型构建\"]\nA --> N1[\"全栈工程师\"]"
+      "mermaid": "graph LR\nA[\"全栈原型构建\"]\nA --> N1[\"全栈工程师\"]\nN2[\"全栈工程师\"] --> A"
     },
     "/knowledge-base/themes/game-mechanics-analysis.html": {
-      "mermaid": "graph LR\nA[\"游戏机制分析\"]\nA --> N1[\"游戏王者\"]"
+      "mermaid": "graph LR\nA[\"游戏机制分析\"]\nA --> N1[\"游戏王者\"]\nN2[\"游戏王者\"] --> A"
     },
     "/knowledge-base/themes/hiking-system.html": {
-      "mermaid": "graph LR\nA[\"徒步系统\"]\nA --> N1[\"户外大神\"]"
+      "mermaid": "graph LR\nA[\"徒步系统\"]\nA --> N1[\"户外大神\"]\nN2[\"户外大神\"] --> A"
     },
     "/knowledge-base/themes": {
       "mermaid": ""
     },
     "/knowledge-base/themes/llm-application-architecture.html": {
-      "mermaid": "graph LR\nA[\"LLM 应用架构\"]\nA --> N1[\"人工智能专家\"]\nN2[\"AI 原生企业能力重构\"] --> A\nN3[\"OpenClaw 智能体生态\"] --> A"
+      "mermaid": "graph LR\nA[\"LLM 应用架构\"]\nA --> N1[\"人工智能专家\"]\nN2[\"人工智能专家\"] --> A\nN3[\"AI 原生企业能力重构\"] --> A\nN4[\"OpenClaw 智能体生态\"] --> A"
     },
     "/knowledge-base/themes/market-cycle-observation.html": {
-      "mermaid": "graph LR\nA[\"市场周期观察\"]\nA --> N1[\"金融市场\"]\nN2[\"查理·芒格\"] --> A\nN3[\"十五五规划\"] --> A"
+      "mermaid": "graph LR\nA[\"市场周期观察\"]\nA --> N1[\"金融市场\"]\nN2[\"查理·芒格\"] --> A\nN3[\"金融市场\"] --> A\nN4[\"十五五规划\"] --> A"
     },
     "/knowledge-base/themes/open-source-business-analysis.html": {
-      "mermaid": "graph LR\nA[\"开源商业模式分析\"]\nA --> N1[\"技术投资\"]"
+      "mermaid": "graph LR\nA[\"开源商业模式分析\"]\nA --> N1[\"技术投资\"]\nN2[\"开源发烧友\"] --> A"
     },
     "/knowledge-base/themes/open-source-collaboration.html": {
-      "mermaid": "graph LR\nA[\"开源协作机制\"]\nA --> N1[\"开源发烧友\"]\nN2[\"莱纳斯\"] --> A"
+      "mermaid": "graph LR\nA[\"开源协作机制\"]\nA --> N1[\"开源发烧友\"]\nN2[\"莱纳斯\"] --> A\nN3[\"开源发烧友\"] --> A"
     },
     "/knowledge-base/themes/open-source-selection.html": {
-      "mermaid": "graph LR\nA[\"开源选型方法\"]\nA --> N1[\"开源发烧友\"]"
+      "mermaid": "graph LR\nA[\"开源选型方法\"]\nA --> N1[\"开源发烧友\"]\nN2[\"开源发烧友\"] --> A"
     },
     "/knowledge-base/themes/opportunity-to-product.html": {
       "mermaid": "graph LR\nA[\"机会到产品转化\"]\nA --> N1[\"产品经理\"]\nN2[\"沈南鹏\"] --> A\nN3[\"史蒂夫·乔布斯\"] --> A\nN4[\"俞敏洪\"] --> A"
     },
     "/knowledge-base/themes/outdoor-equipment-framework.html": {
-      "mermaid": "graph LR\nA[\"户外装备框架\"]\nA --> N1[\"户外大神\"]"
+      "mermaid": "graph LR\nA[\"户外装备框架\"]\nA --> N1[\"户外大神\"]\nN2[\"户外大神\"] --> A"
     },
     "/knowledge-base/themes/patent-strategy.html": {
-      "mermaid": "graph LR\nA[\"专利布局策略\"]\nA --> N1[\"知识产权顾问\"]"
+      "mermaid": "graph LR\nA[\"专利布局策略\"]\nA --> N1[\"知识产权顾问\"]\nN2[\"知识产权顾问\"] --> A"
     },
     "/knowledge-base/themes/personal-digital-os.html": {
-      "mermaid": "graph LR\nA[\"个人数字操作系统\"]\nA --> N1[\"数字人生\"]\nN2[\"个人知识操作系统\"] --> A"
+      "mermaid": "graph LR\nA[\"个人数字操作系统\"]\nA --> N1[\"数字人生\"]\nN2[\"数字人生\"] --> A\nN3[\"个人知识操作系统\"] --> A"
     },
     "/knowledge-base/themes/platform-governance.html": {
-      "mermaid": "graph LR\nA[\"平台治理\"]\nA --> N1[\"云计算与云原生\"]\nN2[\"王坚\"] --> A"
+      "mermaid": "graph LR\nA[\"平台治理\"]\nA --> N1[\"云计算与云原生\"]\nN2[\"王坚\"] --> A\nN3[\"云计算与云原生\"] --> A"
     },
     "/knowledge-base/themes/portfolio-discipline.html": {
-      "mermaid": "graph LR\nA[\"组合纪律体系\"]\nA --> N1[\"金融市场\"]"
+      "mermaid": "graph LR\nA[\"组合纪律体系\"]\nA --> N1[\"金融市场\"]\nN2[\"金融市场\"] --> A"
     },
     "/knowledge-base/themes/prd-design.html": {
-      "mermaid": "graph LR\nA[\"产品需求设计\"]\nA --> N1[\"产品经理\"]\nN2[\"史蒂夫·乔布斯\"] --> A\nN3[\"俞敏洪\"] --> A"
+      "mermaid": "graph LR\nA[\"产品需求设计\"]\nA --> N1[\"产品经理\"]\nN2[\"史蒂夫·乔布斯\"] --> A\nN3[\"俞敏洪\"] --> A\nN4[\"产品经理\"] --> A"
     },
     "/knowledge-base/themes/running-periodization.html": {
-      "mermaid": "graph LR\nA[\"跑步周期训练\"]\nA --> N1[\"健身跑者\"]\nN2[\"彭于晏\"] --> A\nN3[\"村上春树\"] --> A"
+      "mermaid": "graph LR\nA[\"跑步周期训练\"]\nA --> N1[\"健身跑者\"]\nN2[\"彭于晏\"] --> A\nN3[\"村上春树\"] --> A\nN4[\"健身跑者\"] --> A"
     },
     "/knowledge-base/themes/software-asset-protection.html": {
-      "mermaid": "graph LR\nA[\"软件成果保护\"]\nA --> N1[\"知识产权顾问\"]"
+      "mermaid": "graph LR\nA[\"软件成果保护\"]\nA --> N1[\"知识产权顾问\"]\nN2[\"知识产权顾问\"] --> A"
     },
     "/knowledge-base/themes/strength-discipline.html": {
-      "mermaid": "graph LR\nA[\"力量训练纪律\"]\nA --> N1[\"健身跑者\"]\nN2[\"李小龙\"] --> A\nN3[\"彭于晏\"] --> A"
+      "mermaid": "graph LR\nA[\"力量训练纪律\"]\nA --> N1[\"健身跑者\"]\nN2[\"李小龙\"] --> A\nN3[\"彭于晏\"] --> A\nN4[\"健身跑者\"] --> A"
     },
     "/knowledge-base/themes/terroir-map.html": {
-      "mermaid": "graph LR\nA[\"风土地图\"]\nA --> N1[\"葡萄酒大师\"]"
+      "mermaid": "graph LR\nA[\"风土地图\"]\nA --> N1[\"葡萄酒大师\"]\nN2[\"葡萄酒大师\"] --> A"
     },
     "/knowledge-base/themes/traditional-wisdom-modernization.html": {
-      "mermaid": "graph LR\nA[\"传统智慧现代转译\"]\nA --> N1[\"国学大师\"]\nN2[\"蔡志忠\"] --> A\nN3[\"王阳明\"] --> A"
+      "mermaid": "graph LR\nA[\"传统智慧现代转译\"]\nA --> N1[\"国学大师\"]\nN2[\"蔡志忠\"] --> A\nN3[\"王阳明\"] --> A\nN4[\"国学大师\"] --> A"
     },
     "/knowledge-base/themes/visual-storytelling.html": {
       "mermaid": "graph LR\nA[\"视觉叙事\"]\nA --> N1[\"摄影家\"]\nN2[\"村上春树\"] --> A\nN3[\"蒋勋\"] --> A\nN4[\"苏轼\"] --> A"
     },
     "/knowledge-base/themes/wine-tasting-notes.html": {
-      "mermaid": "graph LR\nA[\"葡萄酒品鉴笔记\"]\nA --> N1[\"葡萄酒大师\"]"
+      "mermaid": "graph LR\nA[\"葡萄酒品鉴笔记\"]\nA --> N1[\"葡萄酒大师\"]\nN2[\"葡萄酒大师\"] --> A"
     },
     "/search": {
       "mermaid": ""

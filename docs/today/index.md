@@ -21,8 +21,8 @@ permalink: /today/
 - 分类：知识百科 / 领域
 - 领域：金融市场
 - 更新：2026-03-25
-- 标签：domain, investment
-- 摘要：投资人相关知识领域
+- 标签：investment
+- 摘要：研究股票、基金、指数及其背后的宏观环境、产业趋势与资金行为
 
 ## [软件成果保护](/knowledge-base/themes/software-asset-protection.html)
 
