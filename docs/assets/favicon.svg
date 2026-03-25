@@ -6,21 +6,8 @@
     </linearGradient>
   </defs>
   <rect width="32" height="32" rx="5" fill="url(#bg)"/>
-  <!-- Simplified w+u -->
-  <g stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <path d="M7 8 L7 24 L11 24 L11 8"/>
-    <path d="M21 8 L21 24 L25 24 L25 8"/>
-    <path d="M11 14 Q16 6 21 14"/>
+  <g fill="#fff">
+    <path d="M5 7 L9 25 L11 25 L16 13 L21 25 L23 25 L27 7 L24 7 L21 20 L18 7 L14 7 L11 20 L8 7 Z"/>
   </g>
-  <!-- Nodes -->
-  <g>
-    <circle cx="9" cy="8" r="1.5" fill="#FBBF24"/>
-    <circle cx="23" cy="8" r="1.5" fill="#FBBF24"/>
-    <circle cx="16" cy="14" r="1.8" fill="#2DD4BF"/>
-  </g>
-  <!-- Engineering brackets -->
-  <g stroke="#fff" stroke-width="1" opacity="0.7">
-    <path d="M7 26 L11 30"/>
-    <path d="M25 26 L21 30"/>
-  </g>
+  <circle cx="16" cy="4" r="1.5" fill="#2DD4BF"/>
 </svg>

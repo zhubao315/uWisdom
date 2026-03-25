@@ -9,29 +9,11 @@
   <!-- Background -->
   <rect width="38" height="38" rx="6" fill="url(#bg)"/>
   
-  <!-- Simplified w+u structure -->
-  <g stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <!-- Left side of 'u' -->
-    <path d="M8 10 L8 28 L12 28 L12 10"/>
-    <!-- Right side of 'u' -->  
-    <path d="M26 10 L26 28 L30 28 L30 10"/>
-    <!-- Connection bridge (knowledge flow) -->
-    <path d="M12 18 Q19 10 26 18"/>
+  <!-- W Letter - Clean geometric design -->
+  <g fill="#fff">
+    <path d="M6 8 L11 30 L14 30 L19 16 L24 30 L27 30 L32 8 L28 8 L24.5 24 L21 8 L17 8 L13.5 24 L10 8 Z"/>
   </g>
   
-  <!-- Knowledge nodes -->
-  <g>
-    <!-- Left node -->
-    <circle cx="10" cy="10" r="2" fill="#FBBF24"/>
-    <!-- Right node -->
-    <circle cx="28" cy="10" r="2" fill="#FBBF24"/>
-    <!-- Center connection point -->
-    <circle cx="19" cy="18" r="2.5" fill="#2DD4BF"/>
-  </g>
-  
-  <!-- Engineering brackets abstraction -->
-  <g stroke="#fff" stroke-width="1.5" opacity="0.7">
-    <path d="M8 30 L12 34"/>
-    <path d="M26 30 L22 34"/>
-  </g>
+  <!-- Accent dot - Knowledge node -->
+  <circle cx="19" cy="5" r="2" fill="#2DD4BF"/>
 </svg>

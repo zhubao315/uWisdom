@@ -22,18 +22,18 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="{{ '/' | relative_url }}">
-          <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="7" fill="#133D72"/>
-            <g stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
-              <path d="M8 11 L10 22 L14 11" opacity="0.9"/>
-              <path d="M18 11 L22 22 L24 11" opacity="0.9"/>
-              <path d="M14 11 Q16 22 18 11" opacity="0.95"/>
+          <svg class="brand-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logo-bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#133D72"/>
+                <stop offset="100%" stop-color="#0F2847"/>
+              </linearGradient>
+            </defs>
+            <rect width="38" height="38" rx="6" fill="url(#logo-bg)"/>
+            <g fill="#fff">
+              <path d="M6 8 L11 30 L14 30 L19 16 L24 30 L27 30 L32 8 L28 8 L24.5 24 L21 8 L17 8 L13.5 24 L10 8 Z"/>
             </g>
-            <circle cx="16" cy="15" r="2.2" fill="#FBBF24"/>
-            <circle cx="10" cy="11" r="1.2" fill="#FBBF24" opacity="0.7"/>
-            <circle cx="22" cy="11" r="1.2" fill="#FBBF24" opacity="0.7"/>
-            <circle cx="10" cy="22" r="1" fill="#2DD4BF" opacity="0.6"/>
-            <circle cx="22" cy="22" r="1" fill="#2DD4BF" opacity="0.6"/>
+            <circle cx="19" cy="5" r="2" fill="#2DD4BF"/>
           </svg>
           <span class="brand-text">
             uWisdom
