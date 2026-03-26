@@ -54,10 +54,10 @@
   --shadow-lg: 0 10px 15px -3px rgba(17, 24, 39, 0.08), 0 4px 6px -4px rgba(17, 24, 39, 0.04);
 
   /* Layout */
-  --header-h: 60px;
-  --max-w: 1080px;
-  --radius: 12px;
-  --radius-sm: 8px;
+  --header-h: 64px;
+  --max-w: 1120px;
+  --radius: 14px;
+  --radius-sm: 10px;
   --radius-xs: 6px;
 
   /* Spacing scale (4px base) */
@@ -71,9 +71,101 @@
   --sp-10: 40px;
   --sp-12: 48px;
   --sp-16: 64px;
-}
+  }
 
-/* ── Dark Mode ── */
+  /* ── Reading Progress ── */
+  #reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  z-index: 999;
+  width: 0%;
+  transition: width 0.1s ease;
+  }
+
+  /* ── Lucky Button ── */
+  .lucky-button {
+  background: var(--amber-soft);
+  color: var(--amber);
+  border: 1px solid var(--amber);
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  }
+
+  .lucky-button:hover {
+  background: var(--amber);
+  color: var(--sapphire);
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+  }
+
+  .header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  }
+
+  /* ── TOC ── */
+  .toc-container {
+  position: sticky;
+  top: calc(var(--header-h) + var(--sp-8));
+  float: left;
+  width: 220px;
+  margin-left: -260px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  border-right: 1px solid var(--border);
+  padding-right: var(--sp-4);
+  display: block;
+  }
+
+  .toc-container a {
+  display: block;
+  padding: var(--sp-1) 0;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+
+  .toc-container a:hover {
+  color: var(--accent);
+  }
+
+  .toc-container .active {
+  color: var(--accent);
+  font-weight: 600;
+  border-right: 2px solid var(--accent);
+  }
+
+  @media (max-width: 1400px) {
+  .toc-container {
+    display: none;
+  }
+  }
+
+  /* ── Knowledge Map ── */
+  #global-map {
+  width: 100%;
+  height: 700px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-top: var(--sp-6);
+  }
+
+  /* ── Reset ── */
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: var(--slate-dark);

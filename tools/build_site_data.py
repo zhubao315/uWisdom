@@ -174,7 +174,36 @@ def infer_tags(rel_path: Path, title: str) -> list[str]:
 
 
 def internal_links(body: str) -> list[tuple[str, str]]:
-    return re.findall(r"\[([^\]]+)\]\(\{\{\s*'([^']+)'", body)
+    # Support both [label]({{ 'path' | relative_url }}) and [[WikiLink]]
+    md_links = re.findall(r"\[([^\]]+)\]\(\{\{\s*'([^']+)'", body)
+    wiki_links = re.findall(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]", body)
+    results = []
+    for label, path in md_links:
+        results.append((label, path))
+    for target, label in wiki_links:
+        results.append((label or target, target))
+    return results
+
+
+def extract_chunks(body: str) -> list[dict]:
+    """Split body into chunks by H2/H3 for semantic indexing."""
+    chunks = []
+    current_heading = "Introduction"
+    current_content = []
+    
+    lines = body.splitlines()
+    for line in lines:
+        if line.startswith(("## ", "### ")):
+            if current_content:
+                chunks.append({"heading": current_heading, "text": "\n".join(current_content).strip()})
+            current_heading = line.lstrip("#").strip()
+            current_content = []
+        else:
+            current_content.append(line)
+    
+    if current_content:
+        chunks.append({"heading": current_heading, "text": "\n".join(current_content).strip()})
+    return chunks
 
 
 def git_date(path: Path) -> str:

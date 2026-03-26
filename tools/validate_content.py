@@ -81,6 +81,21 @@ def main():
             url = url.replace("/index.html", "/")
             all_urls.add(url)
 
+    all_titles = {str(f.get("title")).strip(): p for p, f, _ in page_data if f.get("title")}
+
+    # Validate links
+    for rel_path, front, body in page_data:
+        # Check [[WikiLinks]]
+        wiki_links = re.findall(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]", body)
+        for target, _ in wiki_links:
+            target_clean = target.strip()
+            # Try by title or by path
+            if target_clean not in all_titles:
+                # Try finding as path
+                target_path = DOCS / f"{target_clean}.md"
+                if not target_path.exists():
+                    errors.append(f"Broken WikiLink: [[{target_clean}]] in {rel_path}")
+
     # Report
     if errors:
         print(f"Found {len(errors)} issue(s):")

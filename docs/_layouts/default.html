@@ -3,86 +3,96 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.summary | default: site.description }}">
     <meta name="author" content="{{ page.author | default: 'zhubao315' }}">
-    <meta name="theme-color" content="#007AFF">
     {% seo %}
     <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/dist/vis-network.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
     <script defer src="{{ '/assets/app.js' | relative_url }}"></script>
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
       window.mermaid = mermaid;
-      mermaid.initialize({ startOnLoad: false, theme: document.documentElement.getAttribute('color-scheme') === 'dark' ? 'dark' : 'neutral' });
+      mermaid.initialize({ startOnLoad: false, theme: 'neutral', securityLevel: 'loose' });
     </script>
   </head>
   <body data-baseurl="{{ site.baseurl }}">
+    <div id="reading-progress"></div>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="{{ '/' | relative_url }}">
-          <svg class="brand-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100" height="100" fill="#007AFF"/>
-            <g stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
-              <path d="M15 20 L32 80 L50 35 L68 80 L85 20"/>
-            </g>
-          </svg>
+          <img class="brand-icon" src="{{ '/assets/logo.svg' | relative_url }}" alt="uWisdom Logo">
           <span class="brand-text">
             uWisdom
             <span class="brand-sub">Knowledge Compendium</span>
           </span>
         </a>
-        <button class="menu-toggle" aria-label="打开导航" data-menu-toggle>&#9776;</button>
+        <div class="header-actions">
+          <button class="lucky-button" id="lucky-button" title="随机漫步：探索一个知识点">Explore 🎲</button>
+          <button class="menu-toggle" aria-label="打开导航" data-menu-toggle>&#9776;</button>
+        </div>
         <nav class="nav" data-nav>
           <a href="{{ '/' | relative_url }}">首页</a>
           <details class="nav-group">
             <summary>知识百科</summary>
             <div class="nav-panel">
               <a href="{{ '/encyclopedia/' | relative_url }}">总览</a>
-              <a href="{{ '/knowledge-base/domains/' | relative_url }}">按领域</a>
-              <a href="{{ '/knowledge-base/themes/' | relative_url }}">按主题</a>
-              <a href="{{ '/encyclopedia/#tag-index' | relative_url }}">按标签</a>
+              <a href="{{ '/knowledge-base/domains/' | relative_url }}">领域地图</a>
+              <a href="{{ '/knowledge-base/themes/' | relative_url }}">主题深度</a>
+              <a href="{{ '/encyclopedia/map.html' | relative_url }}">知识图谱</a>
             </div>
           </details>
           <a href="{{ '/topic-research/' | relative_url }}">主题研究</a>
           <a href="{{ '/figures/' | relative_url }}">人物志</a>
-          <a href="{{ '/tools-agent/' | relative_url }}">工具 & Agent</a>
+          <a href="{{ '/tools-agent/' | relative_url }}">Agent & Tools</a>
           <a href="{{ '/search/' | relative_url }}">搜索</a>
         </nav>
       </div>
     </header>
     <main class="wrap content">
-      {% unless page.url == "/" %}
-      <div class="entry-actions">
-        <button class="agent-copy-button" type="button" data-copy-agent>
-          复制链接，让你的 Agent 学习这条知识
-        </button>
-      </div>
-      {% endunless %}
-      {{ content }}
-      {% unless page.url == "/" %}
-      <section class="entry-graph">
-        <div class="eyebrow">Knowledge Graph</div>
-        <h2>条目关系图</h2>
-        <p class="meta">自动根据当前页面的上下游关系生成 Mermaid 图。</p>
-        <div id="knowledge-graph" data-graph-target></div>
-      </section>
-      {% endunless %}
+      <aside id="toc-container" class="toc-container"></aside>
+      <article class="main-article">
+        {% unless page.url == "/" %}
+        <div class="entry-actions">
+          <button class="agent-copy-button" type="button" data-copy-agent>
+            复制链接，让你的 Agent 学习这条知识
+          </button>
+        </div>
+        {% endunless %}
+        {{ content }}
+        {% unless page.url == "/" %}
+        <section class="entry-graph">
+          <div class="eyebrow">Contextual Relationship</div>
+          <h2>知识上下游关系</h2>
+          <div id="knowledge-graph" data-graph-target></div>
+        </section>
+        {% endunless %}
+      </article>
     </main>
     <footer class="site-footer">
       <div class="wrap">
         <div class="footer-grid">
           <div>
             <strong>uWisdom</strong>
-            <p>工程化个人知识操作系统</p>
+            <p>基于驾驭工程可读性原则的个人知识操作系统</p>
           </div>
           <div>
-            <p><a href="https://github.com/zhubao315/uWisdom">GitHub 仓库</a></p>
-            <p><a href="{{ '/search/' | relative_url }}">知识搜索</a></p>
+            <strong>快速访问</strong>
+            <p><a href="{{ '/search/' | relative_url }}">模糊检索</a></p>
+            <p><a href="{{ '/encyclopedia/map.html' | relative_url }}">全局图谱</a></p>
           </div>
           <div>
-            <p><a href="{{ '/encyclopedia/' | relative_url }}">知识百科</a></p>
+            <strong>项目链接</strong>
+            <p><a href="https://github.com/zhubao315/uWisdom">GitHub Source</a></p>
             <p><a href="{{ '/today/' | relative_url }}">今日精华</a></p>
           </div>
         </div>
