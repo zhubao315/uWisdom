@@ -2,6 +2,7 @@
 """Validate content integrity: check required front matter fields and find broken links."""
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
