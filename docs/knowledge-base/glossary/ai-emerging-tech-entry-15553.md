@@ -1,5 +1,6 @@
 ---
 id: "kw-ai-emerging-tech-15553"
+summary: "关于 Ai Emerging Tech Entry 15553 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "Ai Emerging Tech Entry 15553"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[ai-emerging-tech-index]]
+- [[encyclopedia/index|知识百科总览]]

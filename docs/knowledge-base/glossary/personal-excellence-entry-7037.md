@@ -1,5 +1,6 @@
 ---
 id: "kw-personal-excellence-07037"
+summary: "关于 Personal Excellence Entry 7037 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "Personal Excellence Entry 7037"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[personal-excellence-index]]
+- [[encyclopedia/index|知识百科总览]]

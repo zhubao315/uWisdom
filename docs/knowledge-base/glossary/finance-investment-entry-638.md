@@ -1,5 +1,6 @@
 ---
 id: "kw-finance-investment-00638"
+summary: "关于 Finance Investment Entry 638 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "Finance Investment Entry 638"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[finance-investment-index]]
+- [[encyclopedia/index|知识百科总览]]

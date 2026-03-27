@@ -1,5 +1,6 @@
 ---
 id: "kw-professional-growth-06508"
+summary: "关于 Professional Growth Entry 6508 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "Professional Growth Entry 6508"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[professional-growth-index]]
+- [[encyclopedia/index|知识百科总览]]

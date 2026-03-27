@@ -1,5 +1,6 @@
 ---
 id: "kw-culture-wisdom-08223"
+summary: "关于 Culture Wisdom Entry 8223 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "Culture Wisdom Entry 8223"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[culture-wisdom-index]]
+- [[encyclopedia/index|知识百科总览]]

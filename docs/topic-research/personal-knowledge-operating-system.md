@@ -49,7 +49,7 @@ graph LR
 - **可信度评分**：标识该知识是“初步想法”还是“经过验证的真理”。
 
 ### 4.2 双向链接与语义图谱
-不仅支持 `[[WikiLink]]`，还支持语义向量（Embedding）。
+不仅支持 `WikiLink`，还支持语义向量（Embedding）。
 - **结构化关联**：通过 `field` 和 `tags` 构建横向连接。
 - **语义搜索**：允许 Agent 在理解用户意图后，自动聚合跨领域的知识条目。
 
@@ -77,6 +77,6 @@ PKOS 的终局是实现**个人的 Agent 化**。
 ---
 
 ## 关联研究
-- [[ai-native-enterprise|AI 原生企业重构研究]]
-- [[personal-digital-os|数字生活与个人 OS 实践]]
-- [[knowledge-engineering|驾驭工程：知识可读性准则]]
+- [[topic-research/ai-native-enterprise|AI 原生企业重构研究]]
+- [[knowledge-base/themes/personal-digital-os|数字生活与个人 OS 实践]]
+- [[knowledge-base/glossary/knowledge-engineering|驾驭工程：知识可读性准则]]

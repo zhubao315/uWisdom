@@ -68,6 +68,6 @@ graph TD
 ---
 
 ## 关联研究
-- [[market-cycle-observation|市场周期观察体系]]
-- [[financial-markets|金融市场领域地图]]
-- [[technology-investment|技术投资深度研究]]
+- [[knowledge-base/themes/market-cycle-observation|市场周期观察体系]]
+- [[knowledge-base/domains/financial-markets|金融市场领域地图]]
+- [[knowledge-base/domains/technology-investment|技术投资深度研究]]

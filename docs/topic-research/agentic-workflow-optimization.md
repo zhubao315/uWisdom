@@ -81,6 +81,6 @@ sequenceDiagram
 ---
 
 ## 关联研究
-- [[ai-native-enterprise|AI 原生企业重构研究]]
-- [[llm-application-architecture|LLM 应用架构体系]]
-- [[agent-workflow-design|Agent 工作流设计实践]]
+- [[topic-research/ai-native-enterprise|AI 原生企业重构研究]]
+- [[knowledge-base/themes/llm-application-architecture|LLM 应用架构体系]]
+- [[knowledge-base/themes/agent-workflow-design|Agent 工作流设计实践]]

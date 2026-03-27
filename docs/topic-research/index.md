@@ -39,15 +39,15 @@ permalink: /topic-research/
 ## 所有课题列表
 
 - **技术与智能**
-  - [[ai-native-enterprise|AI 原生企业能力重构]]
-  - [[agentic-workflow-optimization|Agentic Workflow 任务编排]]
-  - [[openclaw-agent-ecosystem|OpenClaw Agent 生态研究]]
+  - [[topic-research/ai-native-enterprise|AI 原生企业能力重构]]
+  - [[topic-research/agentic-workflow-optimization|Agentic Workflow 任务编排]]
+  - [[topic-research/openclaw-agent-ecosystem|OpenClaw Agent 生态研究]]
 - **认知与效率**
-  - [[personal-knowledge-operating-system|个人知识操作系统 (PKOS)]]
-  - [[city-culture-and-modern-life|城市文化与现代生活范式]]
+  - [[topic-research/personal-knowledge-operating-system|个人知识操作系统 (PKOS)]]
+  - [[topic-research/city-culture-and-modern-life|城市文化与现代生活范式]]
 - **战略与规划**
-  - [[fifteenth-five-year-plan|十五五规划与未来机会点研判]]
-  - [[global-macro-cycle-analysis|全球宏观周期与资产配置]]
+  - [[topic-research/fifteenth-five-year-plan|十五五规划与未来机会点研判]]
+  - [[topic-research/global-macro-cycle-analysis|全球宏观周期与资产配置]]
 
 ## 研究方法论
 

@@ -16,13 +16,13 @@ permalink: /today/
 - 标签：macroeconomics, investment-strategy, cycle-analysis, asset-allocation
 - 摘要：研究长债务周期、技术革命与地缘政治对全球资产配置的影响逻辑
 
-## [个人知识操作系统：从碎片记录到智慧涌现的重构](/topic-research/personal-knowledge-operating-system.html)
+## [主题研究](/topic-research)
 
 - 分类：主题研究
 - 领域：主题研究
 - 更新：2026-03-27
-- 标签：pkm, pkos, second-brain, ai-agent, structured-knowledge
-- 摘要：探讨如何构建“人机双向友好”的个人知识底座，实现认知资产化与 Agent 化调用
+- 标签：research
+- 摘要：锚定核心方向，通过结构化思维与跨学科整合，深耕体系化领域研究
 
 ## [风土地图](/knowledge-base/themes/terroir-map.html)
 

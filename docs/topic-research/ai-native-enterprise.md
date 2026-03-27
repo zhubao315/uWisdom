@@ -78,6 +78,6 @@ AI 原生化将产生显著的“机会红利”：
 ---
 
 ## 关联研究
-- [[personal-knowledge-operating-system|个人知识操作系统]]
-- [[openclaw-agent-ecosystem|OpenClaw Agent 生态研究]]
-- [[ai-expert|人工智能专家领域]]
+- [[topic-research/personal-knowledge-operating-system|个人知识操作系统]]
+- [[topic-research/openclaw-agent-ecosystem|OpenClaw Agent 生态研究]]
+- [[knowledge-base/domains/ai-expert|人工智能专家领域]]

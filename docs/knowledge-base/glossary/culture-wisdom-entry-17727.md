@@ -1,5 +1,6 @@
 ---
 id: "kw-culture-wisdom-17727"
+summary: "关于 Culture Wisdom Entry 17727 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "Culture Wisdom Entry 17727"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[culture-wisdom-index]]
+- [[encyclopedia/index|知识百科总览]]

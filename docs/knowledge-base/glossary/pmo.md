@@ -1,5 +1,6 @@
 ---
 id: "kw-professional-growth-00004"
+summary: "关于 PMO 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "PMO"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[professional-growth-index]]
+- [[encyclopedia/index|知识百科总览]]

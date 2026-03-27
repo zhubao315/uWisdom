@@ -1,5 +1,6 @@
 ---
 id: "kw-professional-growth-14770"
+summary: "关于 Professional Growth Entry 14770 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "Professional Growth Entry 14770"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[professional-growth-index]]
+- [[encyclopedia/index|知识百科总览]]

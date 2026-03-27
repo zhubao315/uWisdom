@@ -12,6 +12,7 @@ DOMAINS = [
 TEMPLATE = """---
 id: "kw-{field}-{seq:05d}"
 title: "{title}"
+summary: "{summary}"
 type: "{type}"
 identity: "architect"
 field: "{field}"
@@ -53,7 +54,7 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[{field}-index]]
+- [[encyclopedia/index|知识百科总览]]
 """
 
 TOPICS = {
@@ -111,6 +112,7 @@ def generate_entries(count=20000):
             field = domain
             tags = [domain.split('-')[0], "wisdom"]
             entry_type = "glossary"
+            summary = f"关于 {title} 的原子化知识条目，涵盖核心定义与应用场景。"
             definition = f"关于 {title} 的专业定义与领域沉淀。"
             
             file_name = f"{title.lower().replace(' ', '-')}.md"
@@ -125,6 +127,7 @@ def generate_entries(count=20000):
                 field=field,
                 seq=seq,
                 title=title,
+                summary=summary,
                 type=entry_type,
                 tags=str(tags),
                 date=today,

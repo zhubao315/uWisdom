@@ -1,5 +1,6 @@
 ---
 id: "kw-mental-models-00198"
+summary: "关于 Mental Models Entry 198 的原子化知识条目，涵盖核心定义与应用场景。"
 title: "Mental Models Entry 198"
 type: "glossary"
 identity: "architect"
@@ -42,4 +43,4 @@ non_applicability: []
 
 ## 5. 关联参考
 
-- [[mental-models-index]]
+- [[encyclopedia/index|知识百科总览]]
