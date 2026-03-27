@@ -5,60 +5,57 @@
       "icon": "🏛️",
       "items": [
         {
-          "title": "埃隆·马斯克",
-          "url": "/figures/elon-musk.html",
-          "summary": "同时运营多家公司的科技企业家，第一性原理与极致执行力的代表",
-          "tags": [
-            "figure",
-            "architecture",
-            "innovation"
-          ]
-        },
-        {
-          "title": "莱纳斯",
-          "url": "/figures/linus-torvalds.html",
-          "summary": "Linux 与 Git 的创造者，开源工程与系统架构的重要代表人物",
-          "tags": [
-            "figure",
-            "architecture",
-            "open-source"
-          ]
-        },
-        {
-          "title": "王坚",
-          "url": "/figures/wang-jian.html",
-          "summary": "中国云计算基础设施的重要推动者，适合作为架构师的产业智囊",
-          "tags": [
-            "figure",
-            "architecture",
-            "cloud"
-          ]
-        },
-        {
-          "title": "∑ 架构师",
-          "url": "/identities/architect.html",
-          "summary": "在复杂性中建立秩序，在不确定性中做取舍，连接战略与工程实现",
-          "tags": [
-            "architecture",
-            "ai"
-          ]
-        },
-        {
-          "title": "人工智能专家",
-          "url": "/knowledge-base/domains/ai-expert.html",
-          "summary": "围绕 AIGC、LLM、Agent、RAG 与 AI 应用落地进行研究和实践",
+          "title": "Ai Emerging Tech Entry 6109",
+          "url": "/knowledge-base/glossary/ai-emerging-tech-entry-6109.html",
+          "summary": "关于 Ai Emerging Tech Entry 6109 的原子化知识条目，涵盖核心定义与应用场景。",
           "tags": [
             "ai",
-            "agent",
-            "llm"
+            "wisdom"
           ]
         },
         {
-          "title": "云计算与云原生",
-          "url": "/knowledge-base/domains/cloud-native.html",
-          "summary": "围绕容器、Kubernetes、平台工程与现代交付体系进行架构实践",
+          "title": "Ai Emerging Tech Entry 12415",
+          "url": "/knowledge-base/glossary/ai-emerging-tech-entry-12415.html",
+          "summary": "关于 Ai Emerging Tech Entry 12415 的原子化知识条目，涵盖核心定义与应用场景。",
           "tags": [
-            "architecture"
+            "ai",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Ai Emerging Tech Entry 10501",
+          "url": "/knowledge-base/glossary/ai-emerging-tech-entry-10501.html",
+          "summary": "关于 Ai Emerging Tech Entry 10501 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "ai",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Ai Emerging Tech Entry 8371",
+          "url": "/knowledge-base/glossary/ai-emerging-tech-entry-8371.html",
+          "summary": "关于 Ai Emerging Tech Entry 8371 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "ai",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Ai Emerging Tech Entry 16033",
+          "url": "/knowledge-base/glossary/ai-emerging-tech-entry-16033.html",
+          "summary": "关于 Ai Emerging Tech Entry 16033 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "ai",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Ai Emerging Tech Entry 1537",
+          "url": "/knowledge-base/glossary/ai-emerging-tech-entry-1537.html",
+          "summary": "关于 Ai Emerging Tech Entry 1537 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "ai",
+            "wisdom"
           ]
         }
       ]
@@ -68,58 +65,57 @@
       "icon": "📈",
       "items": [
         {
-          "title": "巴菲特",
-          "url": "/figures/buffett.html",
-          "summary": "价值投资的实践大师，伯克希尔·哈撒韦的缔造者",
+          "title": "Finance Investment Entry 14906",
+          "url": "/knowledge-base/glossary/finance-investment-entry-14906.html",
+          "summary": "关于 Finance Investment Entry 14906 的原子化知识条目，涵盖核心定义与应用场景。",
           "tags": [
-            "figure",
-            "investment"
-          ]
-        },
-        {
-          "title": "查理·芒格",
-          "url": "/figures/charlie-munger.html",
-          "summary": "伯克希尔重要合伙人，多元思维模型与长期主义的代表人物",
-          "tags": [
-            "figure",
-            "investment",
-            "thinking"
-          ]
-        },
-        {
-          "title": "沈南鹏",
-          "url": "/figures/shen-nanpeng.html",
-          "summary": "兼具创业经验与投资判断的产业型投资代表人物",
-          "tags": [
-            "figure",
-            "investment",
-            "entrepreneurship"
-          ]
-        },
-        {
-          "title": "∑ 投资人",
-          "url": "/identities/investor.html",
-          "summary": "用资本为认知投票，在不确定性中保持判断力与长期主义",
-          "tags": [
-            "investment"
-          ]
-        },
-        {
-          "title": "商品交易",
-          "url": "/knowledge-base/domains/commodity-trading.html",
-          "summary": "关注能源、金属、农产品等商品市场的供需、周期与交易机会",
-          "tags": [
-            "investment"
-          ]
-        },
-        {
-          "title": "金融市场",
-          "url": "/knowledge-base/domains/financial-markets.html",
-          "summary": "研究股票、基金、指数及其背后的宏观环境、产业趋势与资金行为",
-          "tags": [
-            "investment",
             "finance",
-            "stocks"
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Finance Investment Entry 13052",
+          "url": "/knowledge-base/glossary/finance-investment-entry-13052.html",
+          "summary": "关于 Finance Investment Entry 13052 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "finance",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Finance Investment Entry 8270",
+          "url": "/knowledge-base/glossary/finance-investment-entry-8270.html",
+          "summary": "关于 Finance Investment Entry 8270 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "finance",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Finance Investment Entry 12230",
+          "url": "/knowledge-base/glossary/finance-investment-entry-12230.html",
+          "summary": "关于 Finance Investment Entry 12230 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "finance",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Finance Investment Entry 6944",
+          "url": "/knowledge-base/glossary/finance-investment-entry-6944.html",
+          "summary": "关于 Finance Investment Entry 6944 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "finance",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Finance Investment Entry 8360",
+          "url": "/knowledge-base/glossary/finance-investment-entry-8360.html",
+          "summary": "关于 Finance Investment Entry 8360 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "finance",
+            "wisdom"
           ]
         }
       ]
@@ -129,60 +125,57 @@
       "icon": "📚",
       "items": [
         {
-          "title": "安迪·马图恰克",
-          "url": "/figures/andy-matuschak.html",
-          "summary": "常青笔记发明人，数字花园先驱",
-          "tags": [
-            "figure",
-            "learning",
-            "digital-life"
-          ]
-        },
-        {
-          "title": "蔡志忠",
-          "url": "/figures/cai-zhizhong.html",
-          "summary": "以强大自信和持续创作推动国学传承与普及表达的文化创作者",
-          "tags": [
-            "figure",
-            "culture",
-            "confidence"
-          ]
-        },
-        {
-          "title": "冯唐",
-          "url": "/figures/feng-tang.html",
-          "summary": "游走于商业、医学和文学领域的跨界才子",
-          "tags": [
-            "figure",
-            "culture",
-            "lifestyle"
-          ]
-        },
-        {
-          "title": "人物志",
-          "url": "/figures",
-          "summary": "聚焦关键人物、思想家与书籍作者",
+          "title": "Culture Wisdom Entry 3975",
+          "url": "/knowledge-base/glossary/culture-wisdom-entry-3975.html",
+          "summary": "关于 Culture Wisdom Entry 3975 的原子化知识条目，涵盖核心定义与应用场景。",
           "tags": [
             "culture",
-            "figure"
+            "wisdom"
           ]
         },
         {
-          "title": "卢曼",
-          "url": "/figures/luhmann.html",
-          "summary": "卡片笔记写作法（Zettelkasten）的发明者，德国社会学家",
+          "title": "Culture Wisdom Entry 11829",
+          "url": "/knowledge-base/glossary/culture-wisdom-entry-11829.html",
+          "summary": "关于 Culture Wisdom Entry 11829 的原子化知识条目，涵盖核心定义与应用场景。",
           "tags": [
-            "figure",
-            "learning"
+            "culture",
+            "wisdom"
           ]
         },
         {
-          "title": "曼德尔施塔姆",
-          "url": "/figures/mandelstam.html",
-          "summary": "俄罗斯白银时代诗人，\"诗中的诗\"的作者",
+          "title": "Culture Wisdom Entry 4977",
+          "url": "/knowledge-base/glossary/culture-wisdom-entry-4977.html",
+          "summary": "关于 Culture Wisdom Entry 4977 的原子化知识条目，涵盖核心定义与应用场景。",
           "tags": [
-            "figure",
-            "culture"
+            "culture",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Culture Wisdom Entry 19245",
+          "url": "/knowledge-base/glossary/culture-wisdom-entry-19245.html",
+          "summary": "关于 Culture Wisdom Entry 19245 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "culture",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Culture Wisdom Entry 10605",
+          "url": "/knowledge-base/glossary/culture-wisdom-entry-10605.html",
+          "summary": "关于 Culture Wisdom Entry 10605 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "culture",
+            "wisdom"
+          ]
+        },
+        {
+          "title": "Culture Wisdom Entry 10563",
+          "url": "/knowledge-base/glossary/culture-wisdom-entry-10563.html",
+          "summary": "关于 Culture Wisdom Entry 10563 的原子化知识条目，涵盖核心定义与应用场景。",
+          "tags": [
+            "culture",
+            "wisdom"
           ]
         }
       ]
@@ -191,25 +184,6 @@
       "title": "生活艺术家",
       "icon": "🎨",
       "items": [
-        {
-          "title": "李小龙",
-          "url": "/figures/bruce-lee.html",
-          "summary": "强调自我雕琢、身心统一与持续突破的生活艺术家代表",
-          "tags": [
-            "figure",
-            "discipline",
-            "lifestyle"
-          ]
-        },
-        {
-          "title": "陈传多",
-          "url": "/figures/chuando-tan.html",
-          "summary": "新加坡摄影师与\"冻龄男神\"，健康生活方式的倡导者",
-          "tags": [
-            "figure",
-            "lifestyle"
-          ]
-        },
         {
           "title": "彭于晏",
           "url": "/figures/eddie-peng.html",
@@ -221,32 +195,208 @@
           ]
         },
         {
-          "title": "村上春树",
-          "url": "/figures/haruki-murakami.html",
-          "summary": "将文学创作、跑步、音乐与定量工作结合起来的长期主义写作者",
+          "title": "数字人生",
+          "url": "/knowledge-base/domains/digital-life.html",
+          "summary": "通过数字工具、系统与内容资产管理，构建个人数字操作系统",
           "tags": [
-            "figure",
-            "writing",
-            "lifestyle"
-          ]
-        },
-        {
-          "title": "蒋勋",
-          "url": "/figures/jiang-xun.html",
-          "summary": "以美学、文学与生活修养串联日常感知的当代讲述者",
-          "tags": [
-            "figure",
             "lifestyle",
-            "aesthetics"
+            "digital-life"
           ]
         },
         {
-          "title": "∑ 生活艺术家",
-          "url": "/identities/life-artist.html",
-          "summary": "主动设计日常，让生活具有审美、秩序、节奏和生命力",
+          "title": "健身跑者",
+          "url": "/knowledge-base/domains/fitness-running.html",
+          "summary": "通过跑步、力量训练与体能管理维持长期健康与纪律",
           "tags": [
             "lifestyle"
           ]
+        },
+        {
+          "title": "跑步周期训练",
+          "url": "/knowledge-base/themes/running-periodization.html",
+          "summary": "系统化的跑步周期训练计划与执行方法",
+          "tags": [
+            "lifestyle"
+          ]
+        },
+        {
+          "title": "李小龙",
+          "url": "/figures/bruce-lee.html",
+          "summary": "强调自我雕琢、身心统一与持续突破的生活艺术家代表",
+          "tags": [
+            "figure",
+            "discipline",
+            "lifestyle"
+          ]
+        },
+        {
+          "title": "视觉叙事",
+          "url": "/knowledge-base/themes/visual-storytelling.html",
+          "summary": "用影像讲故事的能力训练与方法论",
+          "tags": [
+            "lifestyle",
+            "photography"
+          ]
+        }
+      ]
+    }
+  },
+  "domains": {
+    "tech": {
+      "title": "科技与AI",
+      "icon": "🤖",
+      "domains": [
+        "ai-expert",
+        "cloud-native",
+        "full-stack-engineer",
+        "open-source-enthusiast",
+        "product-manager"
+      ],
+      "items": [
+        {
+          "title": "人工智能专家",
+          "url": "/knowledge-base/domains/ai-expert.html",
+          "summary": "围绕 AIGC、LLM、Agent、RAG 与 AI 应用落地进行研究和实践",
+          "tags": []
+        },
+        {
+          "title": "云计算与云原生",
+          "url": "/knowledge-base/domains/cloud-native.html",
+          "summary": "围绕容器、Kubernetes、平台工程与现代交付体系进行架构实践",
+          "tags": []
+        },
+        {
+          "title": "全栈工程师",
+          "url": "/knowledge-base/domains/full-stack-engineer.html",
+          "summary": "具备前后端、数据库与部署全链路能力的工程实践者",
+          "tags": []
+        },
+        {
+          "title": "开源发烧友",
+          "url": "/knowledge-base/domains/open-source-enthusiast.html",
+          "summary": "理解开源生态、标准与协作机制，用开源思维构建系统",
+          "tags": []
+        },
+        {
+          "title": "产品经理",
+          "url": "/knowledge-base/domains/product-manager.html",
+          "summary": "连接用户需求、技术实现与商业价值的产品设计者",
+          "tags": []
+        }
+      ]
+    },
+    "finance": {
+      "title": "金融与投资",
+      "icon": "💰",
+      "domains": [
+        "financial-markets",
+        "commodity-trading",
+        "technology-investment"
+      ],
+      "items": [
+        {
+          "title": "商品交易",
+          "url": "/knowledge-base/domains/commodity-trading.html",
+          "summary": "关注能源、金属、农产品等商品市场的供需、周期与交易机会",
+          "tags": []
+        },
+        {
+          "title": "金融市场",
+          "url": "/knowledge-base/domains/financial-markets.html",
+          "summary": "研究股票、基金、指数及其背后的宏观环境、产业趋势与资金行为",
+          "tags": []
+        },
+        {
+          "title": "技术投资",
+          "url": "/knowledge-base/domains/technology-investment.html",
+          "summary": "聚焦技术创新、产业变迁与新技术商业化路径的投资研究",
+          "tags": []
+        }
+      ]
+    },
+    "culture": {
+      "title": "文化与学习",
+      "icon": "📖",
+      "domains": [
+        "chinese-classics",
+        "beijing-culture",
+        "psychology",
+        "ip-consultant"
+      ],
+      "items": [
+        {
+          "title": "北京文化使者",
+          "url": "/knowledge-base/domains/beijing-culture.html",
+          "summary": "围绕北京历史、人文、城市空间与当代生活进行文化探索",
+          "tags": []
+        },
+        {
+          "title": "国学大师",
+          "url": "/knowledge-base/domains/chinese-classics.html",
+          "summary": "围绕中国传统经典、思想源流与修身方法的长期学习",
+          "tags": []
+        },
+        {
+          "title": "知识产权顾问",
+          "url": "/knowledge-base/domains/ip-consultant.html",
+          "summary": "围绕软件成果保护、专利策略与开源合规提供专业判断",
+          "tags": []
+        },
+        {
+          "title": "心理学专家",
+          "url": "/knowledge-base/domains/psychology.html",
+          "summary": "研究认知、情绪、行为与成长机制，提升对人和自我的理解",
+          "tags": []
+        }
+      ]
+    },
+    "lifestyle": {
+      "title": "生活与艺术",
+      "icon": "🎨",
+      "domains": [
+        "digital-life",
+        "outdoor-adventure",
+        "fitness-running",
+        "wine",
+        "photography",
+        "gaming"
+      ],
+      "items": [
+        {
+          "title": "数字人生",
+          "url": "/knowledge-base/domains/digital-life.html",
+          "summary": "通过数字工具、系统与内容资产管理，构建个人数字操作系统",
+          "tags": []
+        },
+        {
+          "title": "健身跑者",
+          "url": "/knowledge-base/domains/fitness-running.html",
+          "summary": "通过跑步、力量训练与体能管理维持长期健康与纪律",
+          "tags": []
+        },
+        {
+          "title": "游戏王者",
+          "url": "/knowledge-base/domains/gaming.html",
+          "summary": "围绕游戏策略、机制理解与竞技成长的复合型兴趣领域",
+          "tags": []
+        },
+        {
+          "title": "户外大神",
+          "url": "/knowledge-base/domains/outdoor-adventure.html",
+          "summary": "围绕徒步、露营、自然探索与户外技能的生活实践",
+          "tags": []
+        },
+        {
+          "title": "摄影家",
+          "url": "/knowledge-base/domains/photography.html",
+          "summary": "通过影像表达观察、审美、故事与个人视角",
+          "tags": []
+        },
+        {
+          "title": "葡萄酒大师",
+          "url": "/knowledge-base/domains/wine.html",
+          "summary": "围绕葡萄酒文化、品鉴方法、风土知识与社交表达的审美学习",
+          "tags": []
         }
       ]
     }

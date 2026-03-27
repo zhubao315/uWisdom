@@ -55,24 +55,24 @@ summary: uWisdom 个人知识操作系统首页
   </article>
 </div>
 
-## 四大身份 · 随机精选
+## 四大领域 · 随机精选
 
-<div class="identity-grid" id="identity-grid">
-  <div class="identity-section" data-identity="architect">
-    <h3>🏛️ 架构师</h3>
-    <ul class="entry-list" id="architect-entries"></ul>
+<div class="domain-grid" id="domain-grid">
+  <div class="domain-section" data-domain="tech">
+    <h3>🤖 科技与AI</h3>
+    <ul class="entry-list" id="tech-entries"></ul>
   </div>
-  <div class="identity-section" data-identity="investor">
-    <h3>📈 投资人</h3>
-    <ul class="entry-list" id="investor-entries"></ul>
+  <div class="domain-section" data-domain="finance">
+    <h3>💰 金融与投资</h3>
+    <ul class="entry-list" id="finance-entries"></ul>
   </div>
-  <div class="identity-section" data-identity="lifelong-learner">
-    <h3>📚 终身学习者</h3>
-    <ul class="entry-list" id="lifelong-learner-entries"></ul>
+  <div class="domain-section" data-domain="culture">
+    <h3>📖 文化与学习</h3>
+    <ul class="entry-list" id="culture-entries"></ul>
   </div>
-  <div class="identity-section" data-identity="life-artist">
-    <h3>🎨 生活艺术家</h3>
-    <ul class="entry-list" id="life-artist-entries"></ul>
+  <div class="domain-section" data-domain="lifestyle">
+    <h3>🎨 生活与艺术</h3>
+    <ul class="entry-list" id="lifestyle-entries"></ul>
   </div>
 </div>
 
@@ -80,8 +80,8 @@ summary: uWisdom 个人知识操作系统首页
 fetch('{{ "/assets/homepage-featured.json" | relative_url }}')
   .then(r => r.json())
   .then(data => {
-    const identities = data.identities;
-    for (const [key, info] of Object.entries(identities)) {
+    const domains = data.domains;
+    for (const [key, info] of Object.entries(domains)) {
       const ul = document.getElementById(`${key}-entries`);
       if (!ul) continue;
       for (const item of info.items) {
@@ -94,22 +94,22 @@ fetch('{{ "/assets/homepage-featured.json" | relative_url }}')
 </script>
 
 <style>
-.identity-grid {
+.domain-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin: 2rem 0;
 }
-.identity-section {
+.domain-section {
   background: #f8fafc;
   border-radius: 8px;
   padding: 1.25rem;
   border-left: 4px solid #133D72;
 }
-.identity-section[data-identity="investor"] { border-left-color: #059669; }
-.identity-section[data-identity="lifelong-learner"] { border-left-color: #7C3AED; }
-.identity-section[data-identity="life-artist"] { border-left-color: #DC2626; }
-.identity-section h3 { margin-top: 0; margin-bottom: 1rem; }
+.domain-section[data-domain="finance"] { border-left-color: #059669; }
+.domain-section[data-domain="culture"] { border-left-color: #7C3AED; }
+.domain-section[data-domain="lifestyle"] { border-left-color: #DC2626; }
+.domain-section h3 { margin-top: 0; margin-bottom: 1rem; }
 .entry-list { list-style: none; padding: 0; margin: 0; }
 .entry-list li {
   padding: 0.5rem 0;
@@ -120,7 +120,7 @@ fetch('{{ "/assets/homepage-featured.json" | relative_url }}')
 .entry-list a:hover { color: #133D72; }
 .entry-list .summary { font-size: 0.85rem; color: #64748b; }
 @media (max-width: 768px) {
-  .identity-grid { grid-template-columns: 1fr; }
+  .domain-grid { grid-template-columns: 1fr; }
 }
 </style>
 

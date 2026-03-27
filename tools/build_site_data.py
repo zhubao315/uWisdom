@@ -503,9 +503,46 @@ def main():
         else:
             identity_entries[identity]["items"] = random.sample(candidates, 6)
     
+    # Build homepage featured entries by domain
+    domain_groups = {
+        "tech": {"title": "科技与AI", "icon": "🤖", "domains": ["ai-expert", "cloud-native", "full-stack-engineer", "open-source-enthusiast", "product-manager"], "items": []},
+        "finance": {"title": "金融与投资", "icon": "💰", "domains": ["financial-markets", "commodity-trading", "technology-investment"], "items": []},
+        "culture": {"title": "文化与学习", "icon": "📖", "domains": ["chinese-classics", "beijing-culture", "psychology", "ip-consultant"], "items": []},
+        "lifestyle": {"title": "生活与艺术", "icon": "🎨", "domains": ["digital-life", "outdoor-adventure", "fitness-running", "wine", "photography", "gaming"], "items": []},
+    }
+    
+    domain_candidates = defaultdict(list)
+    for page in pages:
+        # Extract domain ID from path for domain pages
+        page_domain = ""
+        path = page.get("path", "")
+        if "knowledge-base/domains/" in path:
+            page_domain = path.split("knowledge-base/domains/")[1].replace(".md", "")
+        elif page.get("domain"):
+            # For non-domain pages, check if their domain matches our groups
+            page_domain = page["domain"]
+        
+        for group_key, group_info in domain_groups.items():
+            if page_domain in group_info["domains"]:
+                domain_candidates[group_key].append({
+                    "title": page["title"],
+                    "url": page["url"],
+                    "summary": page["summary"][:60] + "..." if len(page["summary"]) > 60 else page["summary"],
+                    "tags": page["tags"][:3] if page["tags"] else []
+                })
+    
+    # Randomly select up to 6 entries per domain group
+    for group_key in domain_groups:
+        candidates = domain_candidates.get(group_key, [])
+        if len(candidates) <= 6:
+            domain_groups[group_key]["items"] = candidates
+        else:
+            domain_groups[group_key]["items"] = random.sample(candidates, 6)
+    
     # Save for JavaScript to use
     homepage_data = {
         "identities": identity_entries,
+        "domains": domain_groups,
         "timestamp": date.today().isoformat()
     }
     
