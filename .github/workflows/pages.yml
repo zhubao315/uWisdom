@@ -46,7 +46,10 @@ jobs:
           destination: ./_site
 
       - name: Copy raw glossary data (Bypass Jekyll rendering)
-        run: cp -r docs/knowledge-base/glossary _site/knowledge-base/glossary
+        run: |
+          sudo mkdir -p _site/knowledge-base/glossary
+          sudo cp -r docs/knowledge-base/glossary/. _site/knowledge-base/glossary/
+          sudo chmod -R 755 _site/knowledge-base/glossary
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
