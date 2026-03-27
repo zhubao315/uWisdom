@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import json
+import random
 import re
 import subprocess
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
+
+random.seed(42)  # Reproducible random selection
 
 try:
     import yaml
@@ -480,17 +483,25 @@ def main():
         
         return None
     
-    # Get entries by identity
+    # Get entries by identity (randomly select 6 per identity)
+    identity_candidates = defaultdict(list)
     for page in pages:
         identity = infer_identity(page)
         if identity and identity in identity_entries:
-            if len(identity_entries[identity]["items"]) < 6:
-                identity_entries[identity]["items"].append({
-                    "title": page["title"],
-                    "url": page["url"],
-                    "summary": page["summary"][:60] + "..." if len(page["summary"]) > 60 else page["summary"],
-                    "tags": page["tags"][:3] if page["tags"] else []
-                })
+            identity_candidates[identity].append({
+                "title": page["title"],
+                "url": page["url"],
+                "summary": page["summary"][:60] + "..." if len(page["summary"]) > 60 else page["summary"],
+                "tags": page["tags"][:3] if page["tags"] else []
+            })
+    
+    # Randomly select up to 6 entries per identity
+    for identity in identity_entries:
+        candidates = identity_candidates.get(identity, [])
+        if len(candidates) <= 6:
+            identity_entries[identity]["items"] = candidates
+        else:
+            identity_entries[identity]["items"] = random.sample(candidates, 6)
     
     # Save for JavaScript to use
     homepage_data = {

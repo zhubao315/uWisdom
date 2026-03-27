@@ -55,6 +55,75 @@ summary: uWisdom 个人知识操作系统首页
   </article>
 </div>
 
+## 四大身份 · 随机精选
+
+<div class="identity-grid" id="identity-grid">
+  <div class="identity-section" data-identity="architect">
+    <h3>🏛️ 架构师</h3>
+    <ul class="entry-list" id="architect-entries"></ul>
+  </div>
+  <div class="identity-section" data-identity="investor">
+    <h3>📈 投资人</h3>
+    <ul class="entry-list" id="investor-entries"></ul>
+  </div>
+  <div class="identity-section" data-identity="lifelong-learner">
+    <h3>📚 终身学习者</h3>
+    <ul class="entry-list" id="lifelong-learner-entries"></ul>
+  </div>
+  <div class="identity-section" data-identity="life-artist">
+    <h3>🎨 生活艺术家</h3>
+    <ul class="entry-list" id="life-artist-entries"></ul>
+  </div>
+</div>
+
+<script>
+fetch('{{ "/assets/homepage-featured.json" | relative_url }}')
+  .then(r => r.json())
+  .then(data => {
+    const identities = data.identities;
+    for (const [key, info] of Object.entries(identities)) {
+      const ul = document.getElementById(`${key}-entries`);
+      if (!ul) continue;
+      for (const item of info.items) {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${item.url}"><strong>${item.title}</strong><br><span class="summary">${item.summary}</span></a>`;
+        ul.appendChild(li);
+      }
+    }
+  });
+</script>
+
+<style>
+.identity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.identity-section {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1.25rem;
+  border-left: 4px solid #133D72;
+}
+.identity-section[data-identity="investor"] { border-left-color: #059669; }
+.identity-section[data-identity="lifelong-learner"] { border-left-color: #7C3AED; }
+.identity-section[data-identity="life-artist"] { border-left-color: #DC2626; }
+.identity-section h3 { margin-top: 0; margin-bottom: 1rem; }
+.entry-list { list-style: none; padding: 0; margin: 0; }
+.entry-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+.entry-list li:last-child { border-bottom: none; }
+.entry-list a { color: #334155; text-decoration: none; }
+.entry-list a:hover { color: #133D72; }
+.entry-list .summary { font-size: 0.85rem; color: #64748b; }
+@media (max-width: 768px) {
+  .identity-grid { grid-template-columns: 1fr; }
+}
+</style>
+
 ## 当前强化方向
 
 - **导航重构**：四大模块为核心，优化知识流转路径
