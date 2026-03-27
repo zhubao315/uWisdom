@@ -338,6 +338,21 @@ def main():
     search_payload = {"entries": search_entries, "filters": filters}
     graph_payload = {"pages": graph_pages}
 
+    # Calculate statistics
+    stats = {
+        "total": len(pages),
+        "by_section": defaultdict(int),
+        "by_domain": defaultdict(int),
+    }
+    for page in pages:
+        stats["by_section"][page["section"]] += 1
+        if page["domain"]:
+            stats["by_domain"][page["domain"]] += 1
+    
+    # Convert defaultdict to regular dict for JSON serialization
+    stats["by_section"] = dict(stats["by_section"])
+    stats["by_domain"] = dict(stats["by_domain"])
+
     ASSETS.mkdir(parents=True, exist_ok=True)
     (ASSETS / "search-index.json").write_text(
         json.dumps(search_payload, ensure_ascii=False, indent=2),
@@ -345,6 +360,10 @@ def main():
     )
     (ASSETS / "graph.json").write_text(
         json.dumps(graph_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    (ASSETS / "stats.json").write_text(
+        json.dumps(stats, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 

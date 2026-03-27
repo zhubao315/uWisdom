@@ -196,10 +196,40 @@ function renderEntryGraph(graphData) {
     .then(({ svg }) => target.innerHTML = svg);
 }
 
+/* ── Statistics ── */
+async function initStats() {
+  const totalEl = document.getElementById("stat-total");
+  const sectionsEl = document.getElementById("stat-sections");
+  const domainsEl = document.getElementById("stat-domains");
+  if (!totalEl) return;
+
+  const stats = await fetchJson("/assets/stats.json");
+  if (!stats) return;
+
+  // Animate numbers for better UX
+  const animateValue = (el, start, end, duration) => {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      el.innerText = Math.floor(progress * (end - start) + start).toLocaleString();
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  };
+
+  animateValue(totalEl, 0, stats.total, 1000);
+  animateValue(sectionsEl, 0, Object.keys(stats.by_section).length, 800);
+  animateValue(domainsEl, 0, Object.keys(stats.by_domain).length, 800);
+}
+
 /* ── Init ── */
 document.addEventListener("DOMContentLoaded", async () => {
   initReadingProgress();
   initTOC();
+  initStats();
   if (window.hljs) window.hljs.highlightAll();
 
   const [graphData, indexData] = await Promise.all([

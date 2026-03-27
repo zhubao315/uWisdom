@@ -11,6 +11,21 @@ summary: uWisdom 个人知识操作系统首页
   <p class="meta">知识百科 · 主题研究 · 人物志 · 工具 & Agent</p>
 </section>
 
+<section class="stats-bar" id="stats-bar">
+  <div class="stat-item">
+    <span class="stat-value" id="stat-total">-</span>
+    <span class="stat-label">知识总条目</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-value" id="stat-sections">-</span>
+    <span class="stat-label">分类模块</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-value" id="stat-domains">-</span>
+    <span class="stat-label">核心领域</span>
+  </div>
+</section>
+
 ## 入口导航
 
 <div class="grid">
