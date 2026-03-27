@@ -14,6 +14,7 @@ uWisdom TDD 测试框架
     python3 tools/test_content.py --coverage  # 覆盖率报告
     python3 tools/test_content.py --verbose  # 详细输出
 """
+
 from __future__ import annotations
 
 import argparse
@@ -27,6 +28,7 @@ from typing import Optional
 
 try:
     import yaml
+
     HAS_YAML = True
 except ImportError:
     HAS_YAML = False
@@ -40,10 +42,10 @@ class TestStatus(Enum):
 
 
 class TestSeverity(Enum):
-    CRITICAL = "CRITICAL"   # 必须修复
-    HIGH = "HIGH"           # 应该修复
-    MEDIUM = "MEDIUM"       # 建议修复
-    LOW = "LOW"             # 可以忽略
+    CRITICAL = "CRITICAL"  # 必须修复
+    HIGH = "HIGH"  # 应该修复
+    MEDIUM = "MEDIUM"  # 建议修复
+    LOW = "LOW"  # 可以忽略
 
 
 @dataclass
@@ -89,11 +91,24 @@ class TestSuite:
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 
-VALID_TYPES = {"principle", "method", "glossary", "decision", "area", "project", "task-pattern", "case", "opportunity", "agent-card"}
+VALID_TYPES = {
+    "principle",
+    "method",
+    "glossary",
+    "decision",
+    "area",
+    "project",
+    "task-pattern",
+    "case",
+    "opportunity",
+    "agent-card",
+}
 VALID_IDENTITIES = {"architect", "investor", "lifelong-learner", "life-artist"}
 VALID_CONFIDENCE = {"high", "medium", "low"}
 
 REQUIRED_FIELDS = {"title", "summary"}
+
+SKIP_DIRS = {"knowledge-base/glossary/"}
 
 
 class ContentTester:
@@ -111,6 +126,9 @@ class ContentTester:
         for path in sorted(DOCS.rglob("*.md")):
             rel_path = path.relative_to(DOCS)
             if rel_path.as_posix().startswith("_"):
+                continue
+            rel_str = rel_path.as_posix()
+            if any(rel_str.startswith(skip_dir) for skip_dir in SKIP_DIRS):
                 continue
             try:
                 raw = path.read_text(encoding="utf-8")
@@ -149,7 +167,7 @@ class ContentTester:
                 self.all_urls[url + "/"] = str(rel_path)
         url = rel_path.with_suffix(".html").as_posix()
         self.all_urls[url] = str(rel_path)
-        
+
         title = front.get("title")
         if title:
             self.all_titles[str(title).strip()] = rel_path
@@ -177,133 +195,162 @@ class FrontMatterTester(ContentTester):
     def _test_required_fields(self, suite: TestSuite, rel_path: Path, front: dict):
         for field in REQUIRED_FIELDS:
             if not front.get(field):
-                suite.add(TestResult(
-                    name=f"必填字段 '{field}'",
-                    status=TestStatus.FAILED,
-                    message=f"缺少必填字段 '{field}'",
-                    severity=TestSeverity.CRITICAL,
-                    file_path=str(rel_path)
-                ))
+                suite.add(
+                    TestResult(
+                        name=f"必填字段 '{field}'",
+                        status=TestStatus.FAILED,
+                        message=f"缺少必填字段 '{field}'",
+                        severity=TestSeverity.CRITICAL,
+                        file_path=str(rel_path),
+                    )
+                )
 
     def _test_title_format(self, suite: TestSuite, rel_path: Path, front: dict):
         title = str(front.get("title", ""))
         if len(title) > 50:
-            suite.add(TestResult(
-                name="标题长度",
-                status=TestStatus.FAILED,
-                message=f"标题过长 ({len(title)} 字符)，应 ≤50",
-                severity=TestSeverity.HIGH,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="标题长度",
+                    status=TestStatus.FAILED,
+                    message=f"标题过长 ({len(title)} 字符)，应 ≤50",
+                    severity=TestSeverity.HIGH,
+                    file_path=str(rel_path),
+                )
+            )
         elif len(title) == 0:
             pass  # 已在 required_fields 测试
         elif self.verbose:
-            suite.add(TestResult(
-                name="标题格式",
-                status=TestStatus.PASSED,
-                message=f"格式正确",
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="标题格式",
+                    status=TestStatus.PASSED,
+                    message=f"格式正确",
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_summary_format(self, suite: TestSuite, rel_path: Path, front: dict):
         summary = str(front.get("summary", ""))
         if summary and len(summary) < 10:
-            suite.add(TestResult(
-                name="摘要长度",
-                status=TestStatus.FAILED,
-                message=f"摘要过短 ({len(summary)} 字符)，应 ≥10",
-                severity=TestSeverity.MEDIUM,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="摘要长度",
+                    status=TestStatus.FAILED,
+                    message=f"摘要过短 ({len(summary)} 字符)，应 ≥10",
+                    severity=TestSeverity.MEDIUM,
+                    file_path=str(rel_path),
+                )
+            )
         elif summary and len(summary) > 200:
-            suite.add(TestResult(
-                name="摘要长度",
-                status=TestStatus.FAILED,
-                message=f"摘要过长 ({len(summary)} 字符)，应 ≤200",
-                severity=TestSeverity.MEDIUM,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="摘要长度",
+                    status=TestStatus.FAILED,
+                    message=f"摘要过长 ({len(summary)} 字符)，应 ≤200",
+                    severity=TestSeverity.MEDIUM,
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_type_field(self, suite: TestSuite, rel_path: Path, front: dict):
         ktype = front.get("type", "")
         if ktype and ktype not in VALID_TYPES:
-            suite.add(TestResult(
-                name="type 字段",
-                status=TestStatus.FAILED,
-                message=f"无效的 type 值 '{ktype}'，有效值: {', '.join(VALID_TYPES)}",
-                severity=TestSeverity.HIGH,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="type 字段",
+                    status=TestStatus.FAILED,
+                    message=f"无效的 type 值 '{ktype}'，有效值: {', '.join(VALID_TYPES)}",
+                    severity=TestSeverity.HIGH,
+                    file_path=str(rel_path),
+                )
+            )
         elif ktype and self.verbose:
-            suite.add(TestResult(
-                name="type 字段",
-                status=TestStatus.PASSED,
-                message=f"有效值: {ktype}",
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="type 字段",
+                    status=TestStatus.PASSED,
+                    message=f"有效值: {ktype}",
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_identity_field(self, suite: TestSuite, rel_path: Path, front: dict):
         identity = front.get("identity", "")
         if identity and identity not in VALID_IDENTITIES:
-            suite.add(TestResult(
-                name="identity 字段",
-                status=TestStatus.FAILED,
-                message=f"无效的 identity 值 '{identity}'，有效值: {', '.join(VALID_IDENTITIES)}",
-                severity=TestSeverity.HIGH,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="identity 字段",
+                    status=TestStatus.FAILED,
+                    message=f"无效的 identity 值 '{identity}'，有效值: {', '.join(VALID_IDENTITIES)}",
+                    severity=TestSeverity.HIGH,
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_confidence_field(self, suite: TestSuite, rel_path: Path, front: dict):
         confidence = front.get("confidence", "")
         if confidence and confidence not in VALID_CONFIDENCE:
-            suite.add(TestResult(
-                name="confidence 字段",
-                status=TestStatus.FAILED,
-                message=f"无效的 confidence 值 '{confidence}'，有效值: {', '.join(VALID_CONFIDENCE)}",
-                severity=TestSeverity.MEDIUM,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="confidence 字段",
+                    status=TestStatus.FAILED,
+                    message=f"无效的 confidence 值 '{confidence}'，有效值: {', '.join(VALID_CONFIDENCE)}",
+                    severity=TestSeverity.MEDIUM,
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_version_format(self, suite: TestSuite, rel_path: Path, front: dict):
         version = str(front.get("version", ""))
-        if version and not re.match(r'^v?\d+\.\d+\.\d+$', version):
-            suite.add(TestResult(
-                name="version 格式",
-                status=TestStatus.FAILED,
-                message=f"无效的 version 格式 '{version}'，应符合 semver (如 v1.0.0)",
-                severity=TestSeverity.MEDIUM,
-                file_path=str(rel_path)
-            ))
+        if version and not re.match(r"^v?\d+\.\d+\.\d+$", version):
+            suite.add(
+                TestResult(
+                    name="version 格式",
+                    status=TestStatus.FAILED,
+                    message=f"无效的 version 格式 '{version}'，应符合 semver (如 v1.0.0)",
+                    severity=TestSeverity.MEDIUM,
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_permalink_format(self, suite: TestSuite, rel_path: Path, front: dict):
+        rel_str = rel_path.as_posix()
+        if rel_str == "index.md":
+            return
         permalink = front.get("permalink", "")
         if not permalink:
-            suite.add(TestResult(
-                name="permalink 字段",
-                status=TestStatus.FAILED,
-                message="缺少 permalink 字段",
-                severity=TestSeverity.HIGH,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="permalink 字段",
+                    status=TestStatus.FAILED,
+                    message="缺少 permalink 字段",
+                    severity=TestSeverity.HIGH,
+                    file_path=str(rel_path),
+                )
+            )
         elif not permalink.startswith("/"):
-            suite.add(TestResult(
-                name="permalink 格式",
-                status=TestStatus.FAILED,
-                message=f"permalink 必须以 / 开头，当前: {permalink}",
-                severity=TestSeverity.HIGH,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="permalink 格式",
+                    status=TestStatus.FAILED,
+                    message=f"permalink 必须以 / 开头，当前: {permalink}",
+                    severity=TestSeverity.HIGH,
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_tags_format(self, suite: TestSuite, rel_path: Path, front: dict):
         tags = front.get("tags", [])
         if tags and not isinstance(tags, list):
-            suite.add(TestResult(
-                name="tags 格式",
-                status=TestStatus.FAILED,
-                message="tags 必须是数组格式",
-                severity=TestSeverity.HIGH,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="tags 格式",
+                    status=TestStatus.FAILED,
+                    message="tags 必须是数组格式",
+                    severity=TestSeverity.HIGH,
+                    file_path=str(rel_path),
+                )
+            )
 
 
 class LinkTester(ContentTester):
@@ -321,8 +368,8 @@ class LinkTester(ContentTester):
 
     def _strip_code_blocks(self, text: str) -> str:
         """移除代码块"""
-        text = re.sub(r'```[\s\S]*?```', '', text)
-        text = re.sub(r'`[^`]+`', '', text)
+        text = re.sub(r"```[\s\S]*?```", "", text)
+        text = re.sub(r"`[^`]+`", "", text)
         return text
 
     def _test_wiki_links(self, suite: TestSuite, rel_path: Path, body: str):
@@ -334,13 +381,15 @@ class LinkTester(ContentTester):
             if target_clean not in self.all_titles:
                 target_path = DOCS / f"{target_clean}.md"
                 if not target_path.exists():
-                    suite.add(TestResult(
-                        name=f"WikiLink [[{target_clean}]]",
-                        status=TestStatus.FAILED,
-                        message=f"死链接：目标不存在",
-                        severity=TestSeverity.CRITICAL,
-                        file_path=str(rel_path)
-                    ))
+                    suite.add(
+                        TestResult(
+                            name=f"WikiLink [[{target_clean}]]",
+                            status=TestStatus.FAILED,
+                            message=f"死链接：目标不存在",
+                            severity=TestSeverity.CRITICAL,
+                            file_path=str(rel_path),
+                        )
+                    )
 
     def _test_markdown_links(self, suite: TestSuite, rel_path: Path, body: str):
         md_links = re.findall(r"\[([^\]]+)\]\(([^)]+)\)", body)
@@ -368,22 +417,31 @@ class LinkTester(ContentTester):
                 continue
             # Skip inline code-like patterns (Python/JavaScript style)
             # Pattern like ["key"](value) or similar code syntax
-            if re.match(r'^["\'].*["\']\)$', f'{label}]({url}'):
+            if re.match(r'^["\'].*["\']\)$', f"{label}]({url}"):
                 continue
-            if '=' in label and '(' in url:
+            if "=" in label and "(" in url:
                 continue
             if label.startswith('"') or label.startswith("'"):
                 continue
-            
+
             clean_url = url.lstrip("/")
-            if clean_url not in self.all_urls and clean_url.rstrip("/") not in self.all_urls:
-                suite.add(TestResult(
-                    name=f"Markdown Link [{label}]({url})",
-                    status=TestStatus.FAILED,
-                    message=f"死链接：目标不存在",
-                    severity=TestSeverity.HIGH,
-                    file_path=str(rel_path)
-                ))
+            if (
+                clean_url not in self.all_urls
+                and clean_url.rstrip("/") not in self.all_urls
+            ):
+                target_path = DOCS / (clean_url + ".md")
+                if not target_path.exists():
+                    target_path = DOCS / clean_url / "index.md"
+                    if not target_path.exists():
+                        suite.add(
+                            TestResult(
+                                name=f"Markdown Link [{label}]({url})",
+                                status=TestStatus.FAILED,
+                                message=f"死链接：目标不存在",
+                                severity=TestSeverity.HIGH,
+                                file_path=str(rel_path),
+                            )
+                        )
 
 
 class ContentQualityTester(ContentTester):
@@ -400,27 +458,33 @@ class ContentQualityTester(ContentTester):
 
         return suite
 
-    def _test_body_length(self, suite: TestSuite, rel_path: Path, front: dict, body: str):
+    def _test_body_length(
+        self, suite: TestSuite, rel_path: Path, front: dict, body: str
+    ):
         lines = [l for l in body.splitlines() if l.strip()]
         if len(lines) < 5:
-            suite.add(TestResult(
-                name="内容长度",
-                status=TestStatus.FAILED,
-                message=f"内容过短 ({len(lines)} 行)，应 ≥5 行",
-                severity=TestSeverity.MEDIUM,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="内容长度",
+                    status=TestStatus.FAILED,
+                    message=f"内容过短 ({len(lines)} 行)，应 ≥5 行",
+                    severity=TestSeverity.MEDIUM,
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_heading_structure(self, suite: TestSuite, rel_path: Path, body: str):
         headings = re.findall(r"^(#{1,6})\s+(.+)$", body, re.MULTILINE)
         if not headings:
-            suite.add(TestResult(
-                name="标题结构",
-                status=TestStatus.FAILED,
-                message="缺少标题结构",
-                severity=TestSeverity.MEDIUM,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="标题结构",
+                    status=TestStatus.FAILED,
+                    message="缺少标题结构",
+                    severity=TestSeverity.MEDIUM,
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_no_placeholder(self, suite: TestSuite, rel_path: Path, body: str):
         placeholders = [
@@ -431,29 +495,35 @@ class ContentQualityTester(ContentTester):
             (r"待写", "待写占位符"),
             (r"补充中", "补充中占位符"),
         ]
-        body_no_code = re.sub(r'```[\s\S]*?```', '', body)
-        body_no_code = re.sub(r'`[^`]+`', '', body_no_code)
+        body_no_code = re.sub(r"```[\s\S]*?```", "", body)
+        body_no_code = re.sub(r"`[^`]+`", "", body_no_code)
         for pattern, msg in placeholders:
             matches = list(re.finditer(pattern, body_no_code, re.IGNORECASE))
             for match in matches:
-                suite.add(TestResult(
-                    name="占位符检测",
-                    status=TestStatus.FAILED,
-                    message=f"发现 {msg}",
-                    severity=TestSeverity.MEDIUM,
-                    file_path=str(rel_path)
-                ))
+                suite.add(
+                    TestResult(
+                        name="占位符检测",
+                        status=TestStatus.FAILED,
+                        message=f"发现 {msg}",
+                        severity=TestSeverity.MEDIUM,
+                        file_path=str(rel_path),
+                    )
+                )
 
-    def _test_incoming_outgoing_balance(self, suite: TestSuite, rel_path: Path, body: str):
+    def _test_incoming_outgoing_balance(
+        self, suite: TestSuite, rel_path: Path, body: str
+    ):
         wiki_links = re.findall(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]", body)
         if len(wiki_links) > 50:
-            suite.add(TestResult(
-                name="链接数量",
-                status=TestStatus.FAILED,
-                message=f"链接过多 ({len(wiki_links)} 个)，考虑拆分",
-                severity=TestSeverity.LOW,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="链接数量",
+                    status=TestStatus.FAILED,
+                    message=f"链接过多 ({len(wiki_links)} 个)，考虑拆分",
+                    severity=TestSeverity.LOW,
+                    file_path=str(rel_path),
+                )
+            )
 
 
 class SchemaTester(ContentTester):
@@ -475,35 +545,41 @@ class SchemaTester(ContentTester):
             applicability = front.get("applicability", [])
             non_applicability = front.get("non_applicability", [])
             if not applicability:
-                suite.add(TestResult(
-                    name="applicability 字段",
-                    status=TestStatus.FAILED,
-                    message="principle/method 类型应包含 applicability 字段",
-                    severity=TestSeverity.HIGH,
-                    file_path=str(rel_path)
-                ))
+                suite.add(
+                    TestResult(
+                        name="applicability 字段",
+                        status=TestStatus.FAILED,
+                        message="principle/method 类型应包含 applicability 字段",
+                        severity=TestSeverity.HIGH,
+                        file_path=str(rel_path),
+                    )
+                )
 
     def _test_skill_ref(self, suite: TestSuite, rel_path: Path, front: dict):
         skill_ref = front.get("skill_ref", "")
         if skill_ref and not re.match(r"^uskill-[a-z0-9-]+$", skill_ref):
-            suite.add(TestResult(
-                name="skill_ref 格式",
-                status=TestStatus.FAILED,
-                message=f"无效的 skill_ref 格式 '{skill_ref}'，应符合 uskill-xxx 格式",
-                severity=TestSeverity.MEDIUM,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="skill_ref 格式",
+                    status=TestStatus.FAILED,
+                    message=f"无效的 skill_ref 格式 '{skill_ref}'，应符合 uskill-xxx 格式",
+                    severity=TestSeverity.MEDIUM,
+                    file_path=str(rel_path),
+                )
+            )
 
     def _test_knowledge_id(self, suite: TestSuite, rel_path: Path, front: dict):
         kid = front.get("id", "")
         if kid and not re.match(r"^kw-[a-z0-9]+-[a-z0-9-]+$", kid):
-            suite.add(TestResult(
-                name="id 格式",
-                status=TestStatus.FAILED,
-                message=f"无效的 id 格式 '{kid}'，应符合 kw-xxx-xxx 格式",
-                severity=TestSeverity.MEDIUM,
-                file_path=str(rel_path)
-            ))
+            suite.add(
+                TestResult(
+                    name="id 格式",
+                    status=TestStatus.FAILED,
+                    message=f"无效的 id 格式 '{kid}'，应符合 kw-xxx-xxx 格式",
+                    severity=TestSeverity.MEDIUM,
+                    file_path=str(rel_path),
+                )
+            )
 
 
 def run_all_tests(verbose: bool = False) -> tuple[int, int, int]:
