@@ -249,6 +249,8 @@ def main():
         tags = front.get("tags") or infer_tags(rel_path, title)
         tags = ensure_list(tags)
 
+        is_glossary = "knowledge-base/glossary/" in rel_path.as_posix()
+        
         page = {
             "path": rel_path.as_posix(),
             "url": url,
@@ -261,8 +263,8 @@ def main():
             "author": str(front.get("author", "")),
             "book": str(front.get("book", "")),
             "updated": str(front.get("updated", "") or git_date(path)),
-            "content": truncate_by_sentence(strip_markdown(body)),
-            "links": internal_links(body),
+            "content": truncate_by_sentence(strip_markdown(body)) if not is_glossary else "",
+            "links": internal_links(body) if not is_glossary else [],
         }
         pages.append(page)
         url_to_page[url] = page

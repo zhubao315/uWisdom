@@ -51,6 +51,7 @@ defaults:
 
 # Exclude from build
 exclude:
+  - knowledge-base/glossary
   - tools
   - README.md
   - Gemfile

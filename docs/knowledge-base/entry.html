@@ -1,0 +1,53 @@
+---
+layout: default
+title: 知识条目查看
+---
+<div id="entry-viewer" class="card" style="margin-top: 2rem; padding: 2rem;">
+  <h1 id="entry-title">正在加载...</h1>
+  <div id="entry-content" class="markdown-body"></div>
+  <hr>
+  <div class="meta">
+    <p id="entry-meta"></p>
+    <a id="entry-raw-link" href="#" class="tag">查看原始 Markdown (Agent Friendly)</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+async function loadEntry() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  if (!id) {
+    document.getElementById('entry-title').innerText = "未找到条目 ID";
+    return;
+  }
+
+  // Fetch from the search index or directly from the raw file
+  const response = await fetch('{{ "/assets/search-index.json" | relative_url }}');
+  const data = await response.json();
+  const entry = data.entries.find(e => e.url.includes(id) || e.title === id);
+
+  if (entry) {
+    document.title = entry.title + " | uWisdom";
+    document.getElementById('entry-title').innerText = entry.title;
+
+    // Fetch raw markdown from the server
+    const rawPath = '{{ "/knowledge-base/glossary/" | relative_url }}' + entry.title.toLowerCase().replace(/ /g, '-') + ".md";
+    const rawRes = await fetch(rawPath);
+    if (rawRes.ok) {
+        const rawText = await rawRes.text();
+        // Strip YAML front matter if it exists
+        const content = rawText.replace(/^---[\s\S]*?---\n/, "");
+        document.getElementById('entry-content').innerHTML = marked.parse(content || "暂无详细内容");
+    } else {
+        document.getElementById('entry-content').innerHTML = "<p>无法加载原始内容，请查看链接。</p>";
+    }
+
+    document.getElementById('entry-meta').innerText = `领域：${entry.domain} | 标签：${entry.tags.join(', ')}`;
+    document.getElementById('entry-raw-link').href = '{{ "/knowledge-base/glossary/" | relative_url }}' + entry.title.toLowerCase().replace(/ /g, '-') + ".md";
+  } else {
+    document.getElementById('entry-title').innerText = "条目不存在";
+  }
+}
+window.onload = loadEntry;
+</script>

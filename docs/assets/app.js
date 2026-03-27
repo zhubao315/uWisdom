@@ -107,7 +107,7 @@ function initSearch(indexData) {
     resultsEl.innerHTML = fuseResults.slice(0, 20).map(({ item, matches }) => {
       return `
         <article class="card search-result">
-          <h3><a href="${withBase(item.url)}">${item.title}</a></h3>
+          <h3><a href="${withBase("/knowledge-base/entry.html?id=" + item.title)}">${item.title}</a></h3>
           <p>${item.summary || ""}</p>
           <p class="search-meta">${item.domain || item.section} · ${item.version}</p>
           <div class="tag-list">${(item.tags || []).map(t => `<span class="tag">${t}</span>`).join("")}</div>
