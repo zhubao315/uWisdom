@@ -60279,14 +60279,20 @@
     "/tools-agent": {
       "mermaid": "graph LR\nA[\"工具 & Agent\"]\nN1[\"OpenClaw 智能体生态\"] --> A"
     },
+    "/topic-research/agentic-workflow-optimization.html": {
+      "mermaid": ""
+    },
     "/topic-research/ai-native-enterprise.html": {
-      "mermaid": "graph LR\nA[\"AI 原生企业能力重构\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"LLM 应用架构\"]"
+      "mermaid": ""
     },
     "/topic-research/city-culture-and-modern-life.html": {
       "mermaid": "graph LR\nA[\"城市文化与现代生活\"]\nA --> N1[\"北京文化使者\"]\nA --> N2[\"城市文化叙事\"]\nA --> N3[\"视觉叙事\"]\nN4[\"村上春树\"] --> A\nN5[\"蒋勋\"] --> A"
     },
     "/topic-research/fifteenth-five-year-plan.html": {
       "mermaid": "graph LR\nA[\"十五五规划\"]\nA --> N1[\"金融市场\"]\nA --> N2[\"技术投资\"]\nA --> N3[\"AI 行业投资\"]"
+    },
+    "/topic-research/global-macro-cycle-analysis.html": {
+      "mermaid": ""
     },
     "/topic-research": {
       "mermaid": "graph LR\nA[\"主题研究\"]\nN1[\"巴菲特\"] --> A\nN2[\"俞敏洪\"] --> A"
@@ -60295,7 +60301,7 @@
       "mermaid": "graph LR\nA[\"OpenClaw 智能体生态\"]\nA --> N1[\"人工智能专家\"]\nA --> N2[\"Agent 工作流设计\"]\nA --> N3[\"LLM 应用架构\"]"
     },
     "/topic-research/personal-knowledge-operating-system.html": {
-      "mermaid": "graph LR\nA[\"个人知识操作系统\"]\nA --> N1[\"数字人生\"]\nA --> N2[\"个人数字操作系统\"]"
+      "mermaid": ""
     },
     "/uWisdom-PRD.html": {
       "mermaid": "graph LR\nA[\"uWisdom 产品需求文档（PRD）\"]\nA --> N1[\"∑ 架构师\"]\nA --> N2[\"∑ 投资人\"]\nA --> N3[\"∑ 生活艺术家\"]"

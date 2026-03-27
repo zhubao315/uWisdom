@@ -8,6 +8,22 @@ permalink: /today/
 
 以下内容由站点构建脚本自动挑选，优先展示最近更新且可复用度高的条目。
 
+## [全球宏观周期与资产配置深度研究](/topic-research/global-macro-cycle-analysis.html)
+
+- 分类：主题研究
+- 领域：主题研究
+- 更新：2026-03-27
+- 标签：macroeconomics, investment-strategy, cycle-analysis, asset-allocation
+- 摘要：研究长债务周期、技术革命与地缘政治对全球资产配置的影响逻辑
+
+## [个人知识操作系统：从碎片记录到智慧涌现的重构](/topic-research/personal-knowledge-operating-system.html)
+
+- 分类：主题研究
+- 领域：主题研究
+- 更新：2026-03-27
+- 标签：pkm, pkos, second-brain, ai-agent, structured-knowledge
+- 摘要：探讨如何构建“人机双向友好”的个人知识底座，实现认知资产化与 Agent 化调用
+
 ## [风土地图](/knowledge-base/themes/terroir-map.html)
 
 - 分类：知识百科 / 主题
@@ -55,19 +71,3 @@ permalink: /today/
 - 更新：2026-03-25
 - 标签：lifestyle
 - 摘要：围绕葡萄酒文化、品鉴方法、风土知识与社交表达的审美学习
-
-## [知识产权顾问](/knowledge-base/domains/ip-consultant.html)
-
-- 分类：知识百科 / 领域
-- 领域：知识产权顾问
-- 更新：2026-03-25
-- 标签：architecture
-- 摘要：围绕软件成果保护、专利策略与开源合规提供专业判断
-
-## [游戏王者](/knowledge-base/domains/gaming.html)
-
-- 分类：知识百科 / 领域
-- 领域：游戏王者
-- 更新：2026-03-25
-- 标签：lifestyle
-- 摘要：围绕游戏策略、机制理解与竞技成长的复合型兴趣领域
