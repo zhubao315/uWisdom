@@ -24,6 +24,9 @@ collections:
   knowledge-base:
     output: true
     permalink: /:path/
+  glossary:
+    output: true
+    permalink: /knowledge-base/glossary/:path/
 
 # Defaults
 defaults:
@@ -33,9 +36,10 @@ defaults:
       layout: default
       lang: zh-CN
   - scope:
-      path: "knowledge-base"
+      path: "knowledge-base/glossary"
     values:
-      section: "知识百科"
+      layout: default
+      section: "知识百科 / 术语"
   - scope:
       path: "figures"
     values:

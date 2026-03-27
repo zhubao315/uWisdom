@@ -116,7 +116,15 @@ function initSearch(indexData) {
     }).join("");
   };
 
-  queryInput.addEventListener("input", performSearch);
+  const debounce = (func, delay) => {
+    let timeout;
+    return (...args) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func(...args), delay);
+    };
+  };
+
+  queryInput.addEventListener("input", debounce(performSearch, 300));
   performSearch();
 }
 

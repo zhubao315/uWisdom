@@ -10,20 +10,20 @@ permalink: /encyclopedia/
 
 <div class="grid">
   <article class="card">
-    <h2><a href="{{ '/knowledge-base/domains/' | relative_url }}">按领域</a></h2>
+    <h2><a href="{{ '/knowledge-base/domains/' | relative_url }}">领域</a></h2>
     <p>从长期关注方向出发浏览知识，包括技术、投资、学习与生活四大板块。</p>
   </article>
   <article class="card">
-    <h2><a href="{{ '/knowledge-base/themes/' | relative_url }}">按主题</a></h2>
+    <h2><a href="{{ '/knowledge-base/themes/' | relative_url }}">主题</a></h2>
     <p>从更具体的问题域、方法题和研究方向切入。</p>
   </article>
   <article class="card">
-    <h2><a href="#tag-index">按标签</a></h2>
-    <p>按可复用关键词快速聚合知识条目。</p>
+    <h2><a href="{{ '/search/' | relative_url }}">术语 (20k+)</a></h2>
+    <p>系统化、原子化的知识百科条目，支持 Agent 检索。</p>
   </article>
 </div>
 
-## 按领域
+## 核心知识库
 
 <div class="card-list">
   <div class="card"><a href="{{ '/knowledge-base/domains/ai-expert.html' | relative_url }}">人工智能专家</a> · AIGC、LLM、Agent、RAG 与企业落地</div>
@@ -32,6 +32,15 @@ permalink: /encyclopedia/
   <div class="card"><a href="{{ '/knowledge-base/domains/chinese-classics.html' | relative_url }}">国学大师</a> · 经典阅读、传统智慧与现代转译</div>
   <div class="card"><a href="{{ '/knowledge-base/domains/digital-life.html' | relative_url }}">数字人生</a> · 个人数字操作系统与数字资产管理</div>
   <div class="card"><a href="{{ '/knowledge-base/domains/photography.html' | relative_url }}">摄影家</a> · 视觉叙事、影像表达与 AI 融合创作</div>
+</div>
+
+## 知识单元类型
+
+<div class="card-list">
+  <div class="card"><strong>术语 (Glossary)</strong> · 原子化的概念定义</div>
+  <div class="card"><strong>原则 (Principles)</strong> · 长期有效的决策基准</div>
+  <div class="card"><strong>方法 (Methods)</strong> · 可执行的工程化流程</div>
+  <div class="card"><strong>案例 (Cases)</strong> · 真实场景的落地闭环</div>
 </div>
 
 ## 按主题

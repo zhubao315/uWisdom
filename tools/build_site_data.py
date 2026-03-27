@@ -113,6 +113,10 @@ def section_for_path(rel_path: Path) -> str:
     section_map = [
         ("knowledge-base/domains/", "知识百科 / 领域"),
         ("knowledge-base/themes/", "知识百科 / 主题"),
+        ("knowledge-base/glossary/", "知识百科 / 术语"),
+        ("knowledge-base/principles/", "知识百科 / 原则"),
+        ("knowledge-base/methods/", "知识百科 / 方法"),
+        ("knowledge-base/cases/", "知识百科 / 案例"),
         ("topic-research/", "主题研究"),
         ("figures/", "人物志"),
         ("tools-agent/", "工具 & Agent"),
