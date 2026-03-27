@@ -815,6 +815,79 @@ td {
   color: var(--teal);
 }
 
+/* ── Tool Grid ── */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--sp-4);
+}
+
+.tool-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-5);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.tool-item:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.tool-item h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: var(--sp-2);
+}
+
+.tool-item h4 code {
+  background: var(--teal-soft);
+  color: var(--teal);
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  font-size: 0.8em;
+}
+
+.tool-item p {
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  margin-bottom: var(--sp-3);
+}
+
+.tool-tags {
+  display: flex;
+  gap: var(--sp-2);
+}
+
+/* ── Feature Card ── */
+.feature-card {
+  position: relative;
+  padding-left: var(--sp-14);
+}
+
+.card-icon {
+  position: absolute;
+  left: var(--sp-5);
+  top: var(--sp-5);
+  font-size: 1.5rem;
+}
+
+/* ── Mermaid ── */
+.mermaid-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-6);
+  margin: var(--sp-6) 0;
+  overflow-x: auto;
+}
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -873,5 +946,14 @@ td {
 
   h2 {
     font-size: 1.25rem;
+  }
+
+  .feature-card {
+    padding-left: var(--sp-5);
+  }
+
+  .card-icon {
+    position: static;
+    margin-bottom: var(--sp-2);
   }
 }
