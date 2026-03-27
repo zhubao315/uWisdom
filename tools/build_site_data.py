@@ -6,7 +6,7 @@ import json
 import re
 import subprocess
 from collections import defaultdict
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 try:
@@ -421,7 +421,224 @@ def main():
     today_dir.mkdir(exist_ok=True)
     (today_dir / "index.md").write_text("\n".join(today_md), encoding="utf-8")
 
+    # Build homepage featured entries by identity
+    identity_entries = {
+        "architect": {"title": "架构师", "icon": "🏛️", "items": []},
+        "investor": {"title": "投资人", "icon": "📈", "items": []},
+        "lifelong-learner": {"title": "终身学习者", "icon": "📚", "items": []},
+        "life-artist": {"title": "生活艺术家", "icon": "🎨", "items": []},
+    }
+    
+    # Tag to identity mapping
+    tag_to_identity = {
+        "architect": "architect", "architecture": "architect", "ai": "architect", "agent": "architect",
+        "engineering": "architect", "system": "architect", "cloud": "architect",
+        "investment": "investor", "finance": "investor", "market": "investor", "trading": "investor",
+        "learning": "lifelong-learner", "culture": "lifelong-learner", "chinese-classics": "lifelong-learner",
+        "psychology": "lifelong-learner", "reading": "lifelong-learner",
+        "lifestyle": "life-artist", "outdoor": "life-artist", "photography": "life-artist",
+        "wine": "life-artist", "fitness": "life-artist", "running": "life-artist",
+    }
+    
+    # Domain to identity mapping
+    domain_to_identity = {
+        "ai-expert": "architect", "cloud-native": "architect", "full-stack-engineer": "architect",
+        "open-source-enthusiast": "architect", "product-manager": "architect", "ip-consultant": "architect",
+        "financial-markets": "investor", "commodity-trading": "investor", "technology-investment": "investor",
+        "chinese-classics": "lifelong-learner", "beijing-culture": "lifelong-learner", "psychology": "lifelong-learner",
+        "digital-life": "life-artist", "outdoor-adventure": "life-artist", "fitness-running": "life-artist",
+        "wine": "life-artist", "photography": "life-artist", "gaming": "life-artist",
+    }
+    
+    def infer_identity(page):
+        # 1. Check explicit identity field
+        if page.get("identity"):
+            return page.get("identity")
+        
+        # 2. Check tags
+        for tag in page.get("tags", []):
+            if tag in tag_to_identity:
+                return tag_to_identity[tag]
+        
+        # 3. Check domain
+        domain = page.get("domain", "")
+        if domain in domain_to_identity:
+            return domain_to_identity[domain]
+        
+        # 4. Infer from title/section
+        title = page.get("title", "").lower()
+        section = page.get("section", "")
+        
+        if "ai" in title or "llm" in title or "agent" in title or "架构" in title or "工程" in title:
+            return "architect"
+        if "投资" in title or "市场" in title or "金融" in title:
+            return "investor"
+        if "学习" in title or "文化" in title or "心理" in title or "经典" in title:
+            return "lifelong-learner"
+        if "生活" in title or "健身" in title or "户外" in title or "摄影" in title or "葡萄酒" in title:
+            return "life-artist"
+        
+        return None
+    
+    # Get entries by identity
+    for page in pages:
+        identity = infer_identity(page)
+        if identity and identity in identity_entries:
+            if len(identity_entries[identity]["items"]) < 6:
+                identity_entries[identity]["items"].append({
+                    "title": page["title"],
+                    "url": page["url"],
+                    "summary": page["summary"][:60] + "..." if len(page["summary"]) > 60 else page["summary"],
+                    "tags": page["tags"][:3] if page["tags"] else []
+                })
+    
+    # Save for JavaScript to use
+    homepage_data = {
+        "identities": identity_entries,
+        "timestamp": date.today().isoformat()
+    }
+    
+    with open(ASSETS / "homepage-featured.json", "w", encoding="utf-8") as f:
+        json.dump(homepage_data, f, ensure_ascii=False, indent=2)
+
+    # Build visualization data
+    build_visualization_data(pages, filters)
+
     print(f"Built: {len(search_entries)} search entries, {len(graph_pages)} graph pages, {len(highlights)} highlights")
+
+
+def build_visualization_data(pages, filters):
+    """Build data for visualization components"""
+    
+    # 1. Tag statistics
+    tag_stats = {}
+    for page in pages:
+        for tag in page.get("tags", []):
+            if tag not in tag_stats:
+                tag_stats[tag] = {"count": 0, "pages": []}
+            tag_stats[tag]["count"] += 1
+            tag_stats[tag]["pages"].append({
+                "title": page["title"],
+                "url": page["url"]
+            })
+    
+    # Sort by count and limit
+    tag_cloud = [
+        {"tag": k, "count": v["count"]}
+        for k, v in sorted(tag_stats.items(), key=lambda x: x[1]["count"], reverse=True)[:50]
+    ]
+    
+    # 2. Section distribution
+    section_stats = {}
+    for page in pages:
+        section = page.get("section", "其他")
+        if section not in section_stats:
+            section_stats[section] = {"count": 0, "items": []}
+        section_stats[section]["count"] += 1
+        section_stats[section]["items"].append({
+            "title": page["title"],
+            "url": page["url"]
+        })
+    
+    # 3. Identity distribution
+    identity_mapping = {
+        "architect": {"icon": "🏛️", "title": "架构师", "color": "#133D72"},
+        "investor": {"icon": "📈", "title": "投资人", "color": "#059669"},
+        "lifelong-learner": {"icon": "📚", "title": "终身学习者", "color": "#7C3AED"},
+        "life-artist": {"icon": "🎨", "title": "生活艺术家", "color": "#DC2626"},
+    }
+    
+    tag_to_identity = {
+        "architect": "architect", "architecture": "architect", "ai": "architect", "agent": "architect",
+        "engineering": "architect", "system": "architect", "cloud": "architect",
+        "investment": "investor", "finance": "investor", "market": "investor", "trading": "investor",
+        "learning": "lifelong-learner", "culture": "lifelong-learner", "chinese-classics": "lifelong-learner",
+        "psychology": "lifelong-learner", "reading": "lifelong-learner",
+        "lifestyle": "life-artist", "outdoor": "life-artist", "photography": "life-artist",
+        "wine": "life-artist", "fitness": "life-artist", "running": "life-artist",
+    }
+    
+    identity_dist = {}
+    for page in pages:
+        identity = page.get("identity", "")
+        if not identity and page.get("tags"):
+            for tag in page.get("tags", []):
+                if tag in tag_to_identity:
+                    identity = tag_to_identity[tag]
+                    break
+        
+        if identity and identity in identity_mapping:
+            if identity not in identity_dist:
+                identity_dist[identity] = {"count": 0, "info": identity_mapping[identity], "items": []}
+            identity_dist[identity]["count"] += 1
+            identity_dist[identity]["items"].append({
+                "title": page["title"],
+                "url": page["url"]
+            })
+    
+    # 4. Knowledge graph for visualization
+    graph_data = {
+        "nodes": [],
+        "links": []
+    }
+    node_ids = set()
+    
+    for page in pages:
+        node_id = page["url"]
+        if node_id not in node_ids:
+            graph_data["nodes"].append({
+                "id": node_id,
+                "title": page["title"],
+                "section": page.get("section", ""),
+                "tags": page.get("tags", [])[:3],
+                "identity": page.get("identity", "")
+            })
+            node_ids.add(node_id)
+        
+        # Add links
+        for label, href in page.get("links", []):
+            target = href.replace(".html", "")
+            if target not in node_ids:
+                graph_data["nodes"].append({
+                    "id": target,
+                    "title": label or target,
+                    "section": "",
+                    "tags": [],
+                    "identity": ""
+                })
+                node_ids.add(target)
+            graph_data["links"].append({
+                "source": node_id,
+                "target": target
+            })
+    
+    # 5. Recent updates timeline
+    recent_updates = sorted(pages, key=lambda x: x.get("updated", ""), reverse=True)[:10]
+    timeline = [
+        {
+            "title": p["title"],
+            "url": p["url"],
+            "updated": p.get("updated", ""),
+            "section": p.get("section", "")
+        }
+        for p in recent_updates
+    ]
+    
+    # Save all visualization data
+    viz_data = {
+        "tagCloud": tag_cloud,
+        "sectionStats": [
+            {"section": k, "count": v["count"]}
+            for k, v in sorted(section_stats.items(), key=lambda x: x[1]["count"], reverse=True)
+        ],
+        "identityStats": list(identity_dist.values()),
+        "graph": graph_data,
+        "timeline": timeline,
+        "generatedAt": datetime.now().isoformat()
+    }
+    
+    with open(ASSETS / "visualization-data.json", "w", encoding="utf-8") as f:
+        json.dump(viz_data, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,255 @@
+{
+  "identities": {
+    "architect": {
+      "title": "架构师",
+      "icon": "🏛️",
+      "items": [
+        {
+          "title": "埃隆·马斯克",
+          "url": "/figures/elon-musk.html",
+          "summary": "同时运营多家公司的科技企业家，第一性原理与极致执行力的代表",
+          "tags": [
+            "figure",
+            "architecture",
+            "innovation"
+          ]
+        },
+        {
+          "title": "莱纳斯",
+          "url": "/figures/linus-torvalds.html",
+          "summary": "Linux 与 Git 的创造者，开源工程与系统架构的重要代表人物",
+          "tags": [
+            "figure",
+            "architecture",
+            "open-source"
+          ]
+        },
+        {
+          "title": "王坚",
+          "url": "/figures/wang-jian.html",
+          "summary": "中国云计算基础设施的重要推动者，适合作为架构师的产业智囊",
+          "tags": [
+            "figure",
+            "architecture",
+            "cloud"
+          ]
+        },
+        {
+          "title": "∑ 架构师",
+          "url": "/identities/architect.html",
+          "summary": "在复杂性中建立秩序，在不确定性中做取舍，连接战略与工程实现",
+          "tags": [
+            "architecture",
+            "ai"
+          ]
+        },
+        {
+          "title": "人工智能专家",
+          "url": "/knowledge-base/domains/ai-expert.html",
+          "summary": "围绕 AIGC、LLM、Agent、RAG 与 AI 应用落地进行研究和实践",
+          "tags": [
+            "ai",
+            "agent",
+            "llm"
+          ]
+        },
+        {
+          "title": "云计算与云原生",
+          "url": "/knowledge-base/domains/cloud-native.html",
+          "summary": "围绕容器、Kubernetes、平台工程与现代交付体系进行架构实践",
+          "tags": [
+            "architecture"
+          ]
+        }
+      ]
+    },
+    "investor": {
+      "title": "投资人",
+      "icon": "📈",
+      "items": [
+        {
+          "title": "巴菲特",
+          "url": "/figures/buffett.html",
+          "summary": "价值投资的实践大师，伯克希尔·哈撒韦的缔造者",
+          "tags": [
+            "figure",
+            "investment"
+          ]
+        },
+        {
+          "title": "查理·芒格",
+          "url": "/figures/charlie-munger.html",
+          "summary": "伯克希尔重要合伙人，多元思维模型与长期主义的代表人物",
+          "tags": [
+            "figure",
+            "investment",
+            "thinking"
+          ]
+        },
+        {
+          "title": "沈南鹏",
+          "url": "/figures/shen-nanpeng.html",
+          "summary": "兼具创业经验与投资判断的产业型投资代表人物",
+          "tags": [
+            "figure",
+            "investment",
+            "entrepreneurship"
+          ]
+        },
+        {
+          "title": "∑ 投资人",
+          "url": "/identities/investor.html",
+          "summary": "用资本为认知投票，在不确定性中保持判断力与长期主义",
+          "tags": [
+            "investment"
+          ]
+        },
+        {
+          "title": "商品交易",
+          "url": "/knowledge-base/domains/commodity-trading.html",
+          "summary": "关注能源、金属、农产品等商品市场的供需、周期与交易机会",
+          "tags": [
+            "investment"
+          ]
+        },
+        {
+          "title": "金融市场",
+          "url": "/knowledge-base/domains/financial-markets.html",
+          "summary": "研究股票、基金、指数及其背后的宏观环境、产业趋势与资金行为",
+          "tags": [
+            "investment",
+            "finance",
+            "stocks"
+          ]
+        }
+      ]
+    },
+    "lifelong-learner": {
+      "title": "终身学习者",
+      "icon": "📚",
+      "items": [
+        {
+          "title": "安迪·马图恰克",
+          "url": "/figures/andy-matuschak.html",
+          "summary": "常青笔记发明人，数字花园先驱",
+          "tags": [
+            "figure",
+            "learning",
+            "digital-life"
+          ]
+        },
+        {
+          "title": "蔡志忠",
+          "url": "/figures/cai-zhizhong.html",
+          "summary": "以强大自信和持续创作推动国学传承与普及表达的文化创作者",
+          "tags": [
+            "figure",
+            "culture",
+            "confidence"
+          ]
+        },
+        {
+          "title": "冯唐",
+          "url": "/figures/feng-tang.html",
+          "summary": "游走于商业、医学和文学领域的跨界才子",
+          "tags": [
+            "figure",
+            "culture",
+            "lifestyle"
+          ]
+        },
+        {
+          "title": "人物志",
+          "url": "/figures",
+          "summary": "聚焦关键人物、思想家与书籍作者",
+          "tags": [
+            "culture",
+            "figure"
+          ]
+        },
+        {
+          "title": "卢曼",
+          "url": "/figures/luhmann.html",
+          "summary": "卡片笔记写作法（Zettelkasten）的发明者，德国社会学家",
+          "tags": [
+            "figure",
+            "learning"
+          ]
+        },
+        {
+          "title": "曼德尔施塔姆",
+          "url": "/figures/mandelstam.html",
+          "summary": "俄罗斯白银时代诗人，\"诗中的诗\"的作者",
+          "tags": [
+            "figure",
+            "culture"
+          ]
+        }
+      ]
+    },
+    "life-artist": {
+      "title": "生活艺术家",
+      "icon": "🎨",
+      "items": [
+        {
+          "title": "李小龙",
+          "url": "/figures/bruce-lee.html",
+          "summary": "强调自我雕琢、身心统一与持续突破的生活艺术家代表",
+          "tags": [
+            "figure",
+            "discipline",
+            "lifestyle"
+          ]
+        },
+        {
+          "title": "陈传多",
+          "url": "/figures/chuando-tan.html",
+          "summary": "新加坡摄影师与\"冻龄男神\"，健康生活方式的倡导者",
+          "tags": [
+            "figure",
+            "lifestyle"
+          ]
+        },
+        {
+          "title": "彭于晏",
+          "url": "/figures/eddie-peng.html",
+          "summary": "严格自律、健身塑形与积极状态管理的当代样本",
+          "tags": [
+            "figure",
+            "discipline",
+            "fitness"
+          ]
+        },
+        {
+          "title": "村上春树",
+          "url": "/figures/haruki-murakami.html",
+          "summary": "将文学创作、跑步、音乐与定量工作结合起来的长期主义写作者",
+          "tags": [
+            "figure",
+            "writing",
+            "lifestyle"
+          ]
+        },
+        {
+          "title": "蒋勋",
+          "url": "/figures/jiang-xun.html",
+          "summary": "以美学、文学与生活修养串联日常感知的当代讲述者",
+          "tags": [
+            "figure",
+            "lifestyle",
+            "aesthetics"
+          ]
+        },
+        {
+          "title": "∑ 生活艺术家",
+          "url": "/identities/life-artist.html",
+          "summary": "主动设计日常，让生活具有审美、秩序、节奏和生命力",
+          "tags": [
+            "lifestyle"
+          ]
+        }
+      ]
+    }
+  },
+  "timestamp": "2026-03-27"
+}

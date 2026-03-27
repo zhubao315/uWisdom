@@ -1,0 +1,3617 @@
+{
+  "tagCloud": [
+    {
+      "tag": "figure",
+      "count": 26
+    },
+    {
+      "tag": "lifestyle",
+      "count": 25
+    },
+    {
+      "tag": "architecture",
+      "count": 24
+    },
+    {
+      "tag": "culture",
+      "count": 20
+    },
+    {
+      "tag": "learning",
+      "count": 14
+    },
+    {
+      "tag": "investment",
+      "count": 14
+    },
+    {
+      "tag": "ai",
+      "count": 14
+    },
+    {
+      "tag": "agent",
+      "count": 6
+    },
+    {
+      "tag": "digital-life",
+      "count": 5
+    },
+    {
+      "tag": "llm",
+      "count": 4
+    },
+    {
+      "tag": "engineering",
+      "count": 4
+    },
+    {
+      "tag": "rag",
+      "count": 3
+    },
+    {
+      "tag": "discipline",
+      "count": 2
+    },
+    {
+      "tag": "innovation",
+      "count": 2
+    },
+    {
+      "tag": "entrepreneurship",
+      "count": 2
+    },
+    {
+      "tag": "photography",
+      "count": 2
+    },
+    {
+      "tag": "knowledge",
+      "count": 2
+    },
+    {
+      "tag": "confidence",
+      "count": 1
+    },
+    {
+      "tag": "thinking",
+      "count": 1
+    },
+    {
+      "tag": "fitness",
+      "count": 1
+    },
+    {
+      "tag": "writing",
+      "count": 1
+    },
+    {
+      "tag": "aesthetics",
+      "count": 1
+    },
+    {
+      "tag": "open-source",
+      "count": 1
+    },
+    {
+      "tag": "product",
+      "count": 1
+    },
+    {
+      "tag": "cloud",
+      "count": 1
+    },
+    {
+      "tag": "grit",
+      "count": 1
+    },
+    {
+      "tag": "aigc",
+      "count": 1
+    },
+    {
+      "tag": "finance",
+      "count": 1
+    },
+    {
+      "tag": "stocks",
+      "count": 1
+    },
+    {
+      "tag": "markets",
+      "count": 1
+    },
+    {
+      "tag": "macro",
+      "count": 1
+    },
+    {
+      "tag": "value-investing",
+      "count": 1
+    },
+    {
+      "tag": "domain",
+      "count": 1
+    },
+    {
+      "tag": "workflow",
+      "count": 1
+    },
+    {
+      "tag": "orchestration",
+      "count": 1
+    },
+    {
+      "tag": "multi-agent",
+      "count": 1
+    },
+    {
+      "tag": "context",
+      "count": 1
+    },
+    {
+      "tag": "memory",
+      "count": 1
+    },
+    {
+      "tag": "context-window",
+      "count": 1
+    },
+    {
+      "tag": "cicd",
+      "count": 1
+    },
+    {
+      "tag": "devops",
+      "count": 1
+    },
+    {
+      "tag": "delivery",
+      "count": 1
+    },
+    {
+      "tag": "theme",
+      "count": 1
+    },
+    {
+      "tag": "prompt-engineering",
+      "count": 1
+    },
+    {
+      "tag": "prompt",
+      "count": 1
+    },
+    {
+      "tag": "zero-shot",
+      "count": 1
+    },
+    {
+      "tag": "few-shot",
+      "count": 1
+    },
+    {
+      "tag": "readability",
+      "count": 1
+    },
+    {
+      "tag": "system-design",
+      "count": 1
+    },
+    {
+      "tag": "documentation",
+      "count": 1
+    }
+  ],
+  "sectionStats": [
+    {
+      "section": "知识百科 / 主题",
+      "count": 40
+    },
+    {
+      "section": "人物志",
+      "count": 26
+    },
+    {
+      "section": "知识百科 / 领域",
+      "count": 19
+    },
+    {
+      "section": "页面",
+      "count": 7
+    },
+    {
+      "section": "主题研究",
+      "count": 6
+    },
+    {
+      "section": "角色地图",
+      "count": 5
+    },
+    {
+      "section": "知识百科",
+      "count": 2
+    },
+    {
+      "section": "搜索",
+      "count": 1
+    },
+    {
+      "section": "今日知识精华",
+      "count": 1
+    },
+    {
+      "section": "工具 & Agent",
+      "count": 1
+    }
+  ],
+  "identityStats": [
+    {
+      "count": 24,
+      "info": {
+        "icon": "📚",
+        "title": "终身学习者",
+        "color": "#7C3AED"
+      },
+      "items": [
+        {
+          "title": "安迪·马图恰克",
+          "url": "/figures/andy-matuschak.html"
+        },
+        {
+          "title": "蔡志忠",
+          "url": "/figures/cai-zhizhong.html"
+        },
+        {
+          "title": "冯唐",
+          "url": "/figures/feng-tang.html"
+        },
+        {
+          "title": "人物志",
+          "url": "/figures"
+        },
+        {
+          "title": "卢曼",
+          "url": "/figures/luhmann.html"
+        },
+        {
+          "title": "曼德尔施塔姆",
+          "url": "/figures/mandelstam.html"
+        },
+        {
+          "title": "蒙田",
+          "url": "/figures/montaigne.html"
+        },
+        {
+          "title": "尼采",
+          "url": "/figures/nietzsche.html"
+        },
+        {
+          "title": "钱钟书",
+          "url": "/figures/qian-zhongshu.html"
+        },
+        {
+          "title": "宋真宗赵恒",
+          "url": "/figures/song-zhenzong.html"
+        },
+        {
+          "title": "苏轼",
+          "url": "/figures/su-shi.html"
+        },
+        {
+          "title": "王阳明",
+          "url": "/figures/wang-yangming.html"
+        },
+        {
+          "title": "张居正",
+          "url": "/figures/zhang-juzheng.html"
+        },
+        {
+          "title": "∑ 终身学习者",
+          "url": "/identities/lifelong-learner.html"
+        },
+        {
+          "title": "北京文化使者",
+          "url": "/knowledge-base/domains/beijing-culture.html"
+        },
+        {
+          "title": "国学大师",
+          "url": "/knowledge-base/domains/chinese-classics.html"
+        },
+        {
+          "title": "心理学专家",
+          "url": "/knowledge-base/domains/psychology.html"
+        },
+        {
+          "title": "城市文化叙事",
+          "url": "/knowledge-base/themes/beijing-city-narrative.html"
+        },
+        {
+          "title": "经典阅读体系",
+          "url": "/knowledge-base/themes/classics-reading-system.html"
+        },
+        {
+          "title": "认知偏差清单",
+          "url": "/knowledge-base/themes/cognitive-biases.html"
+        },
+        {
+          "title": "文化行走路线",
+          "url": "/knowledge-base/themes/cultural-walking-routes.html"
+        },
+        {
+          "title": "情绪调节",
+          "url": "/knowledge-base/themes/emotional-regulation.html"
+        },
+        {
+          "title": "传统智慧现代化",
+          "url": "/knowledge-base/themes/traditional-wisdom-modernization.html"
+        },
+        {
+          "title": "城市文化与现代生活",
+          "url": "/topic-research/city-culture-and-modern-life.html"
+        }
+      ]
+    },
+    {
+      "count": 21,
+      "info": {
+        "icon": "🎨",
+        "title": "生活艺术家",
+        "color": "#DC2626"
+      },
+      "items": [
+        {
+          "title": "李小龙",
+          "url": "/figures/bruce-lee.html"
+        },
+        {
+          "title": "陈传多",
+          "url": "/figures/chuando-tan.html"
+        },
+        {
+          "title": "彭于晏",
+          "url": "/figures/eddie-peng.html"
+        },
+        {
+          "title": "村上春树",
+          "url": "/figures/haruki-murakami.html"
+        },
+        {
+          "title": "蒋勋",
+          "url": "/figures/jiang-xun.html"
+        },
+        {
+          "title": "∑ 生活艺术家",
+          "url": "/identities/life-artist.html"
+        },
+        {
+          "title": "数字人生",
+          "url": "/knowledge-base/domains/digital-life.html"
+        },
+        {
+          "title": "健身跑者",
+          "url": "/knowledge-base/domains/fitness-running.html"
+        },
+        {
+          "title": "游戏王者",
+          "url": "/knowledge-base/domains/gaming.html"
+        },
+        {
+          "title": "户外大神",
+          "url": "/knowledge-base/domains/outdoor-adventure.html"
+        },
+        {
+          "title": "摄影家",
+          "url": "/knowledge-base/domains/photography.html"
+        },
+        {
+          "title": "葡萄酒大师",
+          "url": "/knowledge-base/domains/wine.html"
+        },
+        {
+          "title": "AI 摄影融合",
+          "url": "/knowledge-base/themes/ai-photography-fusion.html"
+        },
+        {
+          "title": "游戏机制分析",
+          "url": "/knowledge-base/themes/game-mechanics-analysis.html"
+        },
+        {
+          "title": "徒步系统",
+          "url": "/knowledge-base/themes/hiking-system.html"
+        },
+        {
+          "title": "户外装备框架",
+          "url": "/knowledge-base/themes/outdoor-equipment-framework.html"
+        },
+        {
+          "title": "跑步周期训练",
+          "url": "/knowledge-base/themes/running-periodization.html"
+        },
+        {
+          "title": "力量纪律",
+          "url": "/knowledge-base/themes/strength-discipline.html"
+        },
+        {
+          "title": "风土地图",
+          "url": "/knowledge-base/themes/terroir-map.html"
+        },
+        {
+          "title": "视觉叙事",
+          "url": "/knowledge-base/themes/visual-storytelling.html"
+        },
+        {
+          "title": "品鉴笔记",
+          "url": "/knowledge-base/themes/wine-tasting-notes.html"
+        }
+      ]
+    },
+    {
+      "count": 13,
+      "info": {
+        "icon": "📈",
+        "title": "投资人",
+        "color": "#059669"
+      },
+      "items": [
+        {
+          "title": "巴菲特",
+          "url": "/figures/buffett.html"
+        },
+        {
+          "title": "查理·芒格",
+          "url": "/figures/charlie-munger.html"
+        },
+        {
+          "title": "沈南鹏",
+          "url": "/figures/shen-nanpeng.html"
+        },
+        {
+          "title": "∑ 投资人",
+          "url": "/identities/investor.html"
+        },
+        {
+          "title": "商品交易",
+          "url": "/knowledge-base/domains/commodity-trading.html"
+        },
+        {
+          "title": "金融市场",
+          "url": "/knowledge-base/domains/financial-markets.html"
+        },
+        {
+          "title": "技术投资",
+          "url": "/knowledge-base/domains/technology-investment.html"
+        },
+        {
+          "title": "AI 行业投资",
+          "url": "/knowledge-base/themes/ai-industry-investment.html"
+        },
+        {
+          "title": "供需分析",
+          "url": "/knowledge-base/themes/commodity-supply-demand.html"
+        },
+        {
+          "title": "竞争分析",
+          "url": "/knowledge-base/themes/competitive-review.html"
+        },
+        {
+          "title": "周期交易框架",
+          "url": "/knowledge-base/themes/cycle-trading-framework.html"
+        },
+        {
+          "title": "市场周期观察",
+          "url": "/knowledge-base/themes/market-cycle-observation.html"
+        },
+        {
+          "title": "组合纪律",
+          "url": "/knowledge-base/themes/portfolio-discipline.html"
+        }
+      ]
+    },
+    {
+      "count": 31,
+      "info": {
+        "icon": "🏛️",
+        "title": "架构师",
+        "color": "#133D72"
+      },
+      "items": [
+        {
+          "title": "埃隆·马斯克",
+          "url": "/figures/elon-musk.html"
+        },
+        {
+          "title": "莱纳斯",
+          "url": "/figures/linus-torvalds.html"
+        },
+        {
+          "title": "王坚",
+          "url": "/figures/wang-jian.html"
+        },
+        {
+          "title": "∑ 架构师",
+          "url": "/identities/architect.html"
+        },
+        {
+          "title": "人工智能专家",
+          "url": "/knowledge-base/domains/ai-expert.html"
+        },
+        {
+          "title": "云计算与云原生",
+          "url": "/knowledge-base/domains/cloud-native.html"
+        },
+        {
+          "title": "全栈工程师",
+          "url": "/knowledge-base/domains/full-stack-engineer.html"
+        },
+        {
+          "title": "知识产权顾问",
+          "url": "/knowledge-base/domains/ip-consultant.html"
+        },
+        {
+          "title": "开源发烧友",
+          "url": "/knowledge-base/domains/open-source-enthusiast.html"
+        },
+        {
+          "title": "产品经理",
+          "url": "/knowledge-base/domains/product-manager.html"
+        },
+        {
+          "title": "Agent 工作流设计",
+          "url": "/knowledge-base/themes/agent-workflow-design.html"
+        },
+        {
+          "title": "云转型",
+          "url": "/knowledge-base/themes/cloud-transformation.html"
+        },
+        {
+          "title": "上下文工程",
+          "url": "/knowledge-base/themes/context-engineering.html"
+        },
+        {
+          "title": "工程交付闭环",
+          "url": "/knowledge-base/themes/engineering-delivery.html"
+        },
+        {
+          "title": "全栈原型开发",
+          "url": "/knowledge-base/themes/full-stack-prototyping.html"
+        },
+        {
+          "title": "LLM 应用架构",
+          "url": "/knowledge-base/themes/llm-application-architecture.html"
+        },
+        {
+          "title": "开源商业分析",
+          "url": "/knowledge-base/themes/open-source-business-analysis.html"
+        },
+        {
+          "title": "开源协作",
+          "url": "/knowledge-base/themes/open-source-collaboration.html"
+        },
+        {
+          "title": "开源选型",
+          "url": "/knowledge-base/themes/open-source-selection.html"
+        },
+        {
+          "title": "机会到产品转化",
+          "url": "/knowledge-base/themes/opportunity-to-product.html"
+        },
+        {
+          "title": "专利策略",
+          "url": "/knowledge-base/themes/patent-strategy.html"
+        },
+        {
+          "title": "平台治理",
+          "url": "/knowledge-base/themes/platform-governance.html"
+        },
+        {
+          "title": "PRD 设计",
+          "url": "/knowledge-base/themes/prd-design.html"
+        },
+        {
+          "title": "提示词工程",
+          "url": "/knowledge-base/themes/prompt-engineering.html"
+        },
+        {
+          "title": "驾驭工程可读性原则",
+          "url": "/knowledge-base/themes/readability-principles.html"
+        },
+        {
+          "title": "软件成果保护",
+          "url": "/knowledge-base/themes/software-asset-protection.html"
+        },
+        {
+          "title": "工具 & Agent",
+          "url": "/tools-agent"
+        },
+        {
+          "title": "AI 原生企业能力重构",
+          "url": "/topic-research/ai-native-enterprise.html"
+        },
+        {
+          "title": "OpenClaw 智能体生态",
+          "url": "/topic-research/openclaw-agent-ecosystem.html"
+        },
+        {
+          "title": "个人知识操作系统",
+          "url": "/topic-research/personal-knowledge-operating-system.html"
+        },
+        {
+          "title": "uWisdom Superpowers 工程化分析",
+          "url": "/uWisdom-SUPERPOWERS.html"
+        }
+      ]
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "/encyclopedia",
+        "title": "知识百科",
+        "section": "知识百科",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/encyclopedia/map.html",
+        "title": "全局知识图谱",
+        "section": "知识百科",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/andy-matuschak.html",
+        "title": "安迪·马图恰克",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "learning",
+          "digital-life"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/personal-digital-os",
+        "title": "个人数字操作系统",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/digital-life",
+        "title": "数字人生",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/luhmann",
+        "title": "卢曼",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/bruce-lee.html",
+        "title": "李小龙",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "discipline",
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/fitness-running",
+        "title": "健身跑者",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/strength-discipline",
+        "title": "力量训练纪律",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/identities/life-artist",
+        "title": "生活艺术家",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/buffett.html",
+        "title": "巴菲特",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "investment"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/financial-markets",
+        "title": "金融市场",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/topic-research/",
+        "title": "投资分析框架",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/charlie-munger",
+        "title": "查理·芒格",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/cai-zhizhong.html",
+        "title": "蔡志忠",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "culture",
+          "confidence"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/chinese-classics",
+        "title": "国学大师",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/traditional-wisdom-modernization",
+        "title": "传统智慧现代转译",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/beijing-culture",
+        "title": "北京文化使者",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/charlie-munger.html",
+        "title": "查理·芒格",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "investment",
+          "thinking"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/technology-investment",
+        "title": "技术投资",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/market-cycle-observation",
+        "title": "市场周期观察",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/cognitive-biases",
+        "title": "认知偏差清单",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/chuando-tan.html",
+        "title": "陈传多",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/eddie-peng.html",
+        "title": "彭于晏",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "discipline",
+          "fitness"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/running-periodization",
+        "title": "跑步周期训练",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/elon-musk.html",
+        "title": "埃隆·马斯克",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "architecture",
+          "innovation"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/ai-expert",
+        "title": "人工智能专家",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/feng-tang.html",
+        "title": "冯唐",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "culture",
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/haruki-murakami.html",
+        "title": "村上春树",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "writing",
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/visual-storytelling",
+        "title": "视觉叙事",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/topic-research/city-culture-and-modern-life",
+        "title": "城市文化与现代生活",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures",
+        "title": "人物志",
+        "section": "人物志",
+        "tags": [
+          "culture",
+          "figure"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/jiang-xun.html",
+        "title": "蒋勋",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "lifestyle",
+          "aesthetics"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/linus-torvalds.html",
+        "title": "莱纳斯",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "architecture",
+          "open-source"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/open-source-enthusiast",
+        "title": "开源发烧友",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/open-source-collaboration",
+        "title": "开源协作机制",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/engineering-delivery",
+        "title": "工程交付闭环",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/luhmann.html",
+        "title": "卢曼",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "learning"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/mandelstam.html",
+        "title": "曼德尔施塔姆",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/montaigne.html",
+        "title": "蒙田",
+        "section": "人物志",
+        "tags": [
+          "culture",
+          "learning",
+          "figure"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/classics-reading-system",
+        "title": "经典阅读体系",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/psychology",
+        "title": "心理学专家",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/nietzsche.html",
+        "title": "尼采",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "learning",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/qian-zhongshu.html",
+        "title": "钱钟书",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "culture",
+          "learning"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/shen-nanpeng.html",
+        "title": "沈南鹏",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "investment",
+          "entrepreneurship"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/ai-industry-investment",
+        "title": "AI 产业投资",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/opportunity-to-product",
+        "title": "机会到产品转化",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/song-zhenzong.html",
+        "title": "宋真宗赵恒",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/steve-jobs.html",
+        "title": "史蒂夫·乔布斯",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "product",
+          "innovation"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/product-manager",
+        "title": "产品经理",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/prd-design",
+        "title": "产品需求设计",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/su-shi.html",
+        "title": "苏轼",
+        "section": "人物志",
+        "tags": [
+          "culture",
+          "lifestyle",
+          "figure"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/wang-jian.html",
+        "title": "王坚",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "architecture",
+          "cloud"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/cloud-native",
+        "title": "云计算与云原生",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/cloud-transformation",
+        "title": "云原生转型",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/platform-governance",
+        "title": "平台治理",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/wang-yangming.html",
+        "title": "王阳明",
+        "section": "人物志",
+        "tags": [
+          "culture",
+          "learning",
+          "figure"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/yu-minhong.html",
+        "title": "俞敏洪",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "entrepreneurship",
+          "grit"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/zhang-juzheng.html",
+        "title": "张居正",
+        "section": "人物志",
+        "tags": [
+          "figure",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/graph",
+        "title": "知识图谱",
+        "section": "页面",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/identities/architect.html",
+        "title": "∑ 架构师",
+        "section": "角色地图",
+        "tags": [
+          "architecture",
+          "ai"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/ip-consultant",
+        "title": "知识产权顾问",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/full-stack-engineer",
+        "title": "全栈工程师",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/identities",
+        "title": "角色地图",
+        "section": "角色地图",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/identities/investor.html",
+        "title": "∑ 投资人",
+        "section": "角色地图",
+        "tags": [
+          "investment"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/commodity-trading",
+        "title": "商品交易",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/identities/life-artist.html",
+        "title": "∑ 生活艺术家",
+        "section": "角色地图",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/outdoor-adventure",
+        "title": "户外大神",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/wine",
+        "title": "葡萄酒大师",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/photography",
+        "title": "摄影家",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/gaming",
+        "title": "游戏王者",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/identities/lifelong-learner.html",
+        "title": "∑ 终身学习者",
+        "section": "角色地图",
+        "tags": [
+          "learning",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/",
+        "title": "首页",
+        "section": "页面",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/ai-expert.html",
+        "title": "人工智能专家",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "ai",
+          "agent",
+          "llm"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/llm-application-architecture",
+        "title": "LLM 应用架构",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/agent-workflow-design",
+        "title": "Agent 工作流设计",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/beijing-culture.html",
+        "title": "北京文化使者",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "learning",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/beijing-city-narrative",
+        "title": "城市文化叙事",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/cultural-walking-routes",
+        "title": "文化行走路线",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/chinese-classics.html",
+        "title": "国学大师",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "learning",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/su-shi",
+        "title": "苏轼",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/figures/wang-yangming",
+        "title": "王阳明",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/cloud-native.html",
+        "title": "云计算与云原生",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/commodity-trading.html",
+        "title": "商品交易",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "investment"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/commodity-supply-demand",
+        "title": "供需分析",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/cycle-trading-framework",
+        "title": "周期交易框架",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/digital-life.html",
+        "title": "数字人生",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "lifestyle",
+          "digital-life"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/digital-asset-curation",
+        "title": "数字资产管理",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/financial-markets.html",
+        "title": "金融市场",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "investment",
+          "finance",
+          "stocks"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/portfolio-discipline",
+        "title": "组合纪律",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/fitness-running.html",
+        "title": "健身跑者",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/full-stack-engineer.html",
+        "title": "全栈工程师",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/full-stack-prototyping",
+        "title": "全栈原型开发",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/gaming.html",
+        "title": "游戏王者",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/game-mechanics-analysis",
+        "title": "游戏机制分析",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains",
+        "title": "按领域",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "domain"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/ip-consultant.html",
+        "title": "知识产权顾问",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/software-asset-protection",
+        "title": "软件成果保护",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/patent-strategy",
+        "title": "专利策略",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/open-source-enthusiast.html",
+        "title": "开源发烧友",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "architecture",
+          "ai"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/open-source-selection",
+        "title": "开源选型",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/open-source-business-analysis",
+        "title": "开源商业分析",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/outdoor-adventure.html",
+        "title": "户外大神",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/hiking-system",
+        "title": "徒步系统",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/outdoor-equipment-framework",
+        "title": "户外装备框架",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/photography.html",
+        "title": "摄影家",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "lifestyle",
+          "photography"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/ai-photography-fusion",
+        "title": "AI 摄影融合",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/product-manager.html",
+        "title": "产品经理",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/psychology.html",
+        "title": "心理学专家",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "learning",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/emotional-regulation",
+        "title": "情绪调节",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/technology-investment.html",
+        "title": "技术投资",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "investment",
+          "ai"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/competitive-review",
+        "title": "竞争分析",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/wine.html",
+        "title": "葡萄酒大师",
+        "section": "知识百科 / 领域",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/terroir-map",
+        "title": "风土地图",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/wine-tasting-notes",
+        "title": "品鉴笔记",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/agent-workflow-design.html",
+        "title": "Agent 工作流设计",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "ai",
+          "agent",
+          "workflow"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/ai-industry-investment.html",
+        "title": "AI 行业投资",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "investment",
+          "ai"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/ai-photography-fusion.html",
+        "title": "AI 摄影融合",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle",
+          "ai"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/beijing-city-narrative.html",
+        "title": "城市文化叙事",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "culture",
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/classics-reading-system.html",
+        "title": "经典阅读体系",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "learning",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/cloud-transformation.html",
+        "title": "云转型",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/cognitive-biases.html",
+        "title": "认知偏差清单",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "learning"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/figures/montaigne",
+        "title": "蒙田",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/commodity-supply-demand.html",
+        "title": "供需分析",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "investment"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/competitive-review.html",
+        "title": "竞争分析",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "investment",
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/context-engineering.html",
+        "title": "上下文工程",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "ai",
+          "llm",
+          "context"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/prompt-engineering",
+        "title": "提示词工程",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/readability-principles",
+        "title": "驾驭工程可读性原则",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/cultural-walking-routes.html",
+        "title": "文化行走路线",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "culture",
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/cycle-trading-framework.html",
+        "title": "周期交易框架",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "investment"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/digital-asset-curation.html",
+        "title": "数字资产管理",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "digital-life"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/emotional-regulation.html",
+        "title": "情绪调节",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "learning"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/engineering-delivery.html",
+        "title": "工程交付闭环",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture",
+          "engineering",
+          "cicd"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/full-stack-prototyping.html",
+        "title": "全栈原型开发",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture",
+          "ai"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/game-mechanics-analysis.html",
+        "title": "游戏机制分析",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/hiking-system.html",
+        "title": "徒步系统",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes",
+        "title": "按主题",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "theme"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/llm-application-architecture.html",
+        "title": "LLM 应用架构",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "ai",
+          "architecture",
+          "llm"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/market-cycle-observation.html",
+        "title": "市场周期观察",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "investment"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/open-source-business-analysis.html",
+        "title": "开源商业分析",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture",
+          "investment"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/open-source-collaboration.html",
+        "title": "开源协作",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/open-source-selection.html",
+        "title": "开源选型",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/opportunity-to-product.html",
+        "title": "机会到产品转化",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/outdoor-equipment-framework.html",
+        "title": "户外装备框架",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/patent-strategy.html",
+        "title": "专利策略",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/personal-digital-os.html",
+        "title": "个人数字操作系统",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "digital-life"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/platform-governance.html",
+        "title": "平台治理",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/portfolio-discipline.html",
+        "title": "组合纪律",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "investment"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/prd-design.html",
+        "title": "PRD 设计",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/prompt-engineering.html",
+        "title": "提示词工程",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "ai",
+          "llm",
+          "prompt"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/context-engineering",
+        "title": "上下文工程",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/readability-principles.html",
+        "title": "驾驭工程可读性原则",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "knowledge",
+          "engineering",
+          "readability"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/uWisdom-PRD",
+        "title": "uWisdom PRD",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/domains/",
+        "title": "知识百科",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/running-periodization.html",
+        "title": "跑步周期训练",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/software-asset-protection.html",
+        "title": "软件成果保护",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/strength-discipline.html",
+        "title": "力量纪律",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/terroir-map.html",
+        "title": "风土地图",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/traditional-wisdom-modernization.html",
+        "title": "传统智慧现代化",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "learning",
+          "culture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/visual-storytelling.html",
+        "title": "视觉叙事",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle",
+          "photography"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/knowledge-base/themes/wine-tasting-notes.html",
+        "title": "品鉴笔记",
+        "section": "知识百科 / 主题",
+        "tags": [
+          "lifestyle"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/plans/TASK-000.html",
+        "title": "TASK-000 任务标题",
+        "section": "页面",
+        "tags": [
+          "plan",
+          "task"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/plans",
+        "title": "任务计划索引",
+        "section": "页面",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/schemas",
+        "title": "Schema 定义索引",
+        "section": "页面",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/search",
+        "title": "搜索",
+        "section": "搜索",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/today",
+        "title": "今日知识精华",
+        "section": "今日知识精华",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/tools-agent",
+        "title": "工具 & Agent",
+        "section": "工具 & Agent",
+        "tags": [
+          "agent",
+          "ai"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/topic-research/ai-native-enterprise.html",
+        "title": "AI 原生企业能力重构",
+        "section": "主题研究",
+        "tags": [
+          "ai",
+          "agent",
+          "architecture"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/topic-research/city-culture-and-modern-life.html",
+        "title": "城市文化与现代生活",
+        "section": "主题研究",
+        "tags": [
+          "culture",
+          "lifestyle",
+          "beijing"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/topic-research/fifteenth-five-year-plan.html",
+        "title": "十五五规划",
+        "section": "主题研究",
+        "tags": [
+          "planning",
+          "strategy",
+          "industry"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/topic-research",
+        "title": "主题研究",
+        "section": "主题研究",
+        "tags": [
+          "research"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/topic-research/openclaw-agent-ecosystem.html",
+        "title": "OpenClaw 智能体生态",
+        "section": "主题研究",
+        "tags": [
+          "ai",
+          "agent",
+          "ecosystem"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/tools-agent/",
+        "title": "工具 & Agent",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/topic-research/personal-knowledge-operating-system.html",
+        "title": "个人知识操作系统",
+        "section": "主题研究",
+        "tags": [
+          "knowledge",
+          "agent",
+          "digital-life"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "/uWisdom-PRD.html",
+        "title": "uWisdom 产品需求文档（PRD）",
+        "section": "页面",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "uWisdom-PRD",
+        "title": "uWisdom-PRD",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "∑ 架构师",
+        "title": "∑ 架构师",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "∑ 投资人",
+        "title": "∑ 投资人",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "∑ 终身学习者",
+        "title": "∑ 终身学习者",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "∑ 生活艺术家",
+        "title": "∑ 生活艺术家",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "知识产权顾问",
+        "title": "知识产权顾问",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "全栈工程师",
+        "title": "全栈工程师",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "产品经理",
+        "title": "产品经理",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "云计算与云原生",
+        "title": "云计算与云原生",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "开源发烧友",
+        "title": "开源发烧友",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "人工智能专家",
+        "title": "人工智能专家",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "金融市场",
+        "title": "金融市场",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "国学大师",
+        "title": "国学大师",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "北京文化使者",
+        "title": "北京文化使者",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "心理学专家",
+        "title": "心理学专家",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "数字人生",
+        "title": "数字人生",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "户外大神",
+        "title": "户外大神",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "健身跑者",
+        "title": "健身跑者",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "葡萄酒大师",
+        "title": "葡萄酒大师",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "摄影家",
+        "title": "摄影家",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "游戏王者",
+        "title": "游戏王者",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      },
+      {
+        "id": "/uWisdom-SUPERPOWERS.html",
+        "title": "uWisdom Superpowers 工程化分析",
+        "section": "页面",
+        "tags": [
+          "engineering",
+          "superpowers",
+          "method"
+        ],
+        "identity": ""
+      },
+      {
+        "id": "WikiLink",
+        "title": "WikiLink",
+        "section": "",
+        "tags": [],
+        "identity": ""
+      }
+    ],
+    "links": [
+      {
+        "source": "/figures/andy-matuschak.html",
+        "target": "/knowledge-base/themes/personal-digital-os"
+      },
+      {
+        "source": "/figures/andy-matuschak.html",
+        "target": "/knowledge-base/domains/digital-life"
+      },
+      {
+        "source": "/figures/andy-matuschak.html",
+        "target": "/figures/luhmann"
+      },
+      {
+        "source": "/figures/bruce-lee.html",
+        "target": "/knowledge-base/domains/fitness-running"
+      },
+      {
+        "source": "/figures/bruce-lee.html",
+        "target": "/knowledge-base/themes/strength-discipline"
+      },
+      {
+        "source": "/figures/bruce-lee.html",
+        "target": "/identities/life-artist"
+      },
+      {
+        "source": "/figures/buffett.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/figures/buffett.html",
+        "target": "/topic-research/"
+      },
+      {
+        "source": "/figures/buffett.html",
+        "target": "/figures/charlie-munger"
+      },
+      {
+        "source": "/figures/cai-zhizhong.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/figures/cai-zhizhong.html",
+        "target": "/knowledge-base/themes/traditional-wisdom-modernization"
+      },
+      {
+        "source": "/figures/cai-zhizhong.html",
+        "target": "/knowledge-base/domains/beijing-culture"
+      },
+      {
+        "source": "/figures/charlie-munger.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/figures/charlie-munger.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/figures/charlie-munger.html",
+        "target": "/knowledge-base/themes/market-cycle-observation"
+      },
+      {
+        "source": "/figures/charlie-munger.html",
+        "target": "/knowledge-base/themes/cognitive-biases"
+      },
+      {
+        "source": "/figures/chuando-tan.html",
+        "target": "/knowledge-base/domains/fitness-running"
+      },
+      {
+        "source": "/figures/chuando-tan.html",
+        "target": "/identities/life-artist"
+      },
+      {
+        "source": "/figures/eddie-peng.html",
+        "target": "/knowledge-base/domains/fitness-running"
+      },
+      {
+        "source": "/figures/eddie-peng.html",
+        "target": "/knowledge-base/themes/running-periodization"
+      },
+      {
+        "source": "/figures/eddie-peng.html",
+        "target": "/knowledge-base/themes/strength-discipline"
+      },
+      {
+        "source": "/figures/elon-musk.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/figures/elon-musk.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/figures/feng-tang.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/figures/haruki-murakami.html",
+        "target": "/knowledge-base/themes/visual-storytelling"
+      },
+      {
+        "source": "/figures/haruki-murakami.html",
+        "target": "/knowledge-base/themes/running-periodization"
+      },
+      {
+        "source": "/figures/haruki-murakami.html",
+        "target": "/topic-research/city-culture-and-modern-life"
+      },
+      {
+        "source": "/figures/jiang-xun.html",
+        "target": "/identities/life-artist"
+      },
+      {
+        "source": "/figures/jiang-xun.html",
+        "target": "/topic-research/city-culture-and-modern-life"
+      },
+      {
+        "source": "/figures/jiang-xun.html",
+        "target": "/knowledge-base/themes/visual-storytelling"
+      },
+      {
+        "source": "/figures/linus-torvalds.html",
+        "target": "/knowledge-base/domains/open-source-enthusiast"
+      },
+      {
+        "source": "/figures/linus-torvalds.html",
+        "target": "/knowledge-base/themes/open-source-collaboration"
+      },
+      {
+        "source": "/figures/linus-torvalds.html",
+        "target": "/knowledge-base/themes/engineering-delivery"
+      },
+      {
+        "source": "/figures/luhmann.html",
+        "target": "/knowledge-base/themes/personal-digital-os"
+      },
+      {
+        "source": "/figures/luhmann.html",
+        "target": "/knowledge-base/domains/digital-life"
+      },
+      {
+        "source": "/figures/mandelstam.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/figures/montaigne.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/figures/montaigne.html",
+        "target": "/knowledge-base/themes/classics-reading-system"
+      },
+      {
+        "source": "/figures/montaigne.html",
+        "target": "/knowledge-base/themes/cognitive-biases"
+      },
+      {
+        "source": "/figures/montaigne.html",
+        "target": "/knowledge-base/domains/psychology"
+      },
+      {
+        "source": "/figures/nietzsche.html",
+        "target": "/knowledge-base/domains/psychology"
+      },
+      {
+        "source": "/figures/nietzsche.html",
+        "target": "/knowledge-base/themes/classics-reading-system"
+      },
+      {
+        "source": "/figures/qian-zhongshu.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/figures/shen-nanpeng.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/figures/shen-nanpeng.html",
+        "target": "/knowledge-base/themes/ai-industry-investment"
+      },
+      {
+        "source": "/figures/shen-nanpeng.html",
+        "target": "/knowledge-base/themes/opportunity-to-product"
+      },
+      {
+        "source": "/figures/song-zhenzong.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/figures/steve-jobs.html",
+        "target": "/knowledge-base/domains/product-manager"
+      },
+      {
+        "source": "/figures/steve-jobs.html",
+        "target": "/knowledge-base/themes/prd-design"
+      },
+      {
+        "source": "/figures/steve-jobs.html",
+        "target": "/knowledge-base/themes/opportunity-to-product"
+      },
+      {
+        "source": "/figures/su-shi.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/figures/su-shi.html",
+        "target": "/knowledge-base/domains/beijing-culture"
+      },
+      {
+        "source": "/figures/su-shi.html",
+        "target": "/knowledge-base/themes/visual-storytelling"
+      },
+      {
+        "source": "/figures/su-shi.html",
+        "target": "/identities/life-artist"
+      },
+      {
+        "source": "/figures/wang-jian.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/figures/wang-jian.html",
+        "target": "/knowledge-base/themes/cloud-transformation"
+      },
+      {
+        "source": "/figures/wang-jian.html",
+        "target": "/knowledge-base/themes/platform-governance"
+      },
+      {
+        "source": "/figures/wang-yangming.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/figures/wang-yangming.html",
+        "target": "/knowledge-base/themes/classics-reading-system"
+      },
+      {
+        "source": "/figures/wang-yangming.html",
+        "target": "/knowledge-base/themes/traditional-wisdom-modernization"
+      },
+      {
+        "source": "/figures/wang-yangming.html",
+        "target": "/knowledge-base/domains/psychology"
+      },
+      {
+        "source": "/figures/yu-minhong.html",
+        "target": "/topic-research/"
+      },
+      {
+        "source": "/figures/yu-minhong.html",
+        "target": "/knowledge-base/themes/opportunity-to-product"
+      },
+      {
+        "source": "/figures/yu-minhong.html",
+        "target": "/knowledge-base/themes/prd-design"
+      },
+      {
+        "source": "/figures/zhang-juzheng.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/identities/architect.html",
+        "target": "/knowledge-base/domains/ip-consultant"
+      },
+      {
+        "source": "/identities/architect.html",
+        "target": "/knowledge-base/domains/full-stack-engineer"
+      },
+      {
+        "source": "/identities/architect.html",
+        "target": "/knowledge-base/domains/product-manager"
+      },
+      {
+        "source": "/identities/architect.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/identities/architect.html",
+        "target": "/knowledge-base/domains/open-source-enthusiast"
+      },
+      {
+        "source": "/identities/architect.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/identities/investor.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/identities/investor.html",
+        "target": "/knowledge-base/domains/commodity-trading"
+      },
+      {
+        "source": "/identities/investor.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/identities/life-artist.html",
+        "target": "/knowledge-base/domains/digital-life"
+      },
+      {
+        "source": "/identities/life-artist.html",
+        "target": "/knowledge-base/domains/outdoor-adventure"
+      },
+      {
+        "source": "/identities/life-artist.html",
+        "target": "/knowledge-base/domains/fitness-running"
+      },
+      {
+        "source": "/identities/life-artist.html",
+        "target": "/knowledge-base/domains/wine"
+      },
+      {
+        "source": "/identities/life-artist.html",
+        "target": "/knowledge-base/domains/photography"
+      },
+      {
+        "source": "/identities/life-artist.html",
+        "target": "/knowledge-base/domains/gaming"
+      },
+      {
+        "source": "/identities/lifelong-learner.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/identities/lifelong-learner.html",
+        "target": "/knowledge-base/domains/beijing-culture"
+      },
+      {
+        "source": "/identities/lifelong-learner.html",
+        "target": "/knowledge-base/domains/psychology"
+      },
+      {
+        "source": "/knowledge-base/domains/ai-expert.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/domains/ai-expert.html",
+        "target": "/knowledge-base/themes/agent-workflow-design"
+      },
+      {
+        "source": "/knowledge-base/domains/ai-expert.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/domains/ai-expert.html",
+        "target": "/knowledge-base/themes/agent-workflow-design"
+      },
+      {
+        "source": "/knowledge-base/domains/ai-expert.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/knowledge-base/domains/ai-expert.html",
+        "target": "/knowledge-base/themes/engineering-delivery"
+      },
+      {
+        "source": "/knowledge-base/domains/beijing-culture.html",
+        "target": "/knowledge-base/themes/beijing-city-narrative"
+      },
+      {
+        "source": "/knowledge-base/domains/beijing-culture.html",
+        "target": "/knowledge-base/themes/cultural-walking-routes"
+      },
+      {
+        "source": "/knowledge-base/domains/beijing-culture.html",
+        "target": "/knowledge-base/themes/visual-storytelling"
+      },
+      {
+        "source": "/knowledge-base/domains/chinese-classics.html",
+        "target": "/knowledge-base/themes/classics-reading-system"
+      },
+      {
+        "source": "/knowledge-base/domains/chinese-classics.html",
+        "target": "/knowledge-base/themes/traditional-wisdom-modernization"
+      },
+      {
+        "source": "/knowledge-base/domains/chinese-classics.html",
+        "target": "/figures/su-shi"
+      },
+      {
+        "source": "/knowledge-base/domains/chinese-classics.html",
+        "target": "/figures/wang-yangming"
+      },
+      {
+        "source": "/knowledge-base/domains/cloud-native.html",
+        "target": "/knowledge-base/themes/platform-governance"
+      },
+      {
+        "source": "/knowledge-base/domains/cloud-native.html",
+        "target": "/knowledge-base/themes/engineering-delivery"
+      },
+      {
+        "source": "/knowledge-base/domains/cloud-native.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/knowledge-base/domains/commodity-trading.html",
+        "target": "/knowledge-base/themes/commodity-supply-demand"
+      },
+      {
+        "source": "/knowledge-base/domains/commodity-trading.html",
+        "target": "/knowledge-base/themes/cycle-trading-framework"
+      },
+      {
+        "source": "/knowledge-base/domains/commodity-trading.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/knowledge-base/domains/digital-life.html",
+        "target": "/knowledge-base/themes/personal-digital-os"
+      },
+      {
+        "source": "/knowledge-base/domains/digital-life.html",
+        "target": "/knowledge-base/themes/digital-asset-curation"
+      },
+      {
+        "source": "/knowledge-base/domains/financial-markets.html",
+        "target": "/knowledge-base/themes/market-cycle-observation"
+      },
+      {
+        "source": "/knowledge-base/domains/financial-markets.html",
+        "target": "/knowledge-base/themes/portfolio-discipline"
+      },
+      {
+        "source": "/knowledge-base/domains/financial-markets.html",
+        "target": "/knowledge-base/themes/market-cycle-observation"
+      },
+      {
+        "source": "/knowledge-base/domains/financial-markets.html",
+        "target": "/knowledge-base/themes/portfolio-discipline"
+      },
+      {
+        "source": "/knowledge-base/domains/financial-markets.html",
+        "target": "/knowledge-base/domains/commodity-trading"
+      },
+      {
+        "source": "/knowledge-base/domains/financial-markets.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/knowledge-base/domains/financial-markets.html",
+        "target": "/topic-research/"
+      },
+      {
+        "source": "/knowledge-base/domains/fitness-running.html",
+        "target": "/knowledge-base/themes/running-periodization"
+      },
+      {
+        "source": "/knowledge-base/domains/fitness-running.html",
+        "target": "/knowledge-base/themes/strength-discipline"
+      },
+      {
+        "source": "/knowledge-base/domains/full-stack-engineer.html",
+        "target": "/knowledge-base/themes/full-stack-prototyping"
+      },
+      {
+        "source": "/knowledge-base/domains/full-stack-engineer.html",
+        "target": "/knowledge-base/themes/engineering-delivery"
+      },
+      {
+        "source": "/knowledge-base/domains/gaming.html",
+        "target": "/knowledge-base/themes/game-mechanics-analysis"
+      },
+      {
+        "source": "/knowledge-base/domains/ip-consultant.html",
+        "target": "/knowledge-base/themes/software-asset-protection"
+      },
+      {
+        "source": "/knowledge-base/domains/ip-consultant.html",
+        "target": "/knowledge-base/themes/patent-strategy"
+      },
+      {
+        "source": "/knowledge-base/domains/ip-consultant.html",
+        "target": "/knowledge-base/domains/open-source-enthusiast"
+      },
+      {
+        "source": "/knowledge-base/domains/open-source-enthusiast.html",
+        "target": "/knowledge-base/themes/open-source-collaboration"
+      },
+      {
+        "source": "/knowledge-base/domains/open-source-enthusiast.html",
+        "target": "/knowledge-base/themes/open-source-selection"
+      },
+      {
+        "source": "/knowledge-base/domains/open-source-enthusiast.html",
+        "target": "/knowledge-base/themes/open-source-business-analysis"
+      },
+      {
+        "source": "/knowledge-base/domains/outdoor-adventure.html",
+        "target": "/knowledge-base/themes/hiking-system"
+      },
+      {
+        "source": "/knowledge-base/domains/outdoor-adventure.html",
+        "target": "/knowledge-base/themes/outdoor-equipment-framework"
+      },
+      {
+        "source": "/knowledge-base/domains/photography.html",
+        "target": "/knowledge-base/themes/visual-storytelling"
+      },
+      {
+        "source": "/knowledge-base/domains/photography.html",
+        "target": "/knowledge-base/themes/ai-photography-fusion"
+      },
+      {
+        "source": "/knowledge-base/domains/product-manager.html",
+        "target": "/knowledge-base/themes/prd-design"
+      },
+      {
+        "source": "/knowledge-base/domains/product-manager.html",
+        "target": "/knowledge-base/themes/opportunity-to-product"
+      },
+      {
+        "source": "/knowledge-base/domains/psychology.html",
+        "target": "/knowledge-base/themes/cognitive-biases"
+      },
+      {
+        "source": "/knowledge-base/domains/psychology.html",
+        "target": "/knowledge-base/themes/emotional-regulation"
+      },
+      {
+        "source": "/knowledge-base/domains/technology-investment.html",
+        "target": "/knowledge-base/themes/ai-industry-investment"
+      },
+      {
+        "source": "/knowledge-base/domains/technology-investment.html",
+        "target": "/knowledge-base/themes/competitive-review"
+      },
+      {
+        "source": "/knowledge-base/domains/technology-investment.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/knowledge-base/domains/wine.html",
+        "target": "/knowledge-base/themes/terroir-map"
+      },
+      {
+        "source": "/knowledge-base/domains/wine.html",
+        "target": "/knowledge-base/themes/wine-tasting-notes"
+      },
+      {
+        "source": "/knowledge-base/themes/agent-workflow-design.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/knowledge-base/themes/agent-workflow-design.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/themes/agent-workflow-design.html",
+        "target": "/knowledge-base/themes/engineering-delivery"
+      },
+      {
+        "source": "/knowledge-base/themes/agent-workflow-design.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/knowledge-base/themes/ai-industry-investment.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/knowledge-base/themes/ai-industry-investment.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/knowledge-base/themes/ai-industry-investment.html",
+        "target": "/knowledge-base/themes/competitive-review"
+      },
+      {
+        "source": "/knowledge-base/themes/ai-photography-fusion.html",
+        "target": "/knowledge-base/domains/photography"
+      },
+      {
+        "source": "/knowledge-base/themes/ai-photography-fusion.html",
+        "target": "/knowledge-base/themes/visual-storytelling"
+      },
+      {
+        "source": "/knowledge-base/themes/ai-photography-fusion.html",
+        "target": "/knowledge-base/domains/photography"
+      },
+      {
+        "source": "/knowledge-base/themes/beijing-city-narrative.html",
+        "target": "/knowledge-base/domains/beijing-culture"
+      },
+      {
+        "source": "/knowledge-base/themes/beijing-city-narrative.html",
+        "target": "/knowledge-base/themes/cultural-walking-routes"
+      },
+      {
+        "source": "/knowledge-base/themes/beijing-city-narrative.html",
+        "target": "/knowledge-base/domains/beijing-culture"
+      },
+      {
+        "source": "/knowledge-base/themes/classics-reading-system.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/knowledge-base/themes/classics-reading-system.html",
+        "target": "/knowledge-base/themes/traditional-wisdom-modernization"
+      },
+      {
+        "source": "/knowledge-base/themes/classics-reading-system.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/knowledge-base/themes/cloud-transformation.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/knowledge-base/themes/cloud-transformation.html",
+        "target": "/knowledge-base/themes/platform-governance"
+      },
+      {
+        "source": "/knowledge-base/themes/cloud-transformation.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/knowledge-base/themes/cloud-transformation.html",
+        "target": "/knowledge-base/themes/engineering-delivery"
+      },
+      {
+        "source": "/knowledge-base/themes/cognitive-biases.html",
+        "target": "/knowledge-base/domains/psychology"
+      },
+      {
+        "source": "/knowledge-base/themes/cognitive-biases.html",
+        "target": "/knowledge-base/themes/emotional-regulation"
+      },
+      {
+        "source": "/knowledge-base/themes/cognitive-biases.html",
+        "target": "/knowledge-base/domains/psychology"
+      },
+      {
+        "source": "/knowledge-base/themes/cognitive-biases.html",
+        "target": "/figures/montaigne"
+      },
+      {
+        "source": "/knowledge-base/themes/commodity-supply-demand.html",
+        "target": "/knowledge-base/domains/commodity-trading"
+      },
+      {
+        "source": "/knowledge-base/themes/commodity-supply-demand.html",
+        "target": "/knowledge-base/domains/commodity-trading"
+      },
+      {
+        "source": "/knowledge-base/themes/commodity-supply-demand.html",
+        "target": "/knowledge-base/themes/cycle-trading-framework"
+      },
+      {
+        "source": "/knowledge-base/themes/competitive-review.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/knowledge-base/themes/competitive-review.html",
+        "target": "/knowledge-base/themes/ai-industry-investment"
+      },
+      {
+        "source": "/knowledge-base/themes/competitive-review.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/knowledge-base/themes/context-engineering.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/knowledge-base/themes/context-engineering.html",
+        "target": "/knowledge-base/themes/prompt-engineering"
+      },
+      {
+        "source": "/knowledge-base/themes/context-engineering.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/themes/context-engineering.html",
+        "target": "/knowledge-base/themes/prompt-engineering"
+      },
+      {
+        "source": "/knowledge-base/themes/context-engineering.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/themes/context-engineering.html",
+        "target": "/knowledge-base/themes/agent-workflow-design"
+      },
+      {
+        "source": "/knowledge-base/themes/context-engineering.html",
+        "target": "/knowledge-base/themes/readability-principles"
+      },
+      {
+        "source": "/knowledge-base/themes/cultural-walking-routes.html",
+        "target": "/knowledge-base/domains/beijing-culture"
+      },
+      {
+        "source": "/knowledge-base/themes/cultural-walking-routes.html",
+        "target": "/knowledge-base/themes/beijing-city-narrative"
+      },
+      {
+        "source": "/knowledge-base/themes/cultural-walking-routes.html",
+        "target": "/knowledge-base/themes/visual-storytelling"
+      },
+      {
+        "source": "/knowledge-base/themes/cycle-trading-framework.html",
+        "target": "/knowledge-base/domains/commodity-trading"
+      },
+      {
+        "source": "/knowledge-base/themes/cycle-trading-framework.html",
+        "target": "/knowledge-base/themes/commodity-supply-demand"
+      },
+      {
+        "source": "/knowledge-base/themes/cycle-trading-framework.html",
+        "target": "/knowledge-base/domains/commodity-trading"
+      },
+      {
+        "source": "/knowledge-base/themes/digital-asset-curation.html",
+        "target": "/knowledge-base/domains/digital-life"
+      },
+      {
+        "source": "/knowledge-base/themes/digital-asset-curation.html",
+        "target": "/knowledge-base/themes/personal-digital-os"
+      },
+      {
+        "source": "/knowledge-base/themes/digital-asset-curation.html",
+        "target": "/knowledge-base/domains/digital-life"
+      },
+      {
+        "source": "/knowledge-base/themes/emotional-regulation.html",
+        "target": "/knowledge-base/domains/psychology"
+      },
+      {
+        "source": "/knowledge-base/themes/emotional-regulation.html",
+        "target": "/knowledge-base/themes/cognitive-biases"
+      },
+      {
+        "source": "/knowledge-base/themes/emotional-regulation.html",
+        "target": "/knowledge-base/domains/psychology"
+      },
+      {
+        "source": "/knowledge-base/themes/engineering-delivery.html",
+        "target": "/knowledge-base/domains/full-stack-engineer"
+      },
+      {
+        "source": "/knowledge-base/themes/engineering-delivery.html",
+        "target": "/knowledge-base/themes/platform-governance"
+      },
+      {
+        "source": "/knowledge-base/themes/engineering-delivery.html",
+        "target": "/knowledge-base/domains/full-stack-engineer"
+      },
+      {
+        "source": "/knowledge-base/themes/engineering-delivery.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/knowledge-base/themes/engineering-delivery.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/themes/full-stack-prototyping.html",
+        "target": "/knowledge-base/domains/full-stack-engineer"
+      },
+      {
+        "source": "/knowledge-base/themes/full-stack-prototyping.html",
+        "target": "/knowledge-base/domains/full-stack-engineer"
+      },
+      {
+        "source": "/knowledge-base/themes/full-stack-prototyping.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/themes/game-mechanics-analysis.html",
+        "target": "/knowledge-base/domains/gaming"
+      },
+      {
+        "source": "/knowledge-base/themes/game-mechanics-analysis.html",
+        "target": "/knowledge-base/domains/gaming"
+      },
+      {
+        "source": "/knowledge-base/themes/hiking-system.html",
+        "target": "/knowledge-base/domains/outdoor-adventure"
+      },
+      {
+        "source": "/knowledge-base/themes/hiking-system.html",
+        "target": "/knowledge-base/themes/outdoor-equipment-framework"
+      },
+      {
+        "source": "/knowledge-base/themes/hiking-system.html",
+        "target": "/knowledge-base/domains/outdoor-adventure"
+      },
+      {
+        "source": "/knowledge-base/themes/llm-application-architecture.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/knowledge-base/themes/llm-application-architecture.html",
+        "target": "/knowledge-base/themes/agent-workflow-design"
+      },
+      {
+        "source": "/knowledge-base/themes/llm-application-architecture.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/knowledge-base/themes/llm-application-architecture.html",
+        "target": "/knowledge-base/themes/engineering-delivery"
+      },
+      {
+        "source": "/knowledge-base/themes/market-cycle-observation.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/knowledge-base/themes/market-cycle-observation.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/knowledge-base/themes/market-cycle-observation.html",
+        "target": "/knowledge-base/themes/portfolio-discipline"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-business-analysis.html",
+        "target": "/knowledge-base/domains/open-source-enthusiast"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-business-analysis.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-business-analysis.html",
+        "target": "/knowledge-base/themes/open-source-selection"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-collaboration.html",
+        "target": "/knowledge-base/domains/open-source-enthusiast"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-collaboration.html",
+        "target": "/knowledge-base/themes/open-source-selection"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-collaboration.html",
+        "target": "/knowledge-base/domains/open-source-enthusiast"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-selection.html",
+        "target": "/knowledge-base/domains/open-source-enthusiast"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-selection.html",
+        "target": "/knowledge-base/themes/open-source-collaboration"
+      },
+      {
+        "source": "/knowledge-base/themes/open-source-selection.html",
+        "target": "/knowledge-base/themes/open-source-business-analysis"
+      },
+      {
+        "source": "/knowledge-base/themes/opportunity-to-product.html",
+        "target": "/knowledge-base/domains/product-manager"
+      },
+      {
+        "source": "/knowledge-base/themes/opportunity-to-product.html",
+        "target": "/knowledge-base/themes/prd-design"
+      },
+      {
+        "source": "/knowledge-base/themes/opportunity-to-product.html",
+        "target": "/knowledge-base/domains/product-manager"
+      },
+      {
+        "source": "/knowledge-base/themes/outdoor-equipment-framework.html",
+        "target": "/knowledge-base/domains/outdoor-adventure"
+      },
+      {
+        "source": "/knowledge-base/themes/outdoor-equipment-framework.html",
+        "target": "/knowledge-base/themes/hiking-system"
+      },
+      {
+        "source": "/knowledge-base/themes/outdoor-equipment-framework.html",
+        "target": "/knowledge-base/domains/outdoor-adventure"
+      },
+      {
+        "source": "/knowledge-base/themes/patent-strategy.html",
+        "target": "/knowledge-base/domains/ip-consultant"
+      },
+      {
+        "source": "/knowledge-base/themes/patent-strategy.html",
+        "target": "/knowledge-base/themes/software-asset-protection"
+      },
+      {
+        "source": "/knowledge-base/themes/patent-strategy.html",
+        "target": "/knowledge-base/domains/ip-consultant"
+      },
+      {
+        "source": "/knowledge-base/themes/personal-digital-os.html",
+        "target": "/knowledge-base/domains/digital-life"
+      },
+      {
+        "source": "/knowledge-base/themes/personal-digital-os.html",
+        "target": "/knowledge-base/themes/digital-asset-curation"
+      },
+      {
+        "source": "/knowledge-base/themes/personal-digital-os.html",
+        "target": "/knowledge-base/domains/digital-life"
+      },
+      {
+        "source": "/knowledge-base/themes/personal-digital-os.html",
+        "target": "/figures/luhmann"
+      },
+      {
+        "source": "/knowledge-base/themes/platform-governance.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/knowledge-base/themes/platform-governance.html",
+        "target": "/knowledge-base/domains/cloud-native"
+      },
+      {
+        "source": "/knowledge-base/themes/platform-governance.html",
+        "target": "/knowledge-base/themes/engineering-delivery"
+      },
+      {
+        "source": "/knowledge-base/themes/portfolio-discipline.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/knowledge-base/themes/portfolio-discipline.html",
+        "target": "/knowledge-base/themes/market-cycle-observation"
+      },
+      {
+        "source": "/knowledge-base/themes/portfolio-discipline.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/knowledge-base/themes/prd-design.html",
+        "target": "/knowledge-base/domains/product-manager"
+      },
+      {
+        "source": "/knowledge-base/themes/prd-design.html",
+        "target": "/knowledge-base/themes/opportunity-to-product"
+      },
+      {
+        "source": "/knowledge-base/themes/prd-design.html",
+        "target": "/knowledge-base/domains/product-manager"
+      },
+      {
+        "source": "/knowledge-base/themes/prompt-engineering.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/knowledge-base/themes/prompt-engineering.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/themes/prompt-engineering.html",
+        "target": "/knowledge-base/themes/context-engineering"
+      },
+      {
+        "source": "/knowledge-base/themes/prompt-engineering.html",
+        "target": "/knowledge-base/themes/context-engineering"
+      },
+      {
+        "source": "/knowledge-base/themes/prompt-engineering.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/knowledge-base/themes/prompt-engineering.html",
+        "target": "/knowledge-base/themes/agent-workflow-design"
+      },
+      {
+        "source": "/knowledge-base/themes/prompt-engineering.html",
+        "target": "/knowledge-base/themes/readability-principles"
+      },
+      {
+        "source": "/knowledge-base/themes/readability-principles.html",
+        "target": "/knowledge-base/domains/full-stack-engineer"
+      },
+      {
+        "source": "/knowledge-base/themes/readability-principles.html",
+        "target": "/knowledge-base/themes/prompt-engineering"
+      },
+      {
+        "source": "/knowledge-base/themes/readability-principles.html",
+        "target": "/knowledge-base/themes/context-engineering"
+      },
+      {
+        "source": "/knowledge-base/themes/readability-principles.html",
+        "target": "/uWisdom-PRD"
+      },
+      {
+        "source": "/knowledge-base/themes/readability-principles.html",
+        "target": "/knowledge-base/themes/prompt-engineering"
+      },
+      {
+        "source": "/knowledge-base/themes/readability-principles.html",
+        "target": "/knowledge-base/themes/context-engineering"
+      },
+      {
+        "source": "/knowledge-base/themes/readability-principles.html",
+        "target": "/knowledge-base/domains/"
+      },
+      {
+        "source": "/knowledge-base/themes/running-periodization.html",
+        "target": "/knowledge-base/domains/fitness-running"
+      },
+      {
+        "source": "/knowledge-base/themes/running-periodization.html",
+        "target": "/knowledge-base/themes/strength-discipline"
+      },
+      {
+        "source": "/knowledge-base/themes/running-periodization.html",
+        "target": "/knowledge-base/domains/fitness-running"
+      },
+      {
+        "source": "/knowledge-base/themes/software-asset-protection.html",
+        "target": "/knowledge-base/domains/ip-consultant"
+      },
+      {
+        "source": "/knowledge-base/themes/software-asset-protection.html",
+        "target": "/knowledge-base/themes/patent-strategy"
+      },
+      {
+        "source": "/knowledge-base/themes/software-asset-protection.html",
+        "target": "/knowledge-base/domains/ip-consultant"
+      },
+      {
+        "source": "/knowledge-base/themes/strength-discipline.html",
+        "target": "/knowledge-base/domains/fitness-running"
+      },
+      {
+        "source": "/knowledge-base/themes/strength-discipline.html",
+        "target": "/knowledge-base/themes/running-periodization"
+      },
+      {
+        "source": "/knowledge-base/themes/strength-discipline.html",
+        "target": "/knowledge-base/domains/fitness-running"
+      },
+      {
+        "source": "/knowledge-base/themes/terroir-map.html",
+        "target": "/knowledge-base/domains/wine"
+      },
+      {
+        "source": "/knowledge-base/themes/terroir-map.html",
+        "target": "/knowledge-base/themes/wine-tasting-notes"
+      },
+      {
+        "source": "/knowledge-base/themes/terroir-map.html",
+        "target": "/knowledge-base/domains/wine"
+      },
+      {
+        "source": "/knowledge-base/themes/traditional-wisdom-modernization.html",
+        "target": "/knowledge-base/domains/chinese-classics"
+      },
+      {
+        "source": "/knowledge-base/themes/traditional-wisdom-modernization.html",
+        "target": "/knowledge-base/themes/classics-reading-system"
+      },
+      {
+        "source": "/knowledge-base/themes/traditional-wisdom-modernization.html",
+        "target": "/knowledge-base/themes/cognitive-biases"
+      },
+      {
+        "source": "/knowledge-base/themes/visual-storytelling.html",
+        "target": "/knowledge-base/domains/photography"
+      },
+      {
+        "source": "/knowledge-base/themes/visual-storytelling.html",
+        "target": "/knowledge-base/themes/ai-photography-fusion"
+      },
+      {
+        "source": "/knowledge-base/themes/visual-storytelling.html",
+        "target": "/knowledge-base/domains/photography"
+      },
+      {
+        "source": "/knowledge-base/themes/wine-tasting-notes.html",
+        "target": "/knowledge-base/domains/wine"
+      },
+      {
+        "source": "/knowledge-base/themes/wine-tasting-notes.html",
+        "target": "/knowledge-base/themes/terroir-map"
+      },
+      {
+        "source": "/knowledge-base/themes/wine-tasting-notes.html",
+        "target": "/knowledge-base/domains/wine"
+      },
+      {
+        "source": "/topic-research/ai-native-enterprise.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/topic-research/ai-native-enterprise.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/topic-research/city-culture-and-modern-life.html",
+        "target": "/knowledge-base/domains/beijing-culture"
+      },
+      {
+        "source": "/topic-research/city-culture-and-modern-life.html",
+        "target": "/knowledge-base/themes/beijing-city-narrative"
+      },
+      {
+        "source": "/topic-research/city-culture-and-modern-life.html",
+        "target": "/knowledge-base/themes/visual-storytelling"
+      },
+      {
+        "source": "/topic-research/fifteenth-five-year-plan.html",
+        "target": "/knowledge-base/domains/financial-markets"
+      },
+      {
+        "source": "/topic-research/fifteenth-five-year-plan.html",
+        "target": "/knowledge-base/domains/technology-investment"
+      },
+      {
+        "source": "/topic-research/fifteenth-five-year-plan.html",
+        "target": "/knowledge-base/themes/ai-industry-investment"
+      },
+      {
+        "source": "/topic-research/fifteenth-five-year-plan.html",
+        "target": "/knowledge-base/themes/market-cycle-observation"
+      },
+      {
+        "source": "/topic-research/openclaw-agent-ecosystem.html",
+        "target": "/knowledge-base/domains/ai-expert"
+      },
+      {
+        "source": "/topic-research/openclaw-agent-ecosystem.html",
+        "target": "/knowledge-base/themes/agent-workflow-design"
+      },
+      {
+        "source": "/topic-research/openclaw-agent-ecosystem.html",
+        "target": "/knowledge-base/themes/llm-application-architecture"
+      },
+      {
+        "source": "/topic-research/openclaw-agent-ecosystem.html",
+        "target": "/tools-agent/"
+      },
+      {
+        "source": "/topic-research/personal-knowledge-operating-system.html",
+        "target": "/knowledge-base/themes/personal-digital-os"
+      },
+      {
+        "source": "/topic-research/personal-knowledge-operating-system.html",
+        "target": "/knowledge-base/domains/digital-life"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "uWisdom-PRD"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "∑ 架构师"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "∑ 投资人"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "∑ 终身学习者"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "∑ 生活艺术家"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "知识产权顾问"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "全栈工程师"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "产品经理"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "云计算与云原生"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "开源发烧友"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "人工智能专家"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "金融市场"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "国学大师"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "北京文化使者"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "心理学专家"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "数字人生"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "户外大神"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "健身跑者"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "葡萄酒大师"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "摄影家"
+      },
+      {
+        "source": "/uWisdom-PRD.html",
+        "target": "游戏王者"
+      },
+      {
+        "source": "/uWisdom-SUPERPOWERS.html",
+        "target": "WikiLink"
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "title": "知识图谱",
+      "url": "/graph",
+      "updated": "2026-03-27",
+      "section": "页面"
+    },
+    {
+      "title": "上下文工程",
+      "url": "/knowledge-base/themes/context-engineering.html",
+      "updated": "2026-03-27",
+      "section": "知识百科 / 主题"
+    },
+    {
+      "title": "提示词工程",
+      "url": "/knowledge-base/themes/prompt-engineering.html",
+      "updated": "2026-03-27",
+      "section": "知识百科 / 主题"
+    },
+    {
+      "title": "驾驭工程可读性原则",
+      "url": "/knowledge-base/themes/readability-principles.html",
+      "updated": "2026-03-27",
+      "section": "知识百科 / 主题"
+    },
+    {
+      "title": "TASK-000 任务标题",
+      "url": "/plans/TASK-000.html",
+      "updated": "2026-03-27",
+      "section": "页面"
+    },
+    {
+      "title": "任务计划索引",
+      "url": "/plans",
+      "updated": "2026-03-27",
+      "section": "页面"
+    },
+    {
+      "title": "Schema 定义索引",
+      "url": "/schemas",
+      "updated": "2026-03-27",
+      "section": "页面"
+    },
+    {
+      "title": "uWisdom Superpowers 工程化分析",
+      "url": "/uWisdom-SUPERPOWERS.html",
+      "updated": "2026-03-27",
+      "section": "页面"
+    },
+    {
+      "title": "全局知识图谱",
+      "url": "/encyclopedia/map.html",
+      "updated": "2026-03-26",
+      "section": "知识百科"
+    },
+    {
+      "title": "uWisdom 产品需求文档（PRD）",
+      "url": "/uWisdom-PRD.html",
+      "updated": "2026-03-26",
+      "section": "页面"
+    }
+  ],
+  "generatedAt": "2026-03-27T16:00:12.181239"
+}

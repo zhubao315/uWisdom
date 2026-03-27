@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://uwisdom.example.com/schemas/knowledge-unit.json",
+  "title": "Knowledge Unit",
+  "description": "uWisdom 知识单元标准 Schema",
+  "type": "object",
+  "required": ["title", "summary", "type", "version"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^kw-[a-z0-9]+-[a-z0-9-]+$",
+      "description": "唯一标识，格式: kw-{field}-{name}"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "description": "条目标题"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 200,
+      "description": "一句话摘要"
+    },
+    "permalink": {
+      "type": "string",
+      "pattern": "^/",
+      "description": "永久链接，必须以 / 开头"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["principle", "method", "glossary", "decision", "area", "project", "task-pattern", "case", "opportunity", "agent-card"],
+      "description": "知识类型"
+    },
+    "identity": {
+      "type": "string",
+      "enum": ["architect", "investor", "lifelong-learner", "life-artist"],
+      "description": "身份归属"
+    },
+    "field": {
+      "type": "string",
+      "description": "领域标签"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "标签数组"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v?\\d+\\.\\d+\\.\\d+$",
+      "description": "语义化版本号"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date",
+      "description": "创建日期"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date",
+      "description": "更新日期"
+    },
+    "author": {
+      "type": "string",
+      "description": "作者"
+    },
+    "book": {
+      "type": "string",
+      "description": "相关书籍"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "可信度"
+    },
+    "applicability": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "适用场景"
+    },
+    "non_applicability": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "非适用场景"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "依赖的知识单元 ID"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "参考资料"
+    },
+    "agent_callable": {
+      "type": "boolean",
+      "description": "是否可被 Agent 调用"
+    },
+    "skill_ref": {
+      "type": "string",
+      "pattern": "^uskill-[a-z0-9-]+$",
+      "description": "关联的 uSkills 技能 ID"
+    },
+    "test_cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["input", "expected"],
+        "properties": {
+          "input": {
+            "type": "string",
+            "description": "测试输入"
+          },
+          "expected": {
+            "type": "string",
+            "description": "预期输出"
+          }
+        }
+      },
+      "description": "验证用例"
+    }
+  }
+}

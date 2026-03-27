@@ -86,10 +86,16 @@ def main():
 
     # Validate links
     for rel_path, front, body in page_data:
+        # Remove code blocks
+        body_no_code = re.sub(r'```[\s\S]*?```', '', body)
+        body_no_code = re.sub(r'`[^`]+`', '', body_no_code)
+        
         # Check [[WikiLinks]]
-        wiki_links = re.findall(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]", body)
+        wiki_links = re.findall(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]", body_no_code)
         for target, _ in wiki_links:
             target_clean = target.strip()
+            if target_clean in {"WikiLink", "Link", "链接"}:
+                continue
             # Try by title or by path
             if target_clean not in all_titles:
                 # Try finding as path
